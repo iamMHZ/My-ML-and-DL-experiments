@@ -52,9 +52,9 @@ def main():
         W += -alpha * gradient
 
         if epoch == 0 or (epoch + 1) % 5 == 0:
-            print("[INFO] epoch={}, loss={:.7f}".format(int(epoch + 1), loss))
+            print("epoch={}, loss={:.7f}".format(int(epoch + 1), loss))
 
-    print('[INFO] evaluating ...')
+    print('evaluating ...')
 
     prediction = predict(test_x, W)
 
@@ -72,7 +72,7 @@ def main():
     plt.figure()
     plt.plot(np.arange(0, epochs), losses)
     plt.title("Training Loss")
-    plt.xlabel("Epoch #")
+    plt.xlabel("Epoch")
     plt.ylabel("Loss")
     plt.show()
 

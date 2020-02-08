@@ -35,6 +35,9 @@ def main():
     y = y.reshape(y.shape[0], 1)
     x = np.c_[x, np.ones((x.shape[0]))]
 
+    # if you don't know what is random state
+    # https://stackoverflow.com/questions/49147774/what-is-random-state-in-sklearn-model-selection-train-test-split-example?rq=1
+
     (train_x, test_x, train_y, test_y) = train_test_split(x, y, test_size=0.5, random_state=42)
 
     print("[INFO] training...")
@@ -60,13 +63,14 @@ def main():
 
     print(classification_report(test_y, prediction))
 
-    plt.style.use("ggplot")
+    plt.style.use('ggplot')
     plt.figure()
     plt.title("Data")
     # plt.scatter(test_x[:, 0], test_x[:, 1], marker="o", c=test_y, s=30)
     # plt.scatter(test_x[:, 0], test_x[:, 1], marker="o", s=30)
     for i in range(len(test_x)):
-        plt.scatter(test_x[i, 0], test_x[i, 1], marker="o", c=get_color(test_y[i, 0]), s=30)
+        # s is  the area of the marker.
+        plt.scatter(test_x[i, 0], test_x[i, 1], marker="o", c=get_color(test_y[i, 0]), s=20)
 
     plt.style.use("ggplot")
     plt.figure()

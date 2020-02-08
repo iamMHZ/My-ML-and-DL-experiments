@@ -63,6 +63,7 @@ def main():
 
     print(classification_report(test_y, prediction))
 
+    print('plotting...')
     plt.style.use('ggplot')
     plt.figure()
     plt.title("Data")

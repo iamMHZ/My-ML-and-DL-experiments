@@ -38,25 +38,25 @@ def main():
     (train_x, test_x, train_y, test_y) = train_test_split(x, y, test_size=0.5, random_state=42)
 
     print("[INFO] training...")
-    W = np.random.randn(x.shape[1], 1)
+    w = np.random.randn(x.shape[1], 1)
     losses = []
 
     for epoch in np.arange(0, epochs):
-        prediction = sigmoid_activation(train_x.dot(W))
+        prediction = sigmoid_activation(train_x.dot(w))
 
         error = prediction - train_y
         loss = np.sum(error ** 2)
         losses.append(loss)
 
         gradient = train_x.T.dot(error)
-        W += -alpha * gradient
+        w += -alpha * gradient
 
         if epoch == 0 or (epoch + 1) % 5 == 0:
             print("epoch={}, loss={:.7f}".format(int(epoch + 1), loss))
 
     print('evaluating ...')
 
-    prediction = predict(test_x, W)
+    prediction = predict(test_x, w)
 
     print(classification_report(test_y, prediction))
 

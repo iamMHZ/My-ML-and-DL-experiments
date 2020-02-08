@@ -11,8 +11,8 @@ def sigmoid_activation(x):
     return sigmoid
 
 
-def predict(X, W):
-    prediction = sigmoid_activation(X.dot(W))
+def predict(x, w):
+    prediction = sigmoid_activation(x.dot(w))
 
     prediction[prediction <= 0.5] = 0
     prediction[prediction > 0] = 1
@@ -31,14 +31,14 @@ def main():
     epochs = 100
     alpha = 0.01
 
-    (X, Y) = make_blobs(n_samples=1000, n_features=2, centers=2, cluster_std=1.5, random_state=1)
-    Y = Y.reshape(Y.shape[0], 1)
-    X = np.c_[X, np.ones((X.shape[0]))]
+    (x, y) = make_blobs(n_samples=1000, n_features=2, centers=2, cluster_std=1.5, random_state=1)
+    y = y.reshape(y.shape[0], 1)
+    x = np.c_[x, np.ones((x.shape[0]))]
 
-    (train_x, test_x, train_y, test_y) = train_test_split(X, Y, test_size=0.5, random_state=42)
+    (train_x, test_x, train_y, test_y) = train_test_split(x, y, test_size=0.5, random_state=42)
 
     print("[INFO] training...")
-    W = np.random.randn(X.shape[1], 1)
+    W = np.random.randn(x.shape[1], 1)
     losses = []
 
     for epoch in np.arange(0, epochs):

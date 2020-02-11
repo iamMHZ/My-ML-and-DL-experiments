@@ -36,8 +36,10 @@ class Perceptron:
         print("################################################################################\n")
 
     def predict(self, x, add_bios=True):
-
+        # print(x)
+        # make sure that data (x) is a 2d array
         x = np.atleast_2d(x)
+        # print(x)
 
         # check if we need to add bios :
 

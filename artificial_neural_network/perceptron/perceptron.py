@@ -3,7 +3,7 @@ import numpy as np
 
 class Perceptron:
 
-    def __init__(self, n, alpha=0.01):
+    def __init__(self, n, alpha=0.1):
         self.alpha = alpha
         # 1 extra column for applying bias trick
         self.weights = np.random.randn(n + 1) / np.sqrt(n)
@@ -15,11 +15,12 @@ class Perceptron:
 
     def fit(self, x, y, epochs=20):
         # apply bias trick:
-        x = np.c_(np.ones(x.shape[0]))
+        x = np.c_[x, np.ones((x.shape[0]))]
 
-        for epoch in epochs:
+        for epoch in range(epochs):
 
             for (data, target) in zip(x, y):
+
                 prediction = self.step_function(np.dot(data, self.weights))
 
                 # apply weight update only if the predition was wrong
@@ -36,10 +37,12 @@ class Perceptron:
 
     def predict(self, x, add_bios=True):
 
+        x = np.atleast_2d(x)
+
         # check if we need to add bios :
 
         if add_bios:
-            x = np.c_(np.ones(x.shape[0]))
+            x = np.c_[x, np.ones((x.shape[0]))]
 
         perdition = self.step_function(np.dot(x, self.weights))
 

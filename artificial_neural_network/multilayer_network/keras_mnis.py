@@ -42,7 +42,7 @@ sgd = SGD(0.01)
 
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
-hyperparameters = model.fit(train_x, train_y, validation_data=(test_x, test_y), epochs=100, batch_size=128)
+model_history = model.fit(train_x, train_y, validation_data=(test_x, test_y), epochs=100, batch_size=128)
 
 print("Evaluating Network : ")
 
@@ -54,10 +54,10 @@ print(
 # plot the training loss and accuracy
 plt.style.use("ggplot")
 plt.figure()
-plt.plot(np.arange(0, 100), hyperparameters.history["loss"], label="train_loss")
-plt.plot(np.arange(0, 100), hyperparameters.history["val_loss"], label="val_loss")
-plt.plot(np.arange(0, 100), hyperparameters.history["accuracy"], label="train_acc")
-plt.plot(np.arange(0, 100), hyperparameters.history["val_accuracy"], label="val_acc")
+plt.plot(np.arange(0, 100), model_history.history["loss"], label="train_loss")
+plt.plot(np.arange(0, 100), model_history.history["val_loss"], label="val_loss")
+plt.plot(np.arange(0, 100), model_history.history["accuracy"], label="train_acc")
+plt.plot(np.arange(0, 100), model_history.history["val_accuracy"], label="val_acc")
 plt.title("Training Loss and Accuracy")
 plt.xlabel("Epoch")
 plt.ylabel("Loss/Accuracy")

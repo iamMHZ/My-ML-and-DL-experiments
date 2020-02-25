@@ -1,6 +1,18 @@
+import math
 from collections import OrderedDict
 
 import numpy as np
+
+
+# modeling distance from i-th centroid to j-th centroid
+class Distance:
+    def __init__(self, start_index, end_index, euclidean_distance):
+        self.start_index = start_index
+        self.end_index = end_index
+        self.euclidean_distance = euclidean_distance
+
+    def __lt__(self, other):
+        return self.euclidean_distance > other.euclidean_distance
 
 
 class CentroidTracker:
@@ -38,7 +50,7 @@ class CentroidTracker:
             return self.objects
 
         else:
-
+            # computer centroid from bounding boxes
             input_centroids = np.zero(len(bounding_boxes), 2)
 
             for (i, (start_x, start_y, end_x, end_y)) in enumerate(bounding_boxes):
@@ -47,4 +59,27 @@ class CentroidTracker:
                 cy = int((start_y + end_y) / 2.0)
                 input_centroids[i] = (cx, cy)
 
+            # if no object has been tracked yet then
+            if len(self.objects) == 0:
+                for centroid in input_centroids:
+                    self.register_object(centroid)
 
+            # computer distances and update objects
+            else:
+
+                existing_object_ids = self.objects.keys()
+                existing_centroids = self.objects.values()
+
+                # compute distance between new centroids and old existing ones:
+                # TODO : improve time complexity of this part :
+                for i in enumerate(input_centroids):
+                    distances = []
+                    for j in enumerate(existing_centroids):
+                        euclidean_distance = self.compute_euclidean_distance(input_centroids[i], existing_centroids[j])
+
+                        distance = Distance(i, j, euclidean_distance)
+                        distances.append(distance)
+
+    def compute_euclidean_distance(self, c1, c2):
+        distance = math.sqrt(sum([(a - b) ** 2 for a, b in zip(c1, c2)]))
+        return distance

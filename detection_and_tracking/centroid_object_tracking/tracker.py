@@ -47,8 +47,6 @@ class CentroidTracker:
                 if self.disappeared[id] > self.max_disappeared:
                     self.unregister_object(id)
 
-            return self.objects
-
         else:
             # computer centroid from bounding boxes
             input_centroids = np.zero(len(bounding_boxes), 2)
@@ -67,8 +65,8 @@ class CentroidTracker:
             # computer distances and update objects
             else:
 
-                existing_object_ids = self.objects.keys()
-                existing_centroids = self.objects.values()
+                existing_object_ids = list(self.objects.keys())
+                existing_centroids = list(self.objects.values())
 
                 # compute distance between new centroids and old existing ones:
                 # TODO : improve time complexity of this part :
@@ -79,6 +77,26 @@ class CentroidTracker:
 
                         distance = Distance(i, j, euclidean_distance)
                         distances.append(distance)
+
+                    # now sort distances from i-th input to existing centroid
+                    distances = sorted(distances)
+                    candidate = distances[0]
+
+                    index = candidate.end_index
+                    # update existing object centroid
+                    self.objects[index] = input_centroids[i]
+                    del input_centroids[i]
+                    del existing_centroids[index]
+                    del existing_object_ids[index]
+
+                # check that if we have lost objects:
+                for id in existing_object_ids:
+                    self.disappeared[id] += 1
+                    # check if current object has to be considered lost
+                    if self.disappeared[id] > self.max_disappeared:
+                        self.unregister_object(id)
+
+        return self.objects
 
     def compute_euclidean_distance(self, c1, c2):
         distance = math.sqrt(sum([(a - b) ** 2 for a, b in zip(c1, c2)]))

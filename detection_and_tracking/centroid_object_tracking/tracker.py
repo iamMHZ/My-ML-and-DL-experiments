@@ -68,6 +68,9 @@ class CentroidTracker:
                 existing_object_ids = list(self.objects.keys())
                 existing_centroids = list(self.objects.values())
 
+                number_of_input_centroid = len(input_centroids)
+                number_of_existing_centroids = len(existing_object_ids)
+
                 # compute distance between new centroids and old existing ones:
                 # TODO : improve time complexity of this part :
                 for i in enumerate(input_centroids):
@@ -90,11 +93,17 @@ class CentroidTracker:
                     del existing_object_ids[index]
 
                 # check that if we have lost objects:
-                for id in existing_object_ids:
-                    self.disappeared[id] += 1
-                    # check if current object has to be considered lost
-                    if self.disappeared[id] > self.max_disappeared:
-                        self.unregister_object(id)
+                # TODO : remove code duplication
+                if number_of_existing_centroids >= number_of_input_centroid:
+                    for id in existing_object_ids:
+                        self.disappeared[id] += 1
+                        # check if current object has to be considered lost
+                        if self.disappeared[id] > self.max_disappeared:
+                            self.unregister_object(id)
+                else:
+                    # register new objects
+                    for centroid in input_centroids:
+                        self.register_object(centroid)
 
         return self.objects
 

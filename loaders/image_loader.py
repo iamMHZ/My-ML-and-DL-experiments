@@ -1,4 +1,5 @@
 import os
+
 import cv2
 import numpy as np
 
@@ -30,16 +31,18 @@ class ImageLoader:
                 # filter corrupted images
                 if image is not None:
                     # pre_processing the image
-                    # for p in self.preprocessors:
-                    image = self.preprocessors.pre_process(image)
+                    for preprocessor in self.preprocessors:
+                        image = self.preprocessor.pre_process(image)
+
                     print(file_path)
                     labels.append(label)
                     data.append(image)
 
         return np.array(data), np.array(labels)
 
-#
-# if __name__ == "__main__":
-#     path = 'D:\\Programming\\database of image\\Datasets\\KaggleCatsAndDogs\\'
-#     loader = ImageLoader()
-#     loader.load(path)
+
+if __name__ == "__main__":
+    # path = 'D:\\Programming\\database of image\\Datasets\\KaggleCatsAndDogs\\'
+    path = '../datasets/cats_and_dogs'
+    loader = ImageLoader()
+    loader.load(path)

@@ -56,10 +56,10 @@ class CentroidTracker:
             input_centroids = np.zeros((len(bounding_boxes), 2), dtype="int")
             input_centroids = list(input_centroids)
 
-            for (i, (start_x, start_y, end_x, end_y)) in enumerate(bounding_boxes):
+            for (i, (x, y, w, h)) in enumerate(bounding_boxes):
                 # compute centroid for each bounding box
-                cx = int((start_x + end_x) / 2 - 0)
-                cy = int((start_y + end_y) / 2.0)
+                cx = int((x + w) / 2 - 0)
+                cy = int((y + h) / 2.0)
                 input_centroids[i] = (cx, cy)
 
             # if no object has been tracked yet then

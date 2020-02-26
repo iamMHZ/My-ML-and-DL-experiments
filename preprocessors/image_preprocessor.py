@@ -11,3 +11,8 @@ class ResizePreprocessor:
     def pre_process(self, image):
         # resizing the image
         return cv2.resize(image, (self.width, self.height), interpolation=self.interpolation)
+
+
+class ImageToArrayPreprocessor:
+
+    def __init__(self , data_formate):

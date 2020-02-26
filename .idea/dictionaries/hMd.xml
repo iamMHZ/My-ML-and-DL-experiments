@@ -4,6 +4,7 @@
       <w>cifar</w>
       <w>crossentropy</w>
       <w>dataset</w>
+      <w>keras</w>
       <w>mnist</w>
       <w>perceptron</w>
       <w>relu</w>

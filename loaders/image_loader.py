@@ -32,7 +32,7 @@ class ImageLoader:
                 if image is not None:
                     # pre_processing the image
                     for preprocessor in self.preprocessors:
-                        image = self.preprocessor.pre_process(image)
+                        image = preprocessor.pre_process(image)
 
                     print(file_path)
                     labels.append(label)

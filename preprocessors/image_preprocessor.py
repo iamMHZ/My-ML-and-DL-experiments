@@ -14,7 +14,7 @@ class ResizePreprocessor:
         return cv2.resize(image, (self.width, self.height), interpolation=self.interpolation)
 
 
-# considers if images should be channel_first (channels, rows, columns) or channel_last (columns, rows, channels)
+# considers if images should be channel_first (channels, rows, columns) or channel_last (rows ,columns , channels)
 class ImageToArrayPreprocessor:
 
     def __init__(self, data_format=None):

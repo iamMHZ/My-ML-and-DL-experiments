@@ -58,7 +58,7 @@ class CentroidTracker:
 
             for (i, (x, y, w, h)) in enumerate(bounding_boxes):
                 # compute centroid for each bounding box
-                cx = int((x + w) / 2 - 0)
+                cx = int((x + w) / 2.0)
                 cy = int((y + h) / 2.0)
                 input_centroids[i] = (cx, cy)
 

@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from keras.optimizers import SGD
+from keras.utils import np_utils
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
@@ -31,6 +32,9 @@ print('[INFO] converting labels to VECTORS ...')
 lb = LabelBinarizer()
 test_y = lb.fit_transform(test_y)
 train_y = lb.fit_transform(train_y)
+
+test_y = np_utils.to_categorical(test_y, num_classes=2)
+train_y = np_utils.to_categorical(train_y, num_classes=2)
 
 # building model
 model = ShallowNet.build(32, 32, 3, 2)

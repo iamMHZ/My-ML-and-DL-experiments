@@ -15,7 +15,7 @@ print('[INFO] LOADING DATA...')
 print('[INFO] DATA LOADED SUCCESSFULLY...')
 
 train_x = train_x.astype('float') / 255
-train_y = train_y.astype('float') / 255
+test_x = test_x.astype('float') / 255
 
 # initialize the label names for the CIFAR-10 dataset
 label_names = ["airplane", "automobile", "bird", "cat", "deer",

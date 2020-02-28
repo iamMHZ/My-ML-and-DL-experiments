@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/paramerres of LeNet.JPG" afterDir="false" />
+    </list>
+    <manually-removed-from-ignored>
+      <directory path="venv/" />
+      <directory path="$PROJECT_DIR$/venv/" />
+    </manually-removed-from-ignored>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$keras_cifar10.coverage" NAME="keras_cifar10 Coverage Results" MODIFIED="1581749726730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_network/multilayer_network" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$image_loader.coverage" NAME="image_loader Coverage Results" MODIFIED="1582700370175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/loaders" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$shallownet_animals.coverage" NAME="shallownet_animals Coverage Results" MODIFIED="1582783966286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$lenet_mnist.coverage" NAME="lenet_mnist Coverage Results" MODIFIED="1582891176207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$test_or.coverage" NAME="test_or Coverage Results" MODIFIED="1581444850993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_network/perceptron" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$test_and.coverage" NAME="test_and Coverage Results" MODIFIED="1581445078085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_network/perceptron" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$vanilla_gradient_descent.coverage" NAME="vanilla_gradient_descent Coverage Results" MODIFIED="1581179417062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gradient_descent" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$main.coverage" NAME="main Coverage Results" MODIFIED="1581078354559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KNN" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$keras_mnis.coverage" NAME="keras_mnis Coverage Results" MODIFIED="1582888234417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_networks/multilayer_network" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$stochastic_gradient__descent.coverage" NAME="stochastic_gradient_ descent Coverage Results" MODIFIED="1581403679829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gradient_descent" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$shallownet_cfar10.coverage" NAME="shallownet_cfar10 Coverage Results" MODIFIED="1582786671856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$test_xor.coverage" NAME="test_xor Coverage Results" MODIFIED="1581445117065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_network/perceptron" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$face_tracker.coverage" NAME="face_tracker Coverage Results" MODIFIED="1582649298224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-733211071">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="png" value="5" />
+          <entry key="py" value="58" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="5" />
+          <entry key="Python" value="58" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="153" />
+          <entry key="py" value="15705" />
+          <entry key="txt" value="1520" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1673" />
+          <entry key="Python" value="15705" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/face_tracker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1582648344443" expanded="true" signature="142:147" ph="..." />
+                <marker date="1582648344443" expanded="true" signature="266:267" ph="..." />
+                <marker date="1582648344443" expanded="true" signature="266:271" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/tracker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="653">
+              <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1582694571410" expanded="true" signature="141:603" ph="..." />
+                <marker date="1582694571410" expanded="true" signature="625:626" ph="..." />
+                <marker date="1582694571410" expanded="true" signature="625:631" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet_animals.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="939">
+              <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loaders/load_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="3" selection-start-line="2" selection-end-line="2" selection-end-column="3" />
+              <folding>
+                <marker date="1582873923647" expanded="true" signature="125:130" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet_animal_prediction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/lenet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="924">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/lenet_mnist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-403">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>keras.json</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\Programming\Python-Workpace\My-ML-and-DL-experiments\venv\Lib</dir>
+      <dir>D:\Programming\Python-Workpace\My-ML-and-DL-experiments\venv</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/KNN/main.py" />
+        <option value="$PROJECT_DIR$/gradient_descent/vanilla_gradient_descent.py" />
+        <option value="$PROJECT_DIR$/gradient_descent/stochastic_gradient_ descent.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_network/perceptron/perceptron.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_network/perceptron/test_or.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_network/perceptron/test_and.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_network/perceptron/test_xor.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_network/backpropagation/backpropagation.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_network/backpropagation/backpropagation_MNIST.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_network/multilayer_network/keras_mnis.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_network/multilayer_network/keras_cifar10.py" />
+        <option value="$PROJECT_DIR$/object_detection/centroid_object_tracking/tracker.py" />
+        <option value="$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/face_tracker.py" />
+        <option value="$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/tracker.py" />
+        <option value="$PROJECT_DIR$/preprocessors/image_preprocessor.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet.py" />
+        <option value="$PROJECT_DIR$/loaders/image_loader.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet_cfar10.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/load_shallownet.py" />
+        <option value="$PROJECT_DIR$/loaders/load_model.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet_animal_prediction.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet_animals.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/lenet.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_networks/multilayer_network/keras_mnis.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/lenet_mnist.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="330" />
+    <option name="y" value="145" />
+    <option name="width" value="1125" />
+    <option name="height" value="685" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="artificial_neural_networks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="artificial_neural_networks" type="462c0819:PsiDirectoryNode" />
+              <item name="convolutional_neural_networks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="artificial_neural_networks" type="462c0819:PsiDirectoryNode" />
+              <item name="convolutional_neural_networks" type="462c0819:PsiDirectoryNode" />
+              <item name="lenet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="artificial_neural_networks" type="462c0819:PsiDirectoryNode" />
+              <item name="multilayer_network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="detection_and_tracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="detection_and_tracking" type="462c0819:PsiDirectoryNode" />
+              <item name="centroid_object_tracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\lenet" />
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\detection_and_tracking\centroid_object_tracking" />
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\loaders" />
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\preprocessors" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.lenet_mnist">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+      <module name="My ML and DL experiments" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Programming\Python-Workpace\My ML and DL experiments\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="image_loader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="My ML and DL experiments" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/loaders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/loaders/image_loader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="keras_mnis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="My ML and DL experiments" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_neural_networks/multilayer_network" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_neural_networks/multilayer_network/keras_mnis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lenet_mnist" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="My ML and DL experiments" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/lenet_mnist.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="shallownet_animals" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="My ML and DL experiments" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet_animals.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="shallownet_cfar10" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="My ML and DL experiments" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet_cfar10.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Unnamed" />
+      <item itemvalue="Python.image_loader" />
+      <item itemvalue="Python.shallownet_animals" />
+      <item itemvalue="Python.shallownet_cfar10" />
+      <item itemvalue="Python.keras_mnis" />
+      <item itemvalue="Python.lenet_mnist" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.lenet_mnist" />
+        <item itemvalue="Python.keras_mnis" />
+        <item itemvalue="Python.shallownet_animals" />
+        <item itemvalue="Python.shallownet_cfar10" />
+        <item itemvalue="Python.image_loader" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\hMd\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="" />
+      <created>1581077672927</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581077672927</updated>
+    </task>
+    <task id="LOCAL-00004" summary="vanilla gradient descent">
+      <created>1581177808830</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581177808830</updated>
+    </task>
+    <task id="LOCAL-00005" summary="vanilla gradient descent">
+      <created>1581177857475</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581177857475</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactoring and commenting">
+      <created>1581179346303</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581179346303</updated>
+    </task>
+    <task id="LOCAL-00007" summary="vanilla implementation finished">
+      <created>1581179550077</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581179550077</updated>
+    </task>
+    <task id="LOCAL-00008" summary="stochastic gradient descent">
+      <created>1581179706497</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581179706497</updated>
+    </task>
+    <task id="LOCAL-00009" summary="implementation of stochastic gradient descent  finished">
+      <created>1581181553647</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581181553647</updated>
+    </task>
+    <task id="LOCAL-00010" summary="perceptron implementation">
+      <created>1581402259208</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1581402259208</updated>
+    </task>
+    <task id="LOCAL-00011" summary="perceptron implementation finished">
+      <created>1581403443882</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1581403443882</updated>
+    </task>
+    <task id="LOCAL-00012" summary="perceptron implementation finished">
+      <created>1581404440096</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1581404440096</updated>
+    </task>
+    <task id="LOCAL-00013" summary="testing perceptron with OR dataset">
+      <created>1581404468043</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1581404468043</updated>
+    </task>
+    <task id="LOCAL-00014" summary="testing perceptron with AND&#10; dataset">
+      <created>1581444556334</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1581444556334</updated>
+    </task>
+    <task id="LOCAL-00015" summary="testing perceptron with AND&#10; dataset">
+      <created>1581444626599</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1581444626599</updated>
+    </task>
+    <task id="LOCAL-00016" summary="changed alpha and epochs">
+      <created>1581444825284</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1581444825284</updated>
+    </task>
+    <task id="LOCAL-00017" summary="predict data with AND dataset">
+      <created>1581445159694</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1581445159694</updated>
+    </task>
+    <task id="LOCAL-00018" summary="predict data with XOR dataset">
+      <created>1581445168965</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1581445168965</updated>
+    </task>
+    <task id="LOCAL-00019" summary="backpropagation">
+      <created>1581607890935</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1581607890935</updated>
+    </task>
+    <task id="LOCAL-00020" summary="train model with keras on MNIST">
+      <created>1581616972569</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1581616972570</updated>
+    </task>
+    <task id="LOCAL-00021" summary="train model with keras on MNIST">
+      <created>1581617043302</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1581617043302</updated>
+    </task>
+    <task id="LOCAL-00022" summary="train model with keras on CIFAR-10">
+      <created>1581750666997</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1581750666997</updated>
+    </task>
+    <task id="LOCAL-00023" summary="centroid object tracking">
+      <created>1582568649670</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1582568649670</updated>
+    </task>
+    <task id="LOCAL-00024" summary="centroidTracker skeleton">
+      <created>1582571369731</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1582571369731</updated>
+    </task>
+    <task id="LOCAL-00025" summary="computing  euclidean distance">
+      <created>1582639240291</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1582639240291</updated>
+    </task>
+    <task id="LOCAL-00026" summary="updating existing centroids and unregistering lost objects">
+      <created>1582640994114</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1582640994114</updated>
+    </task>
+    <task id="LOCAL-00027" summary="registering and unregistering centroids">
+      <created>1582641447387</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1582641447387</updated>
+    </task>
+    <task id="LOCAL-00028" summary="testing tracker with tracing faces">
+      <created>1582647354660</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1582647354660</updated>
+    </task>
+    <task id="LOCAL-00029" summary="bug : scale of centroids">
+      <created>1582647384036</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1582647384036</updated>
+    </task>
+    <task id="LOCAL-00030" summary="update packaging">
+      <created>1582693684513</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1582693684513</updated>
+    </task>
+    <task id="LOCAL-00031" summary="loading images with multiple preprocessors">
+      <created>1582694245432</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1582694245432</updated>
+    </task>
+    <task id="LOCAL-00032" summary="renaming">
+      <created>1582694552956</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1582694552956</updated>
+    </task>
+    <task id="LOCAL-00033" summary="unwanted zero">
+      <created>1582694620578</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1582694620578</updated>
+    </task>
+    <task id="LOCAL-00034" summary="refactoring">
+      <created>1582695589034</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1582695589034</updated>
+    </task>
+    <task id="LOCAL-00035" summary="image to array prepro">
+      <created>1582695595162</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1582695595162</updated>
+    </task>
+    <task id="LOCAL-00036" summary="corrected comments">
+      <created>1582696393578</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1582696393578</updated>
+    </task>
+    <task id="LOCAL-00037" summary="venv">
+      <created>1582697727648</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1582697727648</updated>
+    </task>
+    <task id="LOCAL-00038" summary="shallowNet implementation">
+      <created>1582698255756</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1582698255756</updated>
+    </task>
+    <task id="LOCAL-00039" summary="shallowNet implementation">
+      <created>1582701274531</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1582701274531</updated>
+    </task>
+    <task id="LOCAL-00040" summary="fixed bug of preprocessor">
+      <created>1582701291871</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1582701291871</updated>
+    </task>
+    <task id="LOCAL-00041" summary="shallownet  on animals dataset">
+      <created>1582701321872</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1582701321872</updated>
+    </task>
+    <task id="LOCAL-00042" summary="BUG in encoding labels">
+      <created>1582783927534</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1582783927534</updated>
+    </task>
+    <task id="LOCAL-00043" summary="FIXED BUG in encoding labels">
+      <created>1582783996491</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1582783996491</updated>
+    </task>
+    <task id="LOCAL-00044" summary="ShallowNet implementation on CIFAR10">
+      <created>1582786361734</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1582786361734</updated>
+    </task>
+    <task id="LOCAL-00045" summary="FIXED label type BUG">
+      <created>1582786830073</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1582786830073</updated>
+    </task>
+    <task id="LOCAL-00046" summary="serializing model">
+      <created>1582871858108</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1582871858108</updated>
+    </task>
+    <task id="LOCAL-00047" summary="venv">
+      <created>1582872527273</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1582872527273</updated>
+    </task>
+    <task id="LOCAL-00048" summary="venv">
+      <created>1582884513860</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1582884513860</updated>
+    </task>
+    <task id="LOCAL-00049" summary="venv">
+      <created>1582885135484</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1582885135484</updated>
+    </task>
+    <task id="LOCAL-00050" summary="LeNet implementation">
+      <created>1582891404093</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1582891404124</updated>
+    </task>
+    <task id="LOCAL-00051" summary="predict new data with shallow net model">
+      <created>1582891462214</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1582891462214</updated>
+    </task>
+    <task id="LOCAL-00052" summary="module for loading models with keras">
+      <created>1582891508771</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1582891508771</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="264" y="116" width="900" height="548" extended-state="1" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.30357143" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932885" weight="0.32885906" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5013423" side_tool="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4986577" weight="0.32885906" />
+      <window_info anchor="bottom" id="Python Console" order="5" weight="0.32885906" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.357047" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.37449664" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.49932885" weight="0.32885906" />
+      <window_info anchor="right" id="Database" order="0" weight="0.3295302" />
+      <window_info anchor="right" id="SciView" order="1" weight="0.5845238" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="centroidTracker skeleton" />
+    <MESSAGE value="computing  euclidean distance" />
+    <MESSAGE value="updating existing centroids and unregistering lost objects" />
+    <MESSAGE value="registering and unregistering centroids" />
+    <MESSAGE value="testing tracker with tracing faces" />
+    <MESSAGE value="bug : scale of centroids" />
+    <MESSAGE value="update packaging" />
+    <MESSAGE value="loading images with multiple preprocessors" />
+    <MESSAGE value="renaming" />
+    <MESSAGE value="unwanted zero" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="image to array prepro" />
+    <MESSAGE value="corrected comments" />
+    <MESSAGE value="shallowNet implementation" />
+    <MESSAGE value="fixed bug of preprocessor" />
+    <MESSAGE value="shallownet  on animals dataset" />
+    <MESSAGE value="BUG in encoding labels" />
+    <MESSAGE value="FIXED BUG in encoding labels" />
+    <MESSAGE value="ShallowNet implementation on CIFAR10" />
+    <MESSAGE value="FIXED label type BUG" />
+    <MESSAGE value="serializing model" />
+    <MESSAGE value="venv" />
+    <MESSAGE value="LeNet implementation" />
+    <MESSAGE value="predict new data with shallow net model" />
+    <MESSAGE value="module for loading models with keras" />
+    <option name="LAST_COMMIT_MESSAGE" value="module for loading models with keras" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/tracker.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/tracker.py</url>
+          <line>121</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/tracker.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/tracker.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/face_tracker.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gradient_descent/stochastic_gradient_ descent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradient_descent/vanilla_gradient_descent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="56" selection-start-line="56" selection-end-line="57" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/perceptron/test_xor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/perceptron/test_or.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/perceptron/perceptron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/engine/training_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1894">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/multilayer_network/CIFAR10_plot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/legacy/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9854">
+          <caret line="685" column="43" selection-start-line="685" selection-start-column="43" selection-end-line="685" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/haarcascade_frontalcatface.xml" />
+    <entry file="file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/haarcascade_frontalface_default.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KNN/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/perceptron/test_and.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="83" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/layers/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10142">
+          <caret line="461" column="6" selection-start-line="461" selection-start-column="6" selection-end-line="461" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/multilayer_network/keras_cifar10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="830">
+          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessors/image_preprocessor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/multilayer_network/plot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/backpropagation/backpropagation_MNIST.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/backpropagation/backpropagation.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/face_tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1582648344443" expanded="true" signature="142:147" ph="..." />
+            <marker date="1582648344443" expanded="true" signature="266:267" ph="..." />
+            <marker date="1582648344443" expanded="true" signature="266:271" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet_cfar10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loaders/image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/lenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loaders/load_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="3" selection-start-line="2" selection-end-line="2" selection-end-column="3" />
+          <folding>
+            <marker date="1582873923647" expanded="true" signature="125:130" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1582694571410" expanded="true" signature="141:603" ph="..." />
+            <marker date="1582694571410" expanded="true" signature="625:626" ph="..." />
+            <marker date="1582694571410" expanded="true" signature="625:631" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/multilayer_network/keras_mnis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet_animal_prediction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet_animals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="939">
+          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/lenet_mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-403">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

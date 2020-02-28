@@ -7,7 +7,9 @@
       <w>keras</w>
       <w>mnist</w>
       <w>perceptron</w>
+      <w>preprocessing</w>
       <w>relu</w>
+      <w>resizer</w>
       <w>softmax</w>
     </words>
   </dictionary>

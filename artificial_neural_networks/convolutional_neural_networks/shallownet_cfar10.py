@@ -38,6 +38,10 @@ model.compile(optimizer=sgd, loss=['categorical_crossentropy'], metrics=['accura
 print('[INFO] TRAINING...')
 model_history = model.fit(train_x, train_y, validation_data=(test_x, test_y), batch_size=32, epochs=40, verbose=1)
 
+# save trained model to disk
+print('[INFO] Serializing model...')
+model.save('./shallowNet_weights.hdf5')
+
 # evaluating
 print("[INFO] EVALUATING...")
 

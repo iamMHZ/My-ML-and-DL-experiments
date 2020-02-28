@@ -5,7 +5,7 @@ from keras.optimizers import SGD
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import LabelBinarizer
 
-from artificial_neural_networks.convolutional_neural_networks.shallownet import ShallowNet
+from artificial_neural_networks.convolutional_neural_networks.shallownet.shallownet import ShallowNet
 
 # loading data
 print('[INFO] LOADING DATA...')

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="">
+    <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="fixed plotting BUG">
+      <change afterPath="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/MiniVGGNet architecture.JPG" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/mini_vgg_net.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -23,6 +24,7 @@
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$test_or.coverage" NAME="test_or Coverage Results" MODIFIED="1581444850993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_network/perceptron" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$test_and.coverage" NAME="test_and Coverage Results" MODIFIED="1581445078085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_network/perceptron" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$vanilla_gradient_descent.coverage" NAME="vanilla_gradient_descent Coverage Results" MODIFIED="1581179417062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gradient_descent" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$train_lenet_mnist.coverage" NAME="train_lenet_mnist Coverage Results" MODIFIED="1582954239399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$main.coverage" NAME="main Coverage Results" MODIFIED="1581078354559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KNN" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$keras_mnis.coverage" NAME="keras_mnis Coverage Results" MODIFIED="1582888234417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_networks/multilayer_network" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$stochastic_gradient__descent.coverage" NAME="stochastic_gradient_ descent Coverage Results" MODIFIED="1581403679829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gradient_descent" />
@@ -71,72 +73,52 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="JPG" value="1" />
+          <entry key="JPG" value="3" />
           <entry key="png" value="7" />
-          <entry key="py" value="70" />
+          <entry key="py" value="72" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="8" />
-          <entry key="Python" value="70" />
+          <entry key="Image" value="10" />
+          <entry key="Python" value="72" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="198" />
-          <entry key="py" value="15726" />
-          <entry key="txt" value="1597" />
+          <entry key="dummy" value="210" />
+          <entry key="py" value="16693" />
+          <entry key="txt" value="1609" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="1795" />
-          <entry key="Python" value="15726" />
+          <entry key="PLAIN_TEXT" value="1819" />
+          <entry key="Python" value="16693" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/lenet_mnist.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_cfar10.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/lenet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/mini_vgg_net.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+                <marker date="1582956563339" expanded="true" signature="402:408" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/MiniVGGNet architecture.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -199,11 +181,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="330" />
-    <option name="y" value="145" />
-    <option name="width" value="1125" />
-    <option name="height" value="685" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="157" />
+    <option name="y" value="70" />
+    <option name="width" value="1473" />
+    <option name="height" value="888" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -246,6 +228,13 @@
               <item name="convolutional_neural_networks" type="462c0819:PsiDirectoryNode" />
               <item name="lenet" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="artificial_neural_networks" type="462c0819:PsiDirectoryNode" />
+              <item name="convolutional_neural_networks" type="462c0819:PsiDirectoryNode" />
+              <item name="vgg_net" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -264,6 +253,7 @@
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\preprocessors" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\vgg_net" />
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\lenet" />
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\detection_and_tracking\centroid_object_tracking" />
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments" />
@@ -281,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train_shallownet_cfar10">
+  <component name="RunManager" selected="Python.train_lenet_mnist">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -370,7 +360,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="shallownet_cfar10" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="train_lenet_mnist" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -378,12 +368,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\shallownet\train_shallownet_cfar10.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/train_lenet_mnist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -417,18 +407,18 @@
     <list>
       <item itemvalue="Python.Unnamed" />
       <item itemvalue="Python.shallownet_animals" />
-      <item itemvalue="Python.shallownet_cfar10" />
       <item itemvalue="Python.keras_mnis" />
       <item itemvalue="Python.lenet_mnist" />
       <item itemvalue="Python.train_shallownet_cfar10" />
+      <item itemvalue="Python.train_lenet_mnist" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train_lenet_mnist" />
         <item itemvalue="Python.train_shallownet_cfar10" />
         <item itemvalue="Python.lenet_mnist" />
         <item itemvalue="Python.keras_mnis" />
         <item itemvalue="Python.shallownet_animals" />
-        <item itemvalue="Python.shallownet_cfar10" />
       </list>
     </recent_temporary>
   </component>
@@ -442,13 +432,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581077672927</updated>
-    </task>
-    <task id="LOCAL-00006" summary="refactoring and commenting">
-      <created>1581179346303</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1581179346303</updated>
     </task>
     <task id="LOCAL-00007" summary="vanilla implementation finished">
       <created>1581179550077</created>
@@ -786,7 +769,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582916160418</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="refactoring">
+      <created>1582954148795</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1582954148796</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -799,10 +789,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="126" y="56" width="1178" height="710" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19194631" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.25581396" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932885" weight="0.32885906" />
@@ -890,9 +881,9 @@
     <MESSAGE value="LeNet implementation" />
     <MESSAGE value="predict new data with shallow net model" />
     <MESSAGE value="module for loading models with keras" />
-    <MESSAGE value="refactoring" />
     <MESSAGE value="fixed plotting BUG" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed plotting BUG" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1052,9 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/paramerres of LeNet.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_animals.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -1079,9 +1067,9 @@
     <entry file="file://$PROJECT_DIR$/artificial_neural_networks/multilayer_network/plot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/lenet_mnist.py">
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/train_lenet_mnist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
+        <state relative-caret-position="1386">
           <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
@@ -1096,9 +1084,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/paramerres of LeNet.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/lenet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
+        <state relative-caret-position="588">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -1106,8 +1097,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/MiniVGGNet architecture.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/mini_vgg_net.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+            <marker date="1582956563339" expanded="true" signature="402:408" ph="..." />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

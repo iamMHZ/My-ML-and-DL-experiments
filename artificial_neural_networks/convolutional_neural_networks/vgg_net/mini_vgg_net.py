@@ -51,6 +51,7 @@ class MiniVGGNet:
         model.add(MaxPooling2D(pool_size=(2, 2)))
         model.add(Dropout(rate=0.25))
 
+        #  FC and softmax
         model.add(Flatten())
         model.add(Dense(512))
 

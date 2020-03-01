@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/train_mini_vgg_cifar10.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_cfar10.py" beforeDir="false" afterPath="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_cfar10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artificial_neural_networks/multilayer_network/keras_cifar10.py" beforeDir="false" afterPath="$PROJECT_DIR$/artificial_neural_networks/multilayer_network/keras_cifar10.py" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
       <directory path="venv/" />
@@ -75,28 +74,28 @@
         <counts>
           <entry key="JPG" value="3" />
           <entry key="png" value="7" />
-          <entry key="py" value="86" />
+          <entry key="py" value="87" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="10" />
-          <entry key="Python" value="86" />
+          <entry key="Python" value="87" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="210" />
-          <entry key="py" value="16806" />
-          <entry key="txt" value="1672" />
+          <entry key="py" value="16851" />
+          <entry key="txt" value="1712" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="1882" />
-          <entry key="Python" value="16806" />
+          <entry key="PLAIN_TEXT" value="1922" />
+          <entry key="Python" value="16851" />
         </counts>
       </usages-collector>
     </session>
@@ -121,20 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/artificial_neural_networks/multilayer_network/keras_cifar10.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_cfar10.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1606">
-              <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+            <state relative-caret-position="1408">
+              <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -211,6 +201,7 @@
         <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/mini_vgg_net.py" />
         <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/train_mini_vgg_cifar10.py" />
         <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_cfar10.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_networks/multilayer_network/keras_cifar10.py" />
       </list>
     </option>
   </component>
@@ -471,20 +462,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581077672927</updated>
-    </task>
-    <task id="LOCAL-00011" summary="perceptron implementation finished">
-      <created>1581403443882</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1581403443882</updated>
-    </task>
-    <task id="LOCAL-00012" summary="perceptron implementation finished">
-      <created>1581404440096</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1581404440096</updated>
     </task>
     <task id="LOCAL-00013" summary="testing perceptron with OR dataset">
       <created>1581404468043</created>
@@ -815,7 +792,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582957873783</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="refactoring">
+      <created>1583043553135</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1583043553151</updated>
+    </task>
+    <task id="LOCAL-00061" summary="MiniVGG on CIFAR10 dataset">
+      <created>1583043607591</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1583043607591</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TodoView">
@@ -897,7 +888,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="testing tracker with tracing faces" />
     <MESSAGE value="bug : scale of centroids" />
     <MESSAGE value="update packaging" />
     <MESSAGE value="loading images with multiple preprocessors" />
@@ -918,11 +908,12 @@
     <MESSAGE value="predict new data with shallow net model" />
     <MESSAGE value="module for loading models with keras" />
     <MESSAGE value="fixed plotting BUG" />
-    <MESSAGE value="refactoring" />
     <MESSAGE value="MiniVGGNet finished" />
     <MESSAGE value="MiniVGGNet" />
     <MESSAGE value="FIXED reporting BUG" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIXED reporting BUG" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="MiniVGG on CIFAR10 dataset" />
+    <option name="LAST_COMMIT_MESSAGE" value="MiniVGG on CIFAR10 dataset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1098,13 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/multilayer_network/keras_cifar10.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/mini_vgg_net.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -1112,13 +1096,6 @@
           <folding>
             <marker date="1582956975157" expanded="true" signature="402:408" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_animals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1147,8 +1124,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_cfar10.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+        <state relative-caret-position="-835">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_animals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/multilayer_network/keras_cifar10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

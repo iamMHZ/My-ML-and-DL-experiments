@@ -10,8 +10,18 @@ from artificial_neural_networks.convolutional_neural_networks.shallownet.shallow
 from loaders.image_loader import ImageLoader
 from preprocessors.image_preprocessor import ImageToArrayPreprocessor, ResizePreprocessor
 
+input_width = 32
+input_height = 32
+input_depth = 3
+
+num_classes = 2
+
+batch_size = 32
+epochs = 100
+learning_rate = 0.005
+
 image_to_array = ImageToArrayPreprocessor()
-resizer = ResizePreprocessor(32, 32)
+resizer = ResizePreprocessor(input_width, input_height)
 
 loader = ImageLoader(preprocessors=[resizer, image_to_array])
 
@@ -33,33 +43,33 @@ lb = LabelBinarizer()
 test_y = lb.fit_transform(test_y)
 train_y = lb.fit_transform(train_y)
 
-test_y = np_utils.to_categorical(test_y, num_classes=2)
-train_y = np_utils.to_categorical(train_y, num_classes=2)
+test_y = np_utils.to_categorical(test_y, num_classes=num_classes)
+train_y = np_utils.to_categorical(train_y, num_classes=num_classes)
 
 # building model
-model = ShallowNet.build(32, 32, 3, 2)
+model = ShallowNet.build(input_width, input_height, input_depth, num_classes)
 
 print('[INFO] COMPILING MODEL...')
-sgd = SGD(learning_rate=0.005)
+sgd = SGD(learning_rate=learning_rate)
 model.compile(optimizer=sgd, loss='categorical_crossentropy', metrics=['accuracy'])
 
 # training model
 print('[INFO] TRAINING ...')
-model_history = model.fit(train_x, train_y, batch_size=32, epochs=100, validation_data=(test_x, test_y), verbose=1)
+model_history = model.fit(train_x, train_y, batch_size=batch_size, epochs=epochs, validation_data=(test_x, test_y), verbose=1)
 
 # evaluating network
 print('[INFO] EVALUATING network...')
-predictions = model.predict(test_x, batch_size=32, verbose=1)
+predictions = model.predict(test_x, batch_size=batch_size, verbose=1)
 print(classification_report(test_y.argmax(axis=1), predictions.argmax(axis=1), target_names=["cat", "dog"]))
 
 # plot the training loss and accuracy
 print('[INFO] plotting...')
 plt.style.use("ggplot")
 plt.figure()
-plt.plot(np.arange(0, 100), model_history.history["loss"], label="train_loss")
-plt.plot(np.arange(0, 100), model_history.history["val_loss"], label="val_loss")
-plt.plot(np.arange(0, 100), model_history.history["accuracy"], label="train_acc")
-plt.plot(np.arange(0, 100), model_history.history["val_accuracy"], label="val_acc")
+plt.plot(np.arange(0, epochs), model_history.history["loss"], label="train_loss")
+plt.plot(np.arange(0, epochs), model_history.history["val_loss"], label="val_loss")
+plt.plot(np.arange(0, epochs), model_history.history["accuracy"], label="train_acc")
+plt.plot(np.arange(0, epochs), model_history.history["val_accuracy"], label="val_acc")
 plt.title("Training Loss and Accuracy")
 plt.xlabel("Epoch")
 plt.ylabel("Loss/Accuracy")

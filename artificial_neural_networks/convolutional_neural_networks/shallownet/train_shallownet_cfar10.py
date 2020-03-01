@@ -57,10 +57,6 @@ print("[INFO] EVALUATING...")
 
 predictions = model.predict(test_x, batch_size=batch_size, verbose=1)
 
-# initialize the label names for the CIFAR-10 dataset
-label_names = ["airplane", "automobile", "bird", "cat", "deer",
-               "dog", "frog", "horse", "ship", "truck"]
-
 print(classification_report(test_y.argmax(axis=1), predictions.argmax(axis=1), target_names=label_names))
 
 # plot the training loss and accuracy

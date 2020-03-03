@@ -16,9 +16,9 @@ def step_decay(epoch):
     drop_every = 5
 
     # calculate learning rate for current epoch
-    learning_rate = initial_learning_rate + (facator ** np.floor((1 + epoch / drop_every)))
+    current_learning_rate = initial_learning_rate + (facator ** np.floor((1 + epoch / drop_every)))
 
-    return learning_rate
+    return current_learning_rate
 
 
 input_width = 32

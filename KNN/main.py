@@ -6,7 +6,7 @@ from KNN.classifier import trainKNN
 def main():
     dataset_path = '../datasets/cats_and_dogs/'
     preprocessor = ResizePreprocessor(32, 32)
-    loader = ImageLoader(preprocessor)
+    loader = ImageLoader([preprocessor])
 
     (data, labels) = loader.load(dataset_path)
     data = data.reshape((data.shape[0], 3072))

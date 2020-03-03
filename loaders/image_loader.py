@@ -22,9 +22,12 @@ class ImageLoader:
                 file_name = os.path.basename(file_path)
                 dir_name = os.path.basename(root)
 
-                file_path = file_path.replace('\\', '/')
-                label = file_path.split('/')[-2]
-                print(file_path)
+                # file_path = file_path.replace('\\', '/')
+                # label = file_path.split('/')[-2]
+                # print(file_path)
+                # print(dir_name)
+
+                label = dir_name
 
                 image = cv2.imread(file_path)
 

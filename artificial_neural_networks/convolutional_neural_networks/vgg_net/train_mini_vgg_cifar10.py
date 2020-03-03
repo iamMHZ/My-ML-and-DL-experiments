@@ -1,11 +1,25 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from keras.callbacks import LearningRateScheduler
 from keras.datasets import cifar10
 from keras.optimizers import SGD
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import LabelBinarizer
 
 from artificial_neural_networks.convolutional_neural_networks.vgg_net.mini_vgg_net import MiniVGGNet
+
+
+# decreasing learning rate throw epochs (learning rate scheduler)
+def step_decay(epoch):
+    initial_learning_rate = 0.01
+    facator = 0.5
+    drop_every = 5
+
+    # calculate learning rate for current epoch
+    learning_rate = initial_learning_rate + (facator ** np.floor((1 + epoch / drop_every)))
+
+    return learning_rate
+
 
 input_width = 32
 input_height = 32
@@ -43,13 +57,18 @@ test_y = lb.fit_transform(test_y)
 model = MiniVGGNet.build(input_width, input_height, input_depth, num_classes, batch_normalization=True)
 
 print('[INFO] Compiling model...')
-sgd = SGD(learning_rate, momentum=momentum_term, decay=decay, nesterov=True)
+sgd = SGD(learning_rate=learning_rate, momentum=momentum_term, decay=decay, nesterov=True)
 model.compile(optimizer=sgd, loss=['categorical_crossentropy'], metrics=['accuracy'])
 
 # training
+
+# keras will call callback function at the end or start of each epoch
+# here the learningRateScheduler class will call step_decay at the end of each epoch
+callbacks = [LearningRateScheduler(step_decay)]
+
 print('[INFO] Training...')
 model_history = model.fit(train_x, train_y, batch_size=batch_size, epochs=epochs, verbose=1,
-                          validation_data=(test_x, test_y))
+                          validation_data=(test_x, test_y), callbacks=callbacks)
 
 # save trained model to disk
 print('[INFO] Serializing model...')

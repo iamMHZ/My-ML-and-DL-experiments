@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 
 from artificial_neural_networks.convolutional_neural_networks.lenet.lenet import LeNet
+from monitoring.training_monitoring import TrainingMonitor
 
 input_width = 28
 input_height = 28
@@ -51,8 +52,10 @@ model.compile(optimizer=sgd, loss=['categorical_crossentropy'], metrics=['accura
 # training
 print('[INFO] TRAINING...')
 
+callbacks = [TrainingMonitor('LeNet')]
+
 model_history = model.fit(train_x, train_y, batch_size=batch_size, epochs=epochs, verbose=1,
-                          validation_data=(test_x, test_y))
+                          validation_data=(test_x, test_y), callbacks=callbacks)
 
 # evaluating network
 print('[INFO] EVALUATING network...')

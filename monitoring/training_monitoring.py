@@ -1,4 +1,5 @@
 import json
+import os
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -15,7 +16,12 @@ class TrainingMonitor(BaseLogger):
         super(TrainingMonitor, self).__init__()
 
         self.plot_name = plot_name
-        self.plot_path = './plots/' + plot_name
+
+        # if there is no plot directory for saving plots then create one
+        if not os.path.exists('plots'):
+            os.makedirs('plots')
+
+        self.plot_path = f'./plots/{self.plot_name}'
 
         self.json_path = json_path
         self.start_at = start_at
@@ -49,16 +55,19 @@ class TrainingMonitor(BaseLogger):
             if len(self.loss_history['loss']) > 1:
                 print('[INFO] plotting...')
 
+                # epoch+1 because np.arange()  does not include stop value
+                x = np.arange(start=0, stop=epoch + 1)
+
                 plt.style.use("ggplot")
                 plt.figure()
-                plt.plot(np.arange(0, epoch), self.loss_history["loss"], label="train_loss")
-                plt.plot(np.arange(0, epoch), self.loss_history["val_loss"], label="val_loss")
-                plt.plot(np.arange(0, epoch), self.loss_history["accuracy"], label="train_acc")
-                plt.plot(np.arange(0, epoch), self.loss_history["val_accuracy"], label="val_acc")
+                plt.plot(x, self.loss_history["loss"], label="train_loss")
+                plt.plot(x, self.loss_history["val_loss"], label="val_loss")
+                plt.plot(x, self.loss_history["accuracy"], label="train_acc")
+                plt.plot(x, self.loss_history["val_accuracy"], label="val_acc")
                 plt.title("Training Loss and Accuracy")
                 plt.xlabel("Epoch")
                 plt.ylabel("Loss/Accuracy")
                 plt.legend()
 
-                plt.savefig(self.plot_path + str(epoch)+'.png')
+                plt.savefig(self.plot_path + str(epoch) + '.png')
                 plt.show()

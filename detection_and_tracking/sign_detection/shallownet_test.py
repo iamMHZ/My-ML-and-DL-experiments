@@ -6,6 +6,7 @@ from sklearn.preprocessing import LabelBinarizer
 
 from artificial_neural_networks.convolutional_neural_networks.shallownet.shallownet import ShallowNet
 from loaders.image_loader import ImageLoader
+from monitoring.checkpoints import get_model_checkpoint_callback
 from monitoring.training_monitoring import TrainingMonitor
 from preprocessors.image_preprocessor import ImageToArrayPreprocessor, ResizePreprocessor
 
@@ -44,7 +45,11 @@ def train_and_test(data, labels):
 
     print('[INFO] TRAINING...')
 
+    # checkpoint model and monitor loss and accuracy
     callbacks = [TrainingMonitor('shallowNetHazmat')]
+    checkpoint = get_model_checkpoint_callback(file_name='shallowNetSign')
+    callbacks.append(checkpoint)
+
     model_history = model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, verbose=1,
                               validation_data=(x_test, y_test),
                               callbacks=callbacks)
@@ -64,7 +69,7 @@ def main():
 
     loader = ImageLoader(preprocessors=[resizer, image_to_array])
 
-    data, labels = loader.load(dataset_path)
+    data, labels = loader.load(dataset_path, display_data=True)
 
     # pprint.pprint(labels)
 

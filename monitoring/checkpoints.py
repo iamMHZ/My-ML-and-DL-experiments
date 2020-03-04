@@ -7,9 +7,12 @@ from keras.callbacks import ModelCheckpoint
 '''
 
 
-def get_model_checkpoint_callback(file_name='weights', monitor='val_loss', mode='min', save_best_only=True, verboss=1):
+def get_model_checkpoint_callback(file_name, only_best_model=False, monitor='val_loss', mode='min', save_best_only=True,
+                                  verboss=1):
     file_path = ''
-    if monitor == 'val_loss':
+    if only_best_model:
+        file_path = './'
+    elif monitor == 'val_loss':
         file_path = './' + file_name + '-weights-{epoch:03d}-{val_loss:.4f}.hdf5'
 
     elif monitor == 'val_acc':

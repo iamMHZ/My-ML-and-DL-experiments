@@ -1,4 +1,4 @@
-from loaders import load_model
+from loaders import model_loader
 from loaders.image_loader import ImageLoader
 from preprocessors.image_preprocessor import ResizePreprocessor, ImageToArrayPreprocessor
 
@@ -22,7 +22,7 @@ data = data.astype('float') / 255.0
 # path to pre-trained model
 model_path = ''
 # load model
-model = load_model.load(model_path)
+model = model_loader.load(model_path)
 
 # predict data with model
 predictions = model.predcit(data, batch_size=32).argmax(axis=1)

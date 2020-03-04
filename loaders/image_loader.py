@@ -11,7 +11,7 @@ class ImageLoader:
             preprocessors = []
         self.preprocessors = preprocessors
 
-    def load(self, path):
+    def load(self, path, display_data=False):
 
         data = []
         labels = []
@@ -33,6 +33,11 @@ class ImageLoader:
 
                 # filter corrupted images
                 if image is not None:
+
+                    # display image if requested:
+                    if display_data:
+                        self.display(image, 'Dataset')
+
                     # pre_processing the image
                     for preprocessor in self.preprocessors:
                         image = preprocessor.pre_process(image)
@@ -42,6 +47,11 @@ class ImageLoader:
                     data.append(image)
 
         return np.array(data), np.array(labels)
+
+    def display(self, image, window_name, delay=1):
+        cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
+        cv2.imshow(window_name, image)
+        cv2.waitKey(1)
 
 
 if __name__ == "__main__":

@@ -37,6 +37,7 @@ def train_and_test(data, labels):
 
     # build model
     model = ShallowNet.build(input_width, input_height, input_depth, num_classes)
+    # plot_model(model, to_file='ShallowNet.png', show_shapes=True)
 
     print('[INFO] COMPILING MODEL...')
     sgd = SGD(learning_rate=learning_rate)

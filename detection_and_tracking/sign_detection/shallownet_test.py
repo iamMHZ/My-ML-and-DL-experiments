@@ -1,5 +1,4 @@
 from keras.optimizers import SGD
-from keras.utils import np_utils
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
@@ -14,7 +13,7 @@ input_width = 32
 input_height = 32
 input_depth = 3
 
-num_classes = 2
+num_classes = 3
 
 batch_size = 32
 epochs = 100
@@ -31,8 +30,8 @@ def train_and_test(data, labels):
     y_test = lb.fit_transform(y_test)
     y_train = lb.fit_transform(y_train)
 
-    y_test = np_utils.to_categorical(y_test, num_classes=num_classes)
-    y_train = np_utils.to_categorical(y_train, num_classes=num_classes)
+    # y_test = np_utils.to_categorical(y_test, num_classes=num_classes)
+    # y_train = np_utils.to_categorical(y_train, num_classes=num_classes)
 
     print('[INFO] DATA PREPARED')
 
@@ -47,7 +46,7 @@ def train_and_test(data, labels):
 
     # checkpoint model and monitor loss and accuracy
     callbacks = [TrainingMonitor('shallowNetHazmat')]
-    checkpoint = get_model_checkpoint_callback(file_name='shallowNetSign')
+    checkpoint = get_model_checkpoint_callback(file_name='shallowNetSign', only_best_model=True)
     callbacks.append(checkpoint)
 
     model_history = model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, verbose=1,

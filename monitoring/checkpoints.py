@@ -7,8 +7,8 @@ from keras.callbacks import ModelCheckpoint
 '''
 
 
-def get_model_checkpoint_callback(file_name, only_best_model=False, monitor='val_loss', mode='min', save_best_only=True,
-                                  verboss=1):
+def get_model_checkpoint_callback(file_name, only_best_model=False, monitor='val_loss', mode='min',
+                                  verbose=1):
     file_path = ''
     if only_best_model:
         file_path = './'
@@ -18,7 +18,7 @@ def get_model_checkpoint_callback(file_name, only_best_model=False, monitor='val
     elif monitor == 'val_acc':
         file_path = './' + file_name + '-weights-{epoch:03d}-{val_acc:.4f}.hdf5'
 
-    checkpoint = ModelCheckpoint(filepath=file_path, monitor=monitor, mode=mode, save_best_only=save_best_only,
-                                 verbose=verboss)
+    checkpoint = ModelCheckpoint(filepath=file_path, monitor=monitor, mode=mode, save_best_only=True,
+                                 verbose=verbose)
 
     return checkpoint

@@ -15,7 +15,7 @@ resizer = ResizePreprocessor(32, 32)
 
 data_path = ''
 data_loader = ImageLoader(preprocessors=[resizer, image_to_array])
-data, labels = data_loader.load(data_path)
+data, labels = data_loader.load(data_path)  # load with cv2 module
 
 data = data.astype('float') / 255.0
 

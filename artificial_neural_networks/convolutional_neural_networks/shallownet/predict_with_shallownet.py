@@ -25,7 +25,7 @@ model_path = ''
 model = model_loader.load(model_path)
 
 # predict data with model
-predictions = model.predcit(data, batch_size=32).argmax(axis=1)
+predictions = model.predict(data, batch_size=32).argmax(axis=1)
 
 # print class predicted class labels
 class_labels = ['cat', 'dog']

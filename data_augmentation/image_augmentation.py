@@ -78,7 +78,7 @@ class SimpleAugmentor:
                 file_name = os.path.basename(file_path)
 
                 # remove extension
-                file_name = file_name.split('.')[0]
+                file_name = file_name[:-4]
 
                 image = cv2.imread(file_path)
 

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="live test on signs">
-      <change afterPath="$PROJECT_DIR$/data_augmentation/image_augmentation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/hMd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/hMd.xml" afterDir="false" />
+    <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
@@ -95,14 +93,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="235" />
-          <entry key="py" value="23178" />
-          <entry key="txt" value="2436" />
+          <entry key="py" value="24109" />
+          <entry key="txt" value="2496" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="2671" />
-          <entry key="Python" value="23178" />
+          <entry key="PLAIN_TEXT" value="2731" />
+          <entry key="Python" value="24109" />
         </counts>
       </usages-collector>
     </session>
@@ -113,9 +111,26 @@
         <entry file="file://$PROJECT_DIR$/loaders/image_loader.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
-              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="55" />
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="55" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data_augmentation/image_augmentation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+                <marker date="1583417373303" expanded="true" signature="159:393" ph="..." />
+                <marker date="1583417373303" expanded="true" signature="748:1162" ph="..." />
+                <marker date="1583417373303" expanded="true" signature="1198:1203" ph="..." />
+                <marker date="1583417373303" expanded="true" signature="1198:1499" ph="..." />
+                <marker date="1583417373303" expanded="true" signature="1533:1681" ph="..." />
               </folding>
             </state>
           </provider>
@@ -128,19 +143,6 @@
               <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_augmentation/image_augmentation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <marker date="1583414152607" expanded="true" signature="147:403" ph="..." />
-                <marker date="1583414152607" expanded="true" signature="702:721" ph="..." />
               </folding>
             </state>
           </provider>
@@ -244,11 +246,6 @@
             <path>
               <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
               <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="loaders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
               <item name="monitoring" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -274,17 +271,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\data_augmentation" />
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\vgg_net" />
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\lenet" />
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\detection_and_tracking\centroid_object_tracking" />
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\monitoring" />
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\shallownet" />
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\loaders" />
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\preprocessors" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\vgg_net" />
-      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\lenet" />
-      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\detection_and_tracking\centroid_object_tracking" />
-      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -299,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_live">
+  <component name="RunManager" selected="Python.image_augmentation">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -344,22 +342,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="image_augmentation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KNN" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_augmentation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KNN/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_augmentation/image_augmentation.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -458,17 +453,17 @@
       <item itemvalue="Python.Unnamed" />
       <item itemvalue="Python.train_lenet_mnist" />
       <item itemvalue="Python.train_shallownet_animals" />
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.shallownet_test" />
       <item itemvalue="Python.test_live" />
+      <item itemvalue="Python.image_augmentation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.image_augmentation" />
         <item itemvalue="Python.test_live" />
         <item itemvalue="Python.shallownet_test" />
         <item itemvalue="Python.train_shallownet_animals" />
         <item itemvalue="Python.train_lenet_mnist" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -482,20 +477,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581077672927</updated>
-    </task>
-    <task id="LOCAL-00039" summary="shallowNet implementation">
-      <created>1582701274531</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1582701274531</updated>
-    </task>
-    <task id="LOCAL-00040" summary="fixed bug of preprocessor">
-      <created>1582701291871</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1582701291871</updated>
     </task>
     <task id="LOCAL-00041" summary="shallownet  on animals dataset">
       <created>1582701321872</created>
@@ -826,7 +807,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583393458338</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="skeleton of simple data augmentor">
+      <created>1583414179685</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1583414179686</updated>
+    </task>
+    <task id="LOCAL-00089" summary="flip and rotation finished">
+      <created>1583417394261</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1583417394261</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TodoView">
@@ -850,7 +845,7 @@
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5013423" side_tool="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4986577" weight="0.32885906" />
-      <window_info anchor="bottom" id="Python Console" order="5" weight="0.5785235" />
+      <window_info anchor="bottom" id="Python Console" order="5" weight="0.357047" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32885906" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.42281878" />
@@ -932,8 +927,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="module for loading models with keras" />
-    <MESSAGE value="fixed plotting BUG" />
     <MESSAGE value="MiniVGGNet finished" />
     <MESSAGE value="MiniVGGNet" />
     <MESSAGE value="FIXED reporting BUG" />
@@ -957,7 +950,9 @@
     <MESSAGE value="comment" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="live test on signs" />
-    <option name="LAST_COMMIT_MESSAGE" value="live test on signs" />
+    <MESSAGE value="skeleton of simple data augmentor" />
+    <MESSAGE value="flip and rotation finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="flip and rotation finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1250,7 +1245,7 @@
     <entry file="file://$PROJECT_DIR$/loaders/image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="55" />
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="55" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -1269,11 +1264,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_augmentation/image_augmentation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="286">
+          <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
           <folding>
-            <marker date="1583414152607" expanded="true" signature="147:403" ph="..." />
-            <marker date="1583414152607" expanded="true" signature="702:721" ph="..." />
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1583417373303" expanded="true" signature="159:393" ph="..." />
+            <marker date="1583417373303" expanded="true" signature="748:1162" ph="..." />
+            <marker date="1583417373303" expanded="true" signature="1198:1203" ph="..." />
+            <marker date="1583417373303" expanded="true" signature="1198:1499" ph="..." />
+            <marker date="1583417373303" expanded="true" signature="1533:1681" ph="..." />
           </folding>
         </state>
       </provider>

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="">
+    <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="Fixed naming BUG">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detection_and_tracking/sign_detection/plots/shallowNetHazmat99.png" beforeDir="false" afterPath="$PROJECT_DIR$/detection_and_tracking/sign_detection/plots/shallowNetHazmat99.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallowNetSign.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallowNetSignSmallDataset.hdf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
       <directory path="venv/" />
@@ -23,7 +27,7 @@
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$test_or.coverage" NAME="test_or Coverage Results" MODIFIED="1581444850993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_network/perceptron" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$test_and.coverage" NAME="test_and Coverage Results" MODIFIED="1581445078085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_network/perceptron" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$vanilla_gradient_descent.coverage" NAME="vanilla_gradient_descent Coverage Results" MODIFIED="1581179417062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gradient_descent" />
-    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$shallownet_test.coverage" NAME="shallownet_test Coverage Results" MODIFIED="1583391959564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/detection_and_tracking/sign_detection" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$shallownet_test.coverage" NAME="shallownet_test Coverage Results" MODIFIED="1583419770849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/detection_and_tracking/sign_detection" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$train_lenet_mnist.coverage" NAME="train_lenet_mnist Coverage Results" MODIFIED="1583310637023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$main.coverage" NAME="main Coverage Results" MODIFIED="1583255070533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KNN" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$keras_mnis.coverage" NAME="keras_mnis Coverage Results" MODIFIED="1582888234417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_networks/multilayer_network" />
@@ -79,28 +83,28 @@
         <counts>
           <entry key="JPG" value="5" />
           <entry key="png" value="7" />
-          <entry key="py" value="152" />
+          <entry key="py" value="153" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="12" />
-          <entry key="Python" value="152" />
+          <entry key="Python" value="153" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="235" />
-          <entry key="py" value="24109" />
-          <entry key="txt" value="2496" />
+          <entry key="py" value="24146" />
+          <entry key="txt" value="2529" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="2731" />
-          <entry key="Python" value="24109" />
+          <entry key="PLAIN_TEXT" value="2764" />
+          <entry key="Python" value="24146" />
         </counts>
       </usages-collector>
     </session>
@@ -108,41 +112,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loaders/image_loader.py">
+        <entry file="file://$PROJECT_DIR$/data_augmentation/image_augmentation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="55" />
+            <state relative-caret-position="352">
+              <caret line="82" column="35" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <marker date="1583418951195" expanded="true" signature="159:393" ph="..." />
+                <marker date="1583418951195" expanded="true" signature="748:1162" ph="..." />
+                <marker date="1583418951195" expanded="true" signature="1198:1203" ph="..." />
+                <marker date="1583418951195" expanded="true" signature="1198:1499" ph="..." />
+                <marker date="1583418951195" expanded="true" signature="1533:1681" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_augmentation/image_augmentation.py">
+        <entry file="file://$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+            <state relative-caret-position="32">
+              <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1583417373303" expanded="true" signature="159:393" ph="..." />
-                <marker date="1583417373303" expanded="true" signature="748:1162" ph="..." />
-                <marker date="1583417373303" expanded="true" signature="1198:1203" ph="..." />
-                <marker date="1583417373303" expanded="true" signature="1198:1499" ph="..." />
-                <marker date="1583417373303" expanded="true" signature="1533:1681" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -207,10 +199,11 @@
         <option value="$PROJECT_DIR$/monitoring/training_monitoring.py" />
         <option value="$PROJECT_DIR$/monitoring/checkpoint.py" />
         <option value="$PROJECT_DIR$/monitoring/checkpoints.py" />
-        <option value="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py" />
         <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/predict_with_shallownet.py" />
         <option value="$PROJECT_DIR$/detection_and_tracking/sign_detection/test_live.py" />
         <option value="$PROJECT_DIR$/data_augmentation/image_augmentation.py" />
+        <option value="$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py" />
+        <option value="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py" />
       </list>
     </option>
   </component>
@@ -246,7 +239,13 @@
             <path>
               <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
               <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="monitoring" type="462c0819:PsiDirectoryNode" />
+              <item name="detection_and_tracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="detection_and_tracking" type="462c0819:PsiDirectoryNode" />
+              <item name="sign_detection" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,7 +296,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.image_augmentation">
+  <component name="RunManager" selected="Python.shallownet_test">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -361,6 +360,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="live_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="My ML and DL experiments" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/detection_and_tracking/sign_detection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="shallownet_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -405,28 +423,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train_lenet_mnist" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="My ML and DL experiments" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/lenet/train_lenet_mnist.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="train_shallownet_animals" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -451,19 +447,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.train_lenet_mnist" />
       <item itemvalue="Python.train_shallownet_animals" />
       <item itemvalue="Python.shallownet_test" />
       <item itemvalue="Python.test_live" />
       <item itemvalue="Python.image_augmentation" />
+      <item itemvalue="Python.live_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.shallownet_test" />
+        <item itemvalue="Python.live_test" />
         <item itemvalue="Python.image_augmentation" />
         <item itemvalue="Python.test_live" />
-        <item itemvalue="Python.shallownet_test" />
         <item itemvalue="Python.train_shallownet_animals" />
-        <item itemvalue="Python.train_lenet_mnist" />
       </list>
     </recent_temporary>
   </component>
@@ -477,13 +473,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581077672927</updated>
-    </task>
-    <task id="LOCAL-00041" summary="shallownet  on animals dataset">
-      <created>1582701321872</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1582701321872</updated>
     </task>
     <task id="LOCAL-00042" summary="BUG in encoding labels">
       <created>1582783927534</created>
@@ -821,7 +810,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583417394261</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Fixed naming BUG">
+      <created>1583419066899</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1583419066899</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TodoView">
@@ -834,27 +830,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25704697" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15838926" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932885" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5013423" side_tool="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4986577" weight="0.32885906" />
-      <window_info anchor="bottom" id="Python Console" order="5" weight="0.357047" />
+      <window_info anchor="bottom" id="Python Console" order="5" weight="0.48724833" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32885906" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.42281878" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.2536913" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.5503356" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.49932885" weight="0.32885906" />
       <window_info anchor="right" id="Database" order="0" weight="0.3295302" />
-      <window_info anchor="right" id="SciView" order="1" sideWeight="0.498" weight="0.50939596" />
+      <window_info active="true" anchor="right" id="SciView" order="1" sideWeight="0.498" visible="true" weight="0.44295302" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
@@ -927,7 +922,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="MiniVGGNet finished" />
     <MESSAGE value="MiniVGGNet" />
     <MESSAGE value="FIXED reporting BUG" />
     <MESSAGE value="MiniVGG on CIFAR10 dataset" />
@@ -952,7 +946,8 @@
     <MESSAGE value="live test on signs" />
     <MESSAGE value="skeleton of simple data augmentor" />
     <MESSAGE value="flip and rotation finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="flip and rotation finished" />
+    <MESSAGE value="Fixed naming BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed naming BUG" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1220,16 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/monitoring/training_monitoring.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -1252,27 +1237,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data_augmentation/image_augmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="82" column="35" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1583418951195" expanded="true" signature="159:393" ph="..." />
+            <marker date="1583418951195" expanded="true" signature="748:1162" ph="..." />
+            <marker date="1583418951195" expanded="true" signature="1198:1203" ph="..." />
+            <marker date="1583418951195" expanded="true" signature="1198:1499" ph="..." />
+            <marker date="1583418951195" expanded="true" signature="1533:1681" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="-216">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_augmentation/image_augmentation.py">
+    <entry file="file://$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+        <state relative-caret-position="32">
+          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1583417373303" expanded="true" signature="159:393" ph="..." />
-            <marker date="1583417373303" expanded="true" signature="748:1162" ph="..." />
-            <marker date="1583417373303" expanded="true" signature="1198:1203" ph="..." />
-            <marker date="1583417373303" expanded="true" signature="1198:1499" ph="..." />
-            <marker date="1583417373303" expanded="true" signature="1533:1681" ph="..." />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

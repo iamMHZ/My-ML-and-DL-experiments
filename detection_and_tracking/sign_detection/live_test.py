@@ -12,7 +12,7 @@ def main():
     preprocessors = [resizer, image_to_array]
 
     # path to pre-trained model
-    model_path = './shallowNetSign.hdf5'
+    model_path = './shallowNetSignSmallDataset.hdf5'
     # load model
     model = model_loader.load(model_path)
 

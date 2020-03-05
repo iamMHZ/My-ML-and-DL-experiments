@@ -64,12 +64,14 @@ def train_and_test(data, labels):
 def main():
     dataset_path = 'D:\Programming\database of image\HAZMAT\Datasets\smallDataset'
 
+    augmented_dataset_path = 'D:\Programming\database of image\HAZMAT\Datasets\smallAugmentedDataset'
+
     image_to_array = ImageToArrayPreprocessor()
     resizer = ResizePreprocessor(input_width, input_height)
 
     loader = ImageLoader(preprocessors=[resizer, image_to_array])
 
-    data, labels = loader.load(dataset_path, display_data=True)
+    data, labels = loader.load(augmented_dataset_path, display_data=True)
 
     # pprint.pprint(labels)
 

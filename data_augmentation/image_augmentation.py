@@ -59,9 +59,12 @@ class SimpleAugmentor:
             self.save_image(flipped, name + 'Flip' + str(i))
 
     def convert_to_gray(self, image, name):
-        pass
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+        self.save_image(gray, 'gray ' + name)
 
     def filter_image(self, image, name):
+        # decide filtering type
         pass
 
     def save_image(self, image, save_name):

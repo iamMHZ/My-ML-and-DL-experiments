@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="Fixed naming BUG">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detection_and_tracking/sign_detection/plots/shallowNetHazmat99.png" beforeDir="false" afterPath="$PROJECT_DIR$/detection_and_tracking/sign_detection/plots/shallowNetHazmat99.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallowNetSign.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallowNetSignSmallDataset.hdf5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_augmentation/image_augmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_augmentation/image_augmentation.py" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
       <directory path="venv/" />
@@ -61,7 +58,7 @@
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="4" />
@@ -76,7 +73,7 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="34" />
+          <entry key="project.opened" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -97,44 +94,27 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="235" />
-          <entry key="py" value="24146" />
+          <entry key="py" value="24257" />
           <entry key="txt" value="2529" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="2764" />
-          <entry key="Python" value="24146" />
+          <entry key="Python" value="24257" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_augmentation/image_augmentation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="82" column="35" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+            <state relative-caret-position="264">
+              <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1583418951195" expanded="true" signature="159:393" ph="..." />
-                <marker date="1583418951195" expanded="true" signature="748:1162" ph="..." />
-                <marker date="1583418951195" expanded="true" signature="1198:1203" ph="..." />
-                <marker date="1583418951195" expanded="true" signature="1198:1499" ph="..." />
-                <marker date="1583418951195" expanded="true" signature="1533:1681" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,9 +181,9 @@
         <option value="$PROJECT_DIR$/monitoring/checkpoints.py" />
         <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/predict_with_shallownet.py" />
         <option value="$PROJECT_DIR$/detection_and_tracking/sign_detection/test_live.py" />
-        <option value="$PROJECT_DIR$/data_augmentation/image_augmentation.py" />
         <option value="$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py" />
         <option value="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py" />
+        <option value="$PROJECT_DIR$/data_augmentation/image_augmentation.py" />
       </list>
     </option>
   </component>
@@ -214,16 +194,27 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="130" />
-    <option name="y" value="30" />
-    <option name="width" value="1540" />
-    <option name="height" value="915" />
+    <option name="x" value="240" />
+    <option name="y" value="70" />
+    <option name="width" value="1405" />
+    <option name="height" value="840" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,28 +227,6 @@
               <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
               <item name="data_augmentation" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="detection_and_tracking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="detection_and_tracking" type="462c0819:PsiDirectoryNode" />
-              <item name="sign_detection" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="My-ML-and-DL-experiments" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -266,7 +235,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SAR" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -345,6 +314,9 @@
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_augmentation" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -364,6 +336,9 @@
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/detection_and_tracking/sign_detection" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -830,10 +805,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15838926" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15570469" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932885" weight="0.32885906" />
@@ -849,11 +825,11 @@
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.49932885" weight="0.32885906" />
       <window_info anchor="right" id="Database" order="0" weight="0.3295302" />
-      <window_info active="true" anchor="right" id="SciView" order="1" sideWeight="0.498" visible="true" weight="0.44295302" />
+      <window_info anchor="right" id="SciView" order="1" sideWeight="0.49530202" weight="0.34832215" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" sideWeight="0.502" side_tool="true" weight="0.50067115" />
+      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" sideWeight="0.504698" side_tool="true" weight="0.34832215" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -1237,37 +1213,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_augmentation/image_augmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="82" column="35" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1583418951195" expanded="true" signature="159:393" ph="..." />
-            <marker date="1583418951195" expanded="true" signature="748:1162" ph="..." />
-            <marker date="1583418951195" expanded="true" signature="1198:1203" ph="..." />
-            <marker date="1583418951195" expanded="true" signature="1198:1499" ph="..." />
-            <marker date="1583418951195" expanded="true" signature="1533:1681" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
           <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+        <state relative-caret-position="367">
+          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_augmentation/image_augmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

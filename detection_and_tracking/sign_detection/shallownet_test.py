@@ -7,7 +7,7 @@ from artificial_neural_networks.convolutional_neural_networks.shallownet.shallow
 from loaders.image_loader import ImageLoader
 from monitoring.checkpoints import get_model_checkpoint_callback
 from monitoring.training_monitoring import TrainingMonitor
-from preprocessors.image_preprocessor import ImageToArrayPreprocessor, ResizePreprocessor
+from preprocessors.image_preprocessors import ImageToArrayPreprocessor, ResizePreprocessor
 
 input_width = 32
 input_height = 32

@@ -1,6 +1,6 @@
 from loaders import model_loader
 from loaders.image_loader import ImageLoader
-from preprocessors.image_preprocessor import ResizePreprocessor, ImageToArrayPreprocessor
+from preprocessors.image_preprocessors import ResizePreprocessor, ImageToArrayPreprocessor
 
 '''
     1- loading shallowNet trained model from disk

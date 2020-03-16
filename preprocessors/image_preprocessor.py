@@ -24,3 +24,36 @@ class ImageToArrayPreprocessor:
         # keras function that changes the dimension of image
         # if self.data_format is None it means use whatever is in the keras.json file
         return img_to_array(image, data_format=self.data_format)
+
+
+class AspectAwareResizePreprocessor:
+
+    def __init__(self, new_width, new_height):
+        self.new_width = new_width
+        self.new_height = new_height
+
+    # resizing image and maintaining aspect ratio as well
+    def pre_process(self, image):
+        old_height, old_width = image.shape[:2]
+
+        aspect_ratio = old_width / old_height
+
+        final_width = int(self.new_width / aspect_ratio)
+        final_height = int(self.new_height   / aspect_ratio)
+
+        resized_with_aspect_ratio = cv2.resize(image, (final_width, final_height))
+        resized_without_aspect_ratio = cv2.resize(image, (self.new_width, self.new_height))
+
+        cv2.imshow('original', image)
+        cv2.imshow('aspect_ratio', resized_with_aspect_ratio)
+        cv2.imshow('no aspect_ratio', resized_without_aspect_ratio)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
+
+
+if __name__ == '__main__':
+    image = cv2.imread('./test2.jpg')
+
+    preprocessor = AspectAwareResizePreprocessor(300, 500)
+
+    preprocessor.pre_process(image)

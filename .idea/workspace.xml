@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_augmentation/test.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/hMd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/hMd.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preprocessors/test.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preprocessors/test2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_augmentation/image_augmentation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessors/image_preprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessors/image_preprocessor.py" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
       <directory path="venv/" />
@@ -55,7 +55,7 @@
     <session id="-733211071">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="31" />
+          <entry key="project.closed" value="32" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
@@ -72,10 +72,11 @@
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="35" />
+          <entry key="project.opened" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -83,28 +84,28 @@
           <entry key="JPG" value="5" />
           <entry key="jpg" value="3" />
           <entry key="png" value="7" />
-          <entry key="py" value="154" />
+          <entry key="py" value="155" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="15" />
-          <entry key="Python" value="154" />
+          <entry key="Python" value="155" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="236" />
-          <entry key="py" value="25217" />
-          <entry key="txt" value="2562" />
+          <entry key="py" value="25926" />
+          <entry key="txt" value="2602" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="2798" />
-          <entry key="Python" value="25217" />
+          <entry key="PLAIN_TEXT" value="2838" />
+          <entry key="Python" value="25926" />
         </counts>
       </usages-collector>
     </session>
@@ -112,13 +113,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_augmentation/keras_image_augmentation.py">
+        <entry file="file://$PROJECT_DIR$/preprocessors/image_preprocessor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="178">
+              <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1584084189462" expanded="true" signature="1265:1266" ph="..." />
+                <marker date="1584344291428" expanded="true" signature="933:934" ph="..." />
+                <marker date="1584344291428" expanded="true" signature="1054:1059" ph="..." />
               </folding>
             </state>
           </provider>
@@ -161,7 +162,6 @@
         <option value="$PROJECT_DIR$/object_detection/centroid_object_tracking/tracker.py" />
         <option value="$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/face_tracker.py" />
         <option value="$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/tracker.py" />
-        <option value="$PROJECT_DIR$/preprocessors/image_preprocessor.py" />
         <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet.py" />
         <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet_cfar10.py" />
         <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/load_shallownet.py" />
@@ -190,6 +190,7 @@
         <option value="$PROJECT_DIR$/data_augmentation/image_augmentation.py" />
         <option value="$PROJECT_DIR$/data_augmentation/keras_image_aumentation.py" />
         <option value="$PROJECT_DIR$/data_augmentation/keras_image_augmentation.py" />
+        <option value="$PROJECT_DIR$/preprocessors/image_preprocessor.py" />
       </list>
     </option>
   </component>
@@ -200,27 +201,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="70" />
-    <option name="width" value="1405" />
-    <option name="height" value="840" />
+    <option name="x" value="81" />
+    <option name="y" value="17" />
+    <option name="width" value="1234" />
+    <option name="height" value="734" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="My-ML-and-DL-experiments" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,7 +221,18 @@
             <path>
               <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
               <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="data_augmentation" type="462c0819:PsiDirectoryNode" />
+              <item name="preprocessors" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -245,18 +246,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\preprocessors" />
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\data_augmentation" />
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\vgg_net" />
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\lenet" />
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\detection_and_tracking\centroid_object_tracking" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\monitoring" />
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\shallownet" />
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\loaders" />
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\preprocessors" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\data_augmentation" />
-      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\vgg_net" />
-      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\lenet" />
-      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\detection_and_tracking\centroid_object_tracking" />
-      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -271,7 +272,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.keras_image_augmentation">
+  <component name="RunManager" selected="Python.image_preprocessor">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -338,10 +339,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="image_preprocessor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="My ML and DL experiments" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/preprocessors" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocessors/image_preprocessor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="keras_image_augmentation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_augmentation" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -401,43 +424,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_live" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="My ML and DL experiments" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/detection_and_tracking/sign_detection" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\detection_and_tracking\sign_detection\live_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
       <item itemvalue="Python.shallownet_test" />
-      <item itemvalue="Python.test_live" />
       <item itemvalue="Python.image_augmentation" />
       <item itemvalue="Python.live_test" />
       <item itemvalue="Python.keras_image_augmentation" />
+      <item itemvalue="Python.image_preprocessor" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.image_preprocessor" />
         <item itemvalue="Python.keras_image_augmentation" />
         <item itemvalue="Python.shallownet_test" />
         <item itemvalue="Python.live_test" />
         <item itemvalue="Python.image_augmentation" />
-        <item itemvalue="Python.test_live" />
       </list>
     </recent_temporary>
   </component>
@@ -451,13 +452,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581077672927</updated>
-    </task>
-    <task id="LOCAL-00043" summary="FIXED BUG in encoding labels">
-      <created>1582783996491</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1582783996491</updated>
     </task>
     <task id="LOCAL-00044" summary="ShallowNet implementation on CIFAR10">
       <created>1582786361734</created>
@@ -795,7 +789,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584081387541</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="data augmentation with keras">
+      <created>1584084485985</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1584084485985</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TodoView">
@@ -809,17 +810,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15570469" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15973154" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932885" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5013423" side_tool="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4986577" weight="0.32885906" />
-      <window_info anchor="bottom" id="Python Console" order="5" weight="0.26845637" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="5" visible="true" weight="0.37181208" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32885906" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.2536913" />
@@ -832,7 +832,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" sideWeight="0.504698" side_tool="true" weight="0.34832215" />
+      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" sideWeight="0.504698" side_tool="true" weight="0.34735706" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -901,7 +901,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="FIXED reporting BUG" />
     <MESSAGE value="MiniVGG on CIFAR10 dataset" />
     <MESSAGE value="batch normalization flag" />
     <MESSAGE value="MiniVGG implementation on CIFAR10 dataset" />
@@ -926,7 +925,8 @@
     <MESSAGE value="flip and rotation finished" />
     <MESSAGE value="Fixed naming BUG" />
     <MESSAGE value="convert to gray" />
-    <option name="LAST_COMMIT_MESSAGE" value="convert to gray" />
+    <MESSAGE value="data augmentation with keras" />
+    <option name="LAST_COMMIT_MESSAGE" value="data augmentation with keras" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1099,13 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preprocessors/image_preprocessor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KNN/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1210,9 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1233,32 +1223,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_augmentation/image_augmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data_augmentation/image_augmentation.py" />
     <entry file="file://$PROJECT_DIR$/data_augmentation/test.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_augmentation/image_0_5899..jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data_augmentation/image_0_5899..jpg" />
     <entry file="file://$PROJECT_DIR$/data_augmentation/image_0_8418..jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data_augmentation/keras_image_augmentation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
+        <state relative-caret-position="264">
           <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <marker date="1584084189462" expanded="true" signature="1265:1266" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessors/image_preprocessor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+          <folding>
+            <marker date="1584344291428" expanded="true" signature="933:934" ph="..." />
+            <marker date="1584344291428" expanded="true" signature="1054:1059" ph="..." />
           </folding>
         </state>
       </provider>

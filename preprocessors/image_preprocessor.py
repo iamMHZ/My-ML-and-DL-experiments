@@ -38,8 +38,8 @@ class AspectAwareResizePreprocessor:
 
         aspect_ratio = old_width / old_height
 
-        final_width = int(self.new_width / aspect_ratio)
-        final_height = int(self.new_height   / aspect_ratio)
+        final_width = int(self.new_height / aspect_ratio)
+        final_height = int(self.new_width / aspect_ratio)
 
         resized_with_aspect_ratio = cv2.resize(image, (final_width, final_height))
         resized_without_aspect_ratio = cv2.resize(image, (self.new_width, self.new_height))

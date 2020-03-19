@@ -12,7 +12,7 @@ class TrainingMonitor(BaseLogger):
         for both training and validation set
     '''
 
-    def __init__(self, plot_name, json_path=None, start_at=0):
+    def __init__(self, plot_name, json_path=None, start_at=0, save_plots=False):
         super(TrainingMonitor, self).__init__()
 
         self.plot_name = plot_name
@@ -25,6 +25,7 @@ class TrainingMonitor(BaseLogger):
 
         self.json_path = json_path
         self.start_at = start_at
+        self.save_plots = save_plots
 
         self.loss_history = {}
 
@@ -69,5 +70,6 @@ class TrainingMonitor(BaseLogger):
                 plt.ylabel("Loss/Accuracy")
                 plt.legend()
 
-                plt.savefig(self.plot_path + str(epoch) + '.png')
+                if self.save_plots:
+                    plt.savefig(self.plot_path + str(epoch) + '.png')
                 plt.show()

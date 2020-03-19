@@ -9,7 +9,6 @@ def augment(image, batch_size=1, save_image=False, output_path='./', total_numbe
             width_shift_range=0.1,
             height_shift_range=0.1,
             shear_range=0.2, zoom_range=0.2, horizontal_flip=True):
-
     # preprocess image :
     image = img_to_array(image)
     image = np.expand_dims(image, axis=0)

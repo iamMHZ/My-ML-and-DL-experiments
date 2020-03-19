@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessors/image_preprocessors.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessors/image_preprocessors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_augmentation/keras_image_augmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_augmentation/keras_image_augmentation.py" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
       <directory path="venv/" />
@@ -80,17 +83,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="JPG" value="5" />
-          <entry key="jpg" value="3" />
+          <entry key="JPG" value="6" />
+          <entry key="jpg" value="4" />
           <entry key="png" value="7" />
-          <entry key="py" value="155" />
+          <entry key="py" value="162" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="15" />
-          <entry key="Python" value="155" />
+          <entry key="Image" value="17" />
+          <entry key="Python" value="162" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -98,12 +101,12 @@
         <counts>
           <entry key="dummy" value="237" />
           <entry key="py" value="26426" />
-          <entry key="txt" value="2649" />
+          <entry key="txt" value="2676" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="2886" />
+          <entry key="PLAIN_TEXT" value="2913" />
           <entry key="Python" value="26426" />
         </counts>
       </usages-collector>
@@ -113,23 +116,7 @@
     <favorites_list name="My-ML-and-DL-experiments" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/preprocessors/image_preprocessors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1584620057044" expanded="true" signature="948:949" ph="..." />
-                <marker date="1584620057044" expanded="true" signature="1127:1132" ph="..." />
-                <marker date="1584620057044" expanded="true" signature="1219:1228" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -193,9 +180,11 @@
         <option value="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py" />
         <option value="$PROJECT_DIR$/data_augmentation/image_augmentation.py" />
         <option value="$PROJECT_DIR$/data_augmentation/keras_image_aumentation.py" />
-        <option value="$PROJECT_DIR$/data_augmentation/keras_image_augmentation.py" />
         <option value="$PROJECT_DIR$/preprocessors/image_preprocessor.py" />
         <option value="$PROJECT_DIR$/preprocessors/image_preprocessors.py" />
+        <option value="$PROJECT_DIR$/data_augmentation/keras_image_augmentation.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py" />
+        <option value="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py" />
       </list>
     </option>
   </component>
@@ -205,11 +194,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="216" />
     <option name="y" value="26" />
-    <option name="width" value="1400" />
-    <option name="height" value="870" />
+    <option name="width" value="1498" />
+    <option name="height" value="953" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -233,6 +222,17 @@
             <path>
               <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
               <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="artificial_neural_networks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="artificial_neural_networks" type="462c0819:PsiDirectoryNode" />
+              <item name="different_trained_models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
@@ -460,13 +460,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581077672927</updated>
-    </task>
-    <task id="LOCAL-00047" summary="venv">
-      <created>1582872527273</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1582872527273</updated>
     </task>
     <task id="LOCAL-00048" summary="venv">
       <created>1582884513860</created>
@@ -804,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584344533017</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="aspect ratio resizer">
+      <created>1584620093006</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1584620093007</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TodoView">
@@ -817,11 +817,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="173" y="21" width="1198" height="762" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.500994" side_tool="true" weight="0.16308725" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49900597" visible="true" weight="0.16644295" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49900597" visible="true" weight="0.2460457" />
       <window_info id="Structure" order="2" sideWeight="0.500994" side_tool="true" weight="0.16308725" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932885" weight="0.32885906" />
@@ -910,7 +909,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="batch normalization flag" />
     <MESSAGE value="MiniVGG implementation on CIFAR10 dataset" />
     <MESSAGE value="step decay learning rate scheduler for MiniVggNet" />
     <MESSAGE value="Fixed Bug on data loading and preprocessing" />
@@ -935,7 +933,8 @@
     <MESSAGE value="data augmentation with keras" />
     <MESSAGE value="bug in aspect ration preprocessing" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="aspect ratio resizer" />
+    <option name="LAST_COMMIT_MESSAGE" value="aspect ratio resizer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1098,16 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/MiniVGGNet architecture.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/mini_vgg_net.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KNN/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1137,13 +1126,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/monitoring/plots/test.py" />
-    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/train_mini_vgg_cifar10.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/loaders/model_loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -1237,19 +1219,38 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data_augmentation/image_0_5899..jpg" />
+    <entry file="file://$PROJECT_DIR$/data_augmentation/keras_image_augmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data_augmentation/image_0_8418..jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_augmentation/keras_image_augmentation.py">
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/train_mini_vgg_cifar10.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/MiniVGGNet architecture.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net/mini_vgg_net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1117">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/preprocessors/image_preprocessors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
+        <state relative-caret-position="1726">
           <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -1259,6 +1260,12 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

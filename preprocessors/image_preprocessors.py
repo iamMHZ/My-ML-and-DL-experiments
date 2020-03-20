@@ -86,9 +86,9 @@ class AspectAwareResizePreprocessor:
             dW = int((image.shape[1] - self.width) / 2.0)
 
             (h, w) = image.shape[:2]
-            image = image[dH:h - dH, dW:w - dW]
-            return cv2.resize(image, (self.width, self.height),
-                              interpolation=self.inter)
+        image = image[dH:h - dH, dW:w - dW]
+        return cv2.resize(image, (self.width, self.height),
+                          interpolation=self.inter)
 
 
 if __name__ == '__main__':

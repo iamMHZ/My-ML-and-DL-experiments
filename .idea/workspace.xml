@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/io/dataset_writer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py" beforeDir="false" afterPath="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
       <directory path="venv/" />
@@ -55,7 +55,7 @@
     <session id="-733211071">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="35" />
+          <entry key="project.closed" value="37" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.12" value="1" />
@@ -66,18 +66,18 @@
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="4" />
           <entry key="project.open.time.24" value="4" />
-          <entry key="project.open.time.25" value="3" />
+          <entry key="project.open.time.25" value="4" />
           <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.27" value="3" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="40" />
+          <entry key="project.opened" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -85,28 +85,28 @@
           <entry key="JPG" value="7" />
           <entry key="jpg" value="4" />
           <entry key="png" value="7" />
-          <entry key="py" value="186" />
+          <entry key="py" value="187" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="18" />
-          <entry key="Python" value="186" />
+          <entry key="Python" value="187" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="237" />
-          <entry key="py" value="27878" />
-          <entry key="txt" value="2782" />
+          <entry key="dummy" value="246" />
+          <entry key="py" value="28956" />
+          <entry key="txt" value="2836" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="3019" />
-          <entry key="Python" value="27878" />
+          <entry key="PLAIN_TEXT" value="3082" />
+          <entry key="Python" value="28956" />
         </counts>
       </usages-collector>
     </session>
@@ -119,7 +119,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
+            <state relative-caret-position="1122">
               <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -129,13 +129,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1276">
-              <caret line="58" column="104" selection-start-line="58" selection-start-column="104" selection-end-line="58" selection-end-column="104" />
+            <state relative-caret-position="231">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/io/dataset_writer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+              <folding>
+                <marker date="1584883513180" expanded="true" signature="38:39" ph="..." />
+                <marker date="1584883513180" expanded="true" signature="38:44" ph="..." />
+                <marker date="1584883513180" expanded="true" signature="1542:1551" ph="..." />
               </folding>
             </state>
           </provider>
@@ -210,6 +224,7 @@
         <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_animals.py" />
         <option value="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py" />
         <option value="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py" />
+        <option value="$PROJECT_DIR$/io/dataset_writer.py" />
       </list>
     </option>
   </component>
@@ -220,27 +235,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="215" />
-    <option name="y" value="25" />
-    <option name="width" value="1500" />
-    <option name="height" value="955" />
+    <option name="x" value="110" />
+    <option name="y" value="10" />
+    <option name="width" value="1700" />
+    <option name="height" value="1015" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="My-ML-and-DL-experiments" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,23 +255,18 @@
             <path>
               <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
               <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="artificial_neural_networks" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
             <path>
-              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="artificial_neural_networks" type="462c0819:PsiDirectoryNode" />
-              <item name="different_trained_models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="data_augmentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="loaders" type="462c0819:PsiDirectoryNode" />
+              <item name="My-ML-and-DL-experiments" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -307,7 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mini_vgg_flowers17">
+  <component name="RunManager" selected="Python.mini_vgg_augmented_flowers17">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -374,28 +373,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="image_preprocessor" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="My ML and DL experiments" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/preprocessors" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\preprocessors\image_preprocessors.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="image_preprocessors" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -410,6 +387,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocessors/image_preprocessors.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mini_vgg_augmented_flowers17" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="My ML and DL experiments" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_neural_networks/different_trained_models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -464,19 +463,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.image_preprocessor" />
       <item itemvalue="Python.image_preprocessors" />
       <item itemvalue="Python.image_loader" />
       <item itemvalue="Python.mini_vgg_flowers17" />
       <item itemvalue="Python.train_shallownet_animals" />
+      <item itemvalue="Python.mini_vgg_augmented_flowers17" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mini_vgg_augmented_flowers17" />
         <item itemvalue="Python.mini_vgg_flowers17" />
         <item itemvalue="Python.train_shallownet_animals" />
         <item itemvalue="Python.image_loader" />
         <item itemvalue="Python.image_preprocessors" />
-        <item itemvalue="Python.image_preprocessor" />
       </list>
     </recent_temporary>
   </component>
@@ -490,13 +489,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581077672927</updated>
-    </task>
-    <task id="LOCAL-00051" summary="predict new data with shallow net model">
-      <created>1582891462214</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1582891462214</updated>
     </task>
     <task id="LOCAL-00052" summary="module for loading models with keras">
       <created>1582891508771</created>
@@ -834,7 +826,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584731077600</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="VGG on flowers17 dataset including data augmentation">
+      <created>1584772529407</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1584772529408</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TodoView">
@@ -851,14 +850,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.500994" side_tool="true" weight="0.16308725" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49900597" visible="true" weight="0.19060403" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49900597" visible="true" weight="0.15771812" />
       <window_info id="Structure" order="2" sideWeight="0.500994" side_tool="true" weight="0.16308725" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932885" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5013423" side_tool="true" weight="0.44161072" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4986577" weight="0.32885906" />
-      <window_info anchor="bottom" id="Python Console" order="5" sideWeight="0.4986577" weight="0.37315437" />
+      <window_info anchor="bottom" id="Python Console" order="5" sideWeight="0.4986577" weight="0.45637584" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32885906" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.2536913" />
@@ -871,7 +870,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" sideWeight="0.5060403" side_tool="true" weight="0.20268457" />
+      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" sideWeight="0.5060403" side_tool="true" weight="0.15503356" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -940,7 +939,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="data labeling according to directory name" />
     <MESSAGE value="started sign detection" />
     <MESSAGE value="monitoring module" />
     <MESSAGE value="on_epoch_end method" />
@@ -965,7 +963,8 @@
     <MESSAGE value="fixed bug of aspect ratio aware preprocessing" />
     <MESSAGE value="exception handling while loading data" />
     <MESSAGE value="flowers17 miniVGG" />
-    <option name="LAST_COMMIT_MESSAGE" value="flowers17 miniVGG" />
+    <MESSAGE value="VGG on flowers17 dataset including data augmentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="VGG on flowers17 dataset including data augmentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1274,17 +1273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1584730629186" expanded="true" signature="765:766" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/shallownet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1296,18 +1284,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1584730629186" expanded="true" signature="765:766" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="58" column="104" selection-start-line="58" selection-start-column="104" selection-end-line="58" selection-end-column="104" />
+        <state relative-caret-position="231">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io/dataset_writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+          <folding>
+            <marker date="1584883513180" expanded="true" signature="38:39" ph="..." />
+            <marker date="1584883513180" expanded="true" signature="38:44" ph="..." />
+            <marker date="1584883513180" expanded="true" signature="1542:1551" ph="..." />
           </folding>
         </state>
       </provider>

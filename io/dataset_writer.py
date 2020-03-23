@@ -3,7 +3,7 @@ import h5py
 
 class HDF5DatasetWriter:
 
-    def __int__(self, output_path, height, width, dataset_name_keyword='images', buffer_size=1000):
+    def __init__(self, output_path, height, width, dataset_name_keyword='images', buffer_size=1000):
         self.dataset_dimension = (height, width)
         self.dataset_name_keyword = dataset_name_keyword
         self.buffer_size = buffer_size

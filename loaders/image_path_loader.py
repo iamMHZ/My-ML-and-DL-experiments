@@ -6,7 +6,7 @@ import imutils
 
 # load dataset's image paths and also shuffle them
 # and return paths and labels
-def load_data(dataset_path, shuffle=True):
+def load_image_paths(dataset_path, shuffle=True):
     images_path = imutils.paths.list_images(dataset_path)
 
     if shuffle:

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/io/dataset_writer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loaders/image_path_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transfer_learning/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
@@ -55,7 +57,7 @@
     <session id="-733211071">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="37" />
+          <entry key="project.closed" value="39" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.12" value="1" />
@@ -64,7 +66,7 @@
           <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.23" value="4" />
+          <entry key="project.open.time.23" value="5" />
           <entry key="project.open.time.24" value="4" />
           <entry key="project.open.time.25" value="4" />
           <entry key="project.open.time.26" value="2" />
@@ -75,9 +77,10 @@
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="42" />
+          <entry key="project.opened" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -85,28 +88,28 @@
           <entry key="JPG" value="7" />
           <entry key="jpg" value="4" />
           <entry key="png" value="7" />
-          <entry key="py" value="187" />
+          <entry key="py" value="192" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="18" />
-          <entry key="Python" value="187" />
+          <entry key="Python" value="192" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="246" />
-          <entry key="py" value="28956" />
-          <entry key="txt" value="2836" />
+          <entry key="py" value="29695" />
+          <entry key="txt" value="2851" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="3082" />
-          <entry key="Python" value="28956" />
+          <entry key="PLAIN_TEXT" value="3097" />
+          <entry key="Python" value="29695" />
         </counts>
       </usages-collector>
     </session>
@@ -117,39 +120,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py">
+        <entry file="file://$PROJECT_DIR$/io/dataset_writer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+            <state relative-caret-position="121">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <marker date="1584730629186" expanded="true" signature="765:766" ph="..." />
+                <marker date="1584883513180" expanded="true" signature="38:39" ph="..." />
+                <marker date="1584883513180" expanded="true" signature="38:44" ph="..." />
+                <marker date="1584883513180" expanded="true" signature="1542:1551" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py">
+        <entry file="file://$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state>
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1584949069083" expanded="true" signature="37:42" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/io/dataset_writer.py">
+        <entry file="file://$PROJECT_DIR$/loaders/image_path_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+            <state relative-caret-position="198">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
               <folding>
-                <marker date="1584883513180" expanded="true" signature="38:39" ph="..." />
-                <marker date="1584883513180" expanded="true" signature="38:44" ph="..." />
-                <marker date="1584883513180" expanded="true" signature="1542:1551" ph="..." />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -225,6 +226,9 @@
         <option value="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py" />
         <option value="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py" />
         <option value="$PROJECT_DIR$/io/dataset_writer.py" />
+        <option value="$PROJECT_DIR$/transfer_learning.py" />
+        <option value="$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py" />
+        <option value="$PROJECT_DIR$/loaders/image_path_loader.py" />
       </list>
     </option>
   </component>
@@ -235,10 +239,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="110" />
-    <option name="y" value="10" />
-    <option name="width" value="1700" />
-    <option name="height" value="1015" />
+    <option name="x" value="215" />
+    <option name="y" value="25" />
+    <option name="width" value="1500" />
+    <option name="height" value="955" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -255,7 +259,12 @@
             <path>
               <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
               <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="loaders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="transfer_learning" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -276,7 +285,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SAR" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -489,13 +498,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581077672927</updated>
-    </task>
-    <task id="LOCAL-00052" summary="module for loading models with keras">
-      <created>1582891508771</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1582891508771</updated>
     </task>
     <task id="LOCAL-00053" summary="refactoring">
       <created>1582901216670</created>
@@ -833,7 +835,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584772529408</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="dataset writer">
+      <created>1584883675410</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1584883675410</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TodoView">
@@ -850,7 +859,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.500994" side_tool="true" weight="0.16308725" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49900597" visible="true" weight="0.15771812" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49900597" visible="true" weight="0.16308725" />
       <window_info id="Structure" order="2" sideWeight="0.500994" side_tool="true" weight="0.16308725" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932885" weight="0.32885906" />
@@ -870,7 +879,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" sideWeight="0.5060403" side_tool="true" weight="0.15503356" />
+      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" sideWeight="0.5060403" side_tool="true" weight="0.118120804" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -939,7 +948,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="started sign detection" />
     <MESSAGE value="monitoring module" />
     <MESSAGE value="on_epoch_end method" />
     <MESSAGE value="plotting path bug FIXED" />
@@ -964,7 +972,8 @@
     <MESSAGE value="exception handling while loading data" />
     <MESSAGE value="flowers17 miniVGG" />
     <MESSAGE value="VGG on flowers17 dataset including data augmentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="VGG on flowers17 dataset including data augmentation" />
+    <MESSAGE value="dataset writer" />
+    <option name="LAST_COMMIT_MESSAGE" value="dataset writer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1023,13 +1032,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gradient_descent/stochastic_gradient_ descent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradient_descent/vanilla_gradient_descent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1206,9 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="88" column="22" lean-forward="true" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1233,16 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
           <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loaders/image_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1300,7 +1289,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="726">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -1308,14 +1297,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/transfer_learning.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/io/dataset_writer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+        <state relative-caret-position="121">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <marker date="1584883513180" expanded="true" signature="38:39" ph="..." />
             <marker date="1584883513180" expanded="true" signature="38:44" ph="..." />
             <marker date="1584883513180" expanded="true" signature="1542:1551" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Python37/Lib/ntpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13779">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loaders/image_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1584949069083" expanded="true" signature="37:42" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loaders/image_path_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

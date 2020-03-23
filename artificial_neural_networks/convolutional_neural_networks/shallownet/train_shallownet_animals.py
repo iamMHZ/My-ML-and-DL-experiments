@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 
 from artificial_neural_networks.convolutional_neural_networks.shallownet.shallownet import ShallowNet
-from loaders.image_loader import ImageLoader
+from io.loaders.image_loader import ImageLoader
 from preprocessors.image_preprocessors import ImageToArrayPreprocessor, ResizePreprocessor
 
 input_width = 32

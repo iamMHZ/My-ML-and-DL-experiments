@@ -2,7 +2,7 @@ from keras.applications import VGG16
 from sklearn.preprocessing import LabelEncoder
 
 from io.dataset_writer import HDF5DatasetWriter
-from loaders.image_path_loader import load_image_paths
+from io.loaders.image_path_loader import load_image_paths
 
 
 def extract_features_with_vgg16(dataset_path, batch_size=32, buffer_size=1000):

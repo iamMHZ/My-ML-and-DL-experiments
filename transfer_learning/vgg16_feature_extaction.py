@@ -4,8 +4,8 @@ from keras.applications import imagenet_utils
 from keras.preprocessing.image import img_to_array, load_img
 from sklearn.preprocessing import LabelEncoder
 
-from io.dataset_writer import HDF5DatasetWriter
-from io.loaders.image_path_loader import load_image_paths
+from hdf5.dataset_writer import HDF5DatasetWriter
+from loaders.image_path_loader import load_image_paths
 
 
 def extract_features_with_vgg16(dataset_path, batch_size=32, buffer_size=1000):
@@ -20,6 +20,7 @@ def extract_features_with_vgg16(dataset_path, batch_size=32, buffer_size=1000):
     model = VGG16(weights="imagenet", include_top=False)
 
     # initialize hdf5 writer:
+    # we removed last FC layer of network and the output shape of POOL layer before this FC layer is  512 * 7 * 7
     hdf5_dataset = HDF5DatasetWriter('./features.hdf5', len(paths), 512 * 7 * 7, buffer_size=buffer_size,
                                      dataset_name_keyword='features')
     # save class labels in dataset
@@ -35,23 +36,28 @@ def extract_features_with_vgg16(dataset_path, batch_size=32, buffer_size=1000):
             image = load_img(path, target_size=(244, 244))
             image = img_to_array(image)
 
-            # pre processs image for network:
+            # preprocess image for network:
             image = np.expand_dims(image, axis=0)
             image = imagenet_utils.preprocess_input(image)
 
             batch_images.append(image)
+            print('[INFO] FEATURE EXTRACTION...')
 
-        batch_images = np.vstack(batch_images)
-        # predicting features with VGG16 network:
-        features = model.predict(batch_images, batch_size=batch_size)
+        if len(batch_images) > 0:
+            batch_images = np.vstack(batch_images)
+            # predicting features with VGG16 network:
+            features = model.predict(batch_images, batch_size=batch_size)
 
-        # writing row of data to hdf5 file
-        features = features.reshape(features.shape[0], 512 * 7 * 7)
-        hdf5_dataset.add(features, batch_labels)
+            # writing row of data to hdf5 file
+            features = features.reshape(features.shape[0], 512 * 7 * 7)
+            hdf5_dataset.add(features, batch_labels)
 
     print('[INFO] DONE')
     hdf5_dataset.close()
 
 
 if __name__ == '__main__':
-    dataset_path = ''
+    # dataset_path = 'D:\Programming\database of image\HAZMAT\Datasets\smallDataset'
+    dataset_path = 'D:\Programming\database of image\Datasets\KaggleCatsAndDogs'
+
+    extract_features_with_vgg16(dataset_path=dataset_path, batch_size=32, buffer_size=1000)

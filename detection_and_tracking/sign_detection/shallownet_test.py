@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 
 from artificial_neural_networks.convolutional_neural_networks.shallownet.shallownet import ShallowNet
-from io.loaders.image_loader import ImageLoader
+from loaders.image_loader import ImageLoader
 from monitoring.checkpoints import get_model_checkpoint_callback
 from monitoring.training_monitoring import TrainingMonitor
 from preprocessors.image_preprocessors import ImageToArrayPreprocessor, ResizePreprocessor

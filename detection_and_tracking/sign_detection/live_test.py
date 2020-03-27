@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-from io.loaders import model_loader
+from loaders import model_loader
 from preprocessors.image_preprocessors import ResizePreprocessor, ImageToArrayPreprocessor
 
 

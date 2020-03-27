@@ -1,5 +1,5 @@
-from io.loaders import model_loader
-from io.loaders.image_loader import ImageLoader
+from loaders import model_loader
+from loaders.image_loader import ImageLoader
 from preprocessors.image_preprocessors import ResizePreprocessor, ImageToArrayPreprocessor
 
 '''

@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-from loaders import model_loader
-from preprocessors.image_preprocessors import ResizePreprocessor, ImageToArrayPreprocessor
+from utils.loaders import model_loader
+from utils.preprocessors.image_preprocessors import ResizePreprocessor, ImageToArrayPreprocessor
 
 
 def main():

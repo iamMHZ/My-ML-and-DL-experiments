@@ -4,8 +4,8 @@ from keras.applications import imagenet_utils
 from keras.preprocessing.image import img_to_array, load_img
 from sklearn.preprocessing import LabelEncoder
 
-from hdf5.dataset_writer import HDF5DatasetWriter
-from loaders.image_path_loader import load_image_paths
+from utils.hdf5.dataset_writer import HDF5DatasetWriter
+from utils.loaders.image_path_loader import load_image_paths
 
 
 def extract_features_with_vgg16(dataset_path, batch_size=32, buffer_size=1000):

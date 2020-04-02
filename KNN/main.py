@@ -1,5 +1,5 @@
-from loaders.image_loader import ImageLoader
-from preprocessors.image_preprocessors import ResizePreprocessor
+from utils.loaders.image_loader import ImageLoader
+from utils.preprocessors.image_preprocessors import ResizePreprocessor
 from KNN.classifier import trainKNN
 
 

@@ -6,10 +6,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 from artificial_neural_networks.convolutional_neural_networks.vgg_net.mini_vgg_net import MiniVGGNet
-from loaders.image_loader import ImageLoader
+from utils.loaders.image_loader import ImageLoader
 from monitoring.checkpoints import get_model_checkpoint_callback
 from monitoring.training_monitoring import TrainingMonitor
-from preprocessors.image_preprocessors import AspectAwareResizePreprocessor, ImageToArrayPreprocessor
+from utils.preprocessors.image_preprocessors import AspectAwareResizePreprocessor, ImageToArrayPreprocessor
 
 input_width = 64
 input_height = 64

@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/hdf5/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/loaders/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/preprocessors/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KNN/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/KNN/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/predict_with_shallownet.py" beforeDir="false" afterPath="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/predict_with_shallownet.py" afterDir="false" />
@@ -10,10 +14,13 @@
       <change beforePath="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py" beforeDir="false" afterPath="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/io/loaders/image_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/loaders/image_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/io/loaders/image_path_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/loaders/image_path_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/io/loaders/model_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/loaders/model_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transfer_learning/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdf5/dataset_writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/hdf5/dataset_writer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loaders/image_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/loaders/image_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loaders/image_path_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/loaders/image_path_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loaders/model_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/loaders/model_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessors/image_preprocessors.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/preprocessors/image_preprocessors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessors/test.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/utils/preprocessors/test.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessors/test2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/utils/preprocessors/test2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
@@ -34,6 +41,7 @@
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$mini_vgg_flowers17.coverage" NAME="mini_vgg_flowers17 Coverage Results" MODIFIED="1584730572833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_networks/different_trained_models" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$train_mini_vgg_cifar10.coverage" NAME="train_mini_vgg_cifar10 Coverage Results" MODIFIED="1583253812938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/vgg_net" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$test_or.coverage" NAME="test_or Coverage Results" MODIFIED="1581444850993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_network/perceptron" />
+    <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$vgg16_feature_extaction.coverage" NAME="vgg16_feature_extaction Coverage Results" MODIFIED="1585288717111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/transfer_learning" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$test_and.coverage" NAME="test_and Coverage Results" MODIFIED="1581445078085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_neural_network/perceptron" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$vanilla_gradient_descent.coverage" NAME="vanilla_gradient_descent Coverage Results" MODIFIED="1581179417062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gradient_descent" />
     <SUITE FILE_PATH="coverage/My_ML_and_DL_experiments$shallownet_test.coverage" NAME="shallownet_test Coverage Results" MODIFIED="1583419770849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/detection_and_tracking/sign_detection" />
@@ -66,9 +74,9 @@
     <session id="-733211071">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="42" />
+          <entry key="project.closed" value="45" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.15" value="2" />
@@ -87,11 +95,12 @@
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.68" value="1" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="47" />
+          <entry key="project.opened" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -99,28 +108,28 @@
           <entry key="JPG" value="7" />
           <entry key="jpg" value="4" />
           <entry key="png" value="7" />
-          <entry key="py" value="200" />
+          <entry key="py" value="203" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="18" />
-          <entry key="Python" value="200" />
+          <entry key="Python" value="203" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="246" />
-          <entry key="py" value="31433" />
-          <entry key="txt" value="2978" />
+          <entry key="py" value="31532" />
+          <entry key="txt" value="3046" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="3224" />
-          <entry key="Python" value="31433" />
+          <entry key="PLAIN_TEXT" value="3292" />
+          <entry key="Python" value="31532" />
         </counts>
       </usages-collector>
     </session>
@@ -131,7 +140,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/io/dataset_writer.py">
+        <entry file="file://$PROJECT_DIR$/utils/hdf5/dataset_writer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
               <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
@@ -147,11 +156,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="157">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1585286386400" expanded="true" signature="396:463" ph="..." />
+                <marker date="1585805743232" expanded="true" signature="409:476" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/loaders/image_path_loader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -226,10 +247,10 @@
         <option value="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_animals.py" />
         <option value="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py" />
         <option value="$PROJECT_DIR$/transfer_learning.py" />
-        <option value="$PROJECT_DIR$/loaders/image_path_loader.py" />
         <option value="$PROJECT_DIR$/io/dataset_writer.py" />
-        <option value="$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py" />
         <option value="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py" />
+        <option value="$PROJECT_DIR$/loaders/image_path_loader.py" />
+        <option value="$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py" />
       </list>
     </option>
   </component>
@@ -240,8 +261,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="215" />
-    <option name="y" value="25" />
+    <option name="x" value="160" />
+    <option name="y" value="110" />
     <option name="width" value="1500" />
     <option name="height" value="955" />
   </component>
@@ -271,17 +292,12 @@
             <path>
               <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
               <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="datasets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
               <item name="transfer_learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -291,7 +307,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SAR" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -303,11 +319,11 @@
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\detection_and_tracking\centroid_object_tracking" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\utils" />
+      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments" />
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\io" />
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\monitoring" />
       <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\artificial_neural_networks\convolutional_neural_networks\shallownet" />
-      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\loaders" />
-      <recent name="D:\Programming\Python-Workpace\My-ML-and-DL-experiments\preprocessors" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -502,20 +518,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581077672927</updated>
-    </task>
-    <task id="LOCAL-00060" summary="refactoring">
-      <created>1583043553135</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1583043553151</updated>
-    </task>
-    <task id="LOCAL-00061" summary="MiniVGG on CIFAR10 dataset">
-      <created>1583043607591</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1583043607591</updated>
     </task>
     <task id="LOCAL-00062" summary="refactoring">
       <created>1583043844794</created>
@@ -846,7 +848,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584971504797</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="refactoring">
+      <created>1585286415924</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1585286415925</updated>
+    </task>
+    <task id="LOCAL-00110" summary="done feature extraction with VGG16">
+      <created>1585289720733</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1585289720733</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TodoView">
@@ -859,21 +875,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="128" y="88" width="1200" height="764" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.500994" side_tool="true" weight="0.16308725" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49900597" visible="true" weight="0.17181209" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49900597" visible="true" weight="0.2140351" />
       <window_info id="Structure" order="2" sideWeight="0.500994" side_tool="true" weight="0.16308725" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932885" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5013423" side_tool="true" weight="0.44161072" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4986577" weight="0.32885906" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="5" sideWeight="0.4986577" visible="true" weight="0.16375838" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="5" sideWeight="0.4986577" visible="true" weight="0.4437401" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32885906" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.2536913" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.49261746" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.43355703" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.49932885" weight="0.32885906" />
@@ -882,7 +898,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" sideWeight="0.5060403" side_tool="true" weight="0.08947369" />
+      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" sideWeight="0.5060403" side_tool="true" visible="true" weight="0.08947369" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -928,7 +944,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="testing shallowNet on two group of signs" />
     <MESSAGE value="checkpoint model and save best ones" />
     <MESSAGE value="checkpointing on signs" />
     <MESSAGE value="saving with hdf5 extension" />
@@ -951,9 +966,10 @@
     <MESSAGE value="transfer learning" />
     <MESSAGE value="fixed constructor " />
     <MESSAGE value="renamed method" />
-    <MESSAGE value="refactoring" />
     <MESSAGE value="feature extraction with VGG16" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature extraction with VGG16" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="done feature extraction with VGG16" />
+    <option name="LAST_COMMIT_MESSAGE" value="done feature extraction with VGG16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1003,6 +1019,16 @@
           <line>39</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/loaders/image_path_loader.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -1012,14 +1038,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/perceptron/test_or.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/engine/training_utils.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/legacy/layers.py" />
     <entry file="file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/haarcascade_frontalcatface.xml" />
     <entry file="file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/haarcascade_frontalface_default.xml">
@@ -1124,7 +1142,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/monitoring/plots/test.py" />
-    <entry file="file://$PROJECT_DIR$/loaders/model_loader.py">
+    <entry file="file://$PROJECT_DIR$/utils/loaders/model_loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="3" selection-start-line="2" selection-end-line="2" selection-end-column="3" />
@@ -1170,7 +1188,7 @@
     <entry file="file://$PROJECT_DIR$/data_augmentation/image_0_8418..jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/preprocessors/image_preprocessors.py">
+    <entry file="file://$PROJECT_DIR$/utils/preprocessors/image_preprocessors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="88" column="22" lean-forward="true" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
@@ -1257,7 +1275,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loaders/image_loader.py">
+    <entry file="file://$PROJECT_DIR$/utils/loaders/image_loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
@@ -1281,7 +1299,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io/dataset_writer.py">
+    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="967">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Python37/Lib/site-packages/imutils/paths.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Python37/Lib/site-packages/numpy/core/shape_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="281" selection-start-line="281" selection-end-line="281" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/hdf5/dataset_writer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
@@ -1293,20 +1332,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py">
+    <entry file="file://$PROJECT_DIR$/utils/loaders/image_path_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="967">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loaders/image_path_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="374">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -1315,11 +1344,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="157">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1585286386400" expanded="true" signature="396:463" ph="..." />
+            <marker date="1585805743232" expanded="true" signature="409:476" ph="..." />
           </folding>
         </state>
       </provider>

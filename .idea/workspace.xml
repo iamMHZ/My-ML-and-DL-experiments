@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827c1446-15ef-4b46-948b-c60adfe9d35e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/hdf5/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/loaders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/preprocessors/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KNN/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/KNN/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/predict_with_shallownet.py" beforeDir="false" afterPath="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/predict_with_shallownet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_animals.py" beforeDir="false" afterPath="$PROJECT_DIR$/artificial_neural_networks/convolutional_neural_networks/shallownet/train_shallownet_animals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py" beforeDir="false" afterPath="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py" beforeDir="false" afterPath="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_flowers17.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/detection_and_tracking/sign_detection/live_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/detection_and_tracking/sign_detection/shallownet_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdf5/dataset_writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/hdf5/dataset_writer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loaders/image_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/loaders/image_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loaders/image_path_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/loaders/image_path_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loaders/model_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/loaders/model_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessors/image_preprocessors.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/preprocessors/image_preprocessors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessors/test.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/utils/preprocessors/test.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessors/test2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/utils/preprocessors/test2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/metrics/ranked_accuracy.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/metrics/ranked_accuracy.py" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
       <directory path="venv/" />
@@ -108,28 +90,28 @@
           <entry key="JPG" value="7" />
           <entry key="jpg" value="4" />
           <entry key="png" value="7" />
-          <entry key="py" value="203" />
+          <entry key="py" value="205" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="18" />
-          <entry key="Python" value="203" />
+          <entry key="Python" value="205" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="246" />
-          <entry key="py" value="31532" />
-          <entry key="txt" value="3046" />
+          <entry key="dummy" value="260" />
+          <entry key="py" value="32137" />
+          <entry key="txt" value="3131" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="3292" />
-          <entry key="Python" value="31532" />
+          <entry key="PLAIN_TEXT" value="3391" />
+          <entry key="Python" value="32137" />
         </counts>
       </usages-collector>
     </session>
@@ -153,10 +135,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
+            <state relative-caret-position="565">
               <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -166,13 +148,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/loaders/image_path_loader.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/metrics/ranked_accuracy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="506">
+              <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <marker date="1585807997953" expanded="true" signature="81:85" ph="..." />
+                <marker date="1585807997953" expanded="true" signature="81:676" ph="..." />
               </folding>
             </state>
           </provider>
@@ -251,6 +234,8 @@
         <option value="$PROJECT_DIR$/artificial_neural_networks/different_trained_models/mini_vgg_augmented_flowers17.py" />
         <option value="$PROJECT_DIR$/loaders/image_path_loader.py" />
         <option value="$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py" />
+        <option value="$PROJECT_DIR$/utils/metrics/ranks.py" />
+        <option value="$PROJECT_DIR$/utils/metrics/ranked_accuracy.py" />
       </list>
     </option>
   </component>
@@ -261,10 +246,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="160" />
-    <option name="y" value="110" />
-    <option name="width" value="1500" />
-    <option name="height" value="955" />
+    <option name="x" value="270" />
+    <option name="y" value="100" />
+    <option name="width" value="1440" />
+    <option name="height" value="935" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -292,12 +277,13 @@
             <path>
               <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
               <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="transfer_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="My-ML-and-DL-experiments" type="b2602c69:ProjectViewProjectNode" />
               <item name="My-ML-and-DL-experiments" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="metrics" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,7 +293,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../YoutubeDownloader" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -518,20 +504,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581077672927</updated>
-    </task>
-    <task id="LOCAL-00062" summary="refactoring">
-      <created>1583043844794</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1583043844794</updated>
-    </task>
-    <task id="LOCAL-00063" summary="refactoring">
-      <created>1583044047926</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1583044047926</updated>
     </task>
     <task id="LOCAL-00064" summary="refactoring">
       <created>1583044271729</created>
@@ -862,7 +834,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585289720733</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="refactoring by adding utils package 😋😎">
+      <created>1585806022132</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1585806022133</updated>
+    </task>
+    <task id="LOCAL-00112" summary="rank1 and rank5 calculation">
+      <created>1585806275884</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1585806275884</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TodoView">
@@ -875,19 +861,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="128" y="88" width="1200" height="764" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.500994" side_tool="true" weight="0.16308725" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49900597" visible="true" weight="0.2140351" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49900597" visible="true" weight="0.16375838" />
       <window_info id="Structure" order="2" sideWeight="0.500994" side_tool="true" weight="0.16308725" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932885" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5013423" side_tool="true" weight="0.44161072" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4986577" weight="0.32885906" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="5" sideWeight="0.4986577" visible="true" weight="0.4437401" />
+      <window_info anchor="bottom" id="Python Console" order="5" sideWeight="0.4986577" weight="0.4437401" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32885906" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3280507" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.2536913" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.43355703" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -898,7 +885,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" sideWeight="0.5060403" side_tool="true" visible="true" weight="0.08947369" />
+      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" sideWeight="0.5060403" side_tool="true" weight="0.21744967" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -944,8 +931,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="checkpoint model and save best ones" />
-    <MESSAGE value="checkpointing on signs" />
     <MESSAGE value="saving with hdf5 extension" />
     <MESSAGE value="failed to plot model architecture" />
     <MESSAGE value="comment" />
@@ -969,7 +954,9 @@
     <MESSAGE value="feature extraction with VGG16" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="done feature extraction with VGG16" />
-    <option name="LAST_COMMIT_MESSAGE" value="done feature extraction with VGG16" />
+    <MESSAGE value="refactoring by adding utils package " />
+    <MESSAGE value="rank1 and rank5 calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="rank1 and rank5 calculation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1038,8 +1025,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/legacy/layers.py" />
-    <entry file="file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/haarcascade_frontalcatface.xml" />
     <entry file="file://$PROJECT_DIR$/detection_and_tracking/centroid_object_tracking/haarcascade_frontalface_default.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1320,6 +1305,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils/loaders/image_path_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/hdf5/dataset_writer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1332,23 +1327,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/loaders/image_path_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
+        <state relative-caret-position="565">
           <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <marker date="1585805743232" expanded="true" signature="409:476" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Python37/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2224">
+          <caret line="978" column="4" selection-start-line="978" selection-start-column="4" selection-end-line="978" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/metrics/ranked_accuracy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+          <folding>
+            <marker date="1585807997953" expanded="true" signature="81:85" ph="..." />
+            <marker date="1585807997953" expanded="true" signature="81:676" ph="..." />
           </folding>
         </state>
       </provider>

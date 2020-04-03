@@ -56,7 +56,7 @@
     <session id="-733211071">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="45" />
+          <entry key="project.closed" value="46" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.12" value="1" />
@@ -77,12 +77,13 @@
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="50" />
+          <entry key="project.opened" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -104,14 +105,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="260" />
-          <entry key="py" value="32137" />
-          <entry key="txt" value="3131" />
+          <entry key="py" value="32681" />
+          <entry key="txt" value="3132" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="3391" />
-          <entry key="Python" value="32137" />
+          <entry key="PLAIN_TEXT" value="3392" />
+          <entry key="Python" value="32681" />
         </counts>
       </usages-collector>
     </session>
@@ -138,8 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="1232">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <marker date="1585805743232" expanded="true" signature="409:476" ph="..." />
@@ -151,11 +152,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/metrics/ranked_accuracy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+            <state relative-caret-position="176">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               <folding>
-                <marker date="1585807997953" expanded="true" signature="81:85" ph="..." />
-                <marker date="1585807997953" expanded="true" signature="81:676" ph="..." />
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1585887521959" expanded="true" signature="214:557" ph="..." />
+                <marker date="1585887521959" expanded="true" signature="611:615" ph="..." />
+                <marker date="1585887521959" expanded="true" signature="611:1206" ph="..." />
               </folding>
             </state>
           </provider>
@@ -246,10 +249,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="270" />
-    <option name="y" value="100" />
-    <option name="width" value="1440" />
-    <option name="height" value="935" />
+    <option name="x" value="200" />
+    <option name="y" value="30" />
+    <option name="width" value="1500" />
+    <option name="height" value="955" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -461,6 +464,9 @@
       <module name="My ML and DL experiments" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/transfer_learning" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -504,13 +510,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581077672927</updated>
-    </task>
-    <task id="LOCAL-00064" summary="refactoring">
-      <created>1583044271729</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1583044271729</updated>
     </task>
     <task id="LOCAL-00065" summary="refactoring">
       <created>1583044873769</created>
@@ -848,7 +847,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585806275884</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="rank1 and rank5 calculation">
+      <created>1585808006771</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1585808006771</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TodoView">
@@ -865,7 +871,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.500994" side_tool="true" weight="0.16308725" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49900597" visible="true" weight="0.16375838" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49900597" visible="true" weight="0.16979866" />
       <window_info id="Structure" order="2" sideWeight="0.500994" side_tool="true" weight="0.16308725" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932885" weight="0.32885906" />
@@ -1278,9 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1315,6 +1318,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Program Files/Python37/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2224">
+          <caret line="978" column="4" selection-start-line="978" selection-start-column="4" selection-end-line="978" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/hdf5/dataset_writer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1329,8 +1339,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/transfer_learning/vgg16_feature_extaction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="1232">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <marker date="1585805743232" expanded="true" signature="409:476" ph="..." />
@@ -1338,20 +1348,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Program Files/Python37/Lib/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2224">
-          <caret line="978" column="4" selection-start-line="978" selection-start-column="4" selection-end-line="978" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/metrics/ranked_accuracy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+        <state relative-caret-position="176">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding>
-            <marker date="1585807997953" expanded="true" signature="81:85" ph="..." />
-            <marker date="1585807997953" expanded="true" signature="81:676" ph="..." />
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1585887521959" expanded="true" signature="214:557" ph="..." />
+            <marker date="1585887521959" expanded="true" signature="611:615" ph="..." />
+            <marker date="1585887521959" expanded="true" signature="611:1206" ph="..." />
           </folding>
         </state>
       </provider>

@@ -1,7 +1,27 @@
+import pickle
+
+import h5py
 import numpy as np
 
 
-def calculate_rank1_rank5(predictions, ground_truth_labels):
+# loads a model an features from hdf5 file and then calculates ranks for the models's predictions
+def model_rank(model_path, hdf5_path):
+    # load scikit-learn model
+    model = pickle.load(open(model_path, 'rb').read())
+    db = h5py.File(hdf5_path, 'r')
+
+    index = db['labels'].shape[0] * 0.75
+
+    # test model:
+    predictions = model.predict_proba(db['features'][index:])
+
+    rank1, rank5 = get_rank1_rank5(predictions, db['labels'][index:])
+
+    print(f'RANK-1{rank1}')
+    print(f'RANK-5{rank5}')
+
+
+def get_rank1_rank5(predictions, ground_truth_labels):
     rank1 = 0
     rank5 = 0
 

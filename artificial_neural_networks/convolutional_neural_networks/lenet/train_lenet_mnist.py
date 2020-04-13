@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 
 from artificial_neural_networks.convolutional_neural_networks.lenet.lenet import LeNet
-from monitoring.training_monitoring import TrainingMonitor
+from utils.model_monitoring.training_monitoring import TrainingMonitor
 
 input_width = 28
 input_height = 28

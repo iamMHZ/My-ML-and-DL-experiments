@@ -7,8 +7,8 @@ from sklearn.preprocessing import LabelEncoder
 
 from artificial_neural_networks.convolutional_neural_networks.vgg_net.mini_vgg_net import MiniVGGNet
 from utils.loaders.image_loader import ImageLoader
-from monitoring.checkpoints import get_model_checkpoint_callback
-from monitoring.training_monitoring import TrainingMonitor
+from utils.model_monitoring.checkpoints import get_model_checkpoint_callback
+from utils.model_monitoring.training_monitoring import TrainingMonitor
 from utils.preprocessors.image_preprocessors import AspectAwareResizePreprocessor, ImageToArrayPreprocessor
 
 input_width = 64

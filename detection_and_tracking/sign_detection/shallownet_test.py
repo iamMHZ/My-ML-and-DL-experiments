@@ -5,8 +5,8 @@ from sklearn.preprocessing import LabelBinarizer
 
 from artificial_neural_networks.convolutional_neural_networks.shallownet.shallownet import ShallowNet
 from utils.loaders.image_loader import ImageLoader
-from monitoring.checkpoints import get_model_checkpoint_callback
-from monitoring.training_monitoring import TrainingMonitor
+from utils.model_monitoring.checkpoints import get_model_checkpoint_callback
+from utils.model_monitoring.training_monitoring import TrainingMonitor
 from utils.preprocessors.image_preprocessors import ImageToArrayPreprocessor, ResizePreprocessor
 
 input_width = 32

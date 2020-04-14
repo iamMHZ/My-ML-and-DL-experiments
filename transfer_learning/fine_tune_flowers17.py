@@ -15,7 +15,7 @@ height = 224
 depth = 3
 
 # load and split the dataset
-path = './'
+path = 'D:\Programming\database of image\Datasets\Flower17\\train'
 asa = AspectAwareResizePreprocessor(new_width=width, new_height=height)
 image_to_array = ImageToArrayPreprocessor()
 loader = ImageLoader(preprocessors=[image_to_array, asa])

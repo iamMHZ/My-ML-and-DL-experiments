@@ -28,7 +28,7 @@ loader = ImageLoader(preprocessors=[resizer, image_to_array])
 # loading animal dataset
 print('\n[INFO] Loading data...\n')
 
-data, labels = loader.load(path='../../../datasets/cats_and_dogs')
+data, labels = loader.load(path='../../../utils/datasets/cats_and_dogs')
 
 data = data.astype('float') / 255.0
 

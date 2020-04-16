@@ -4,7 +4,7 @@ from KNN.classifier import trainKNN
 
 
 def main():
-    dataset_path = '../datasets/cats_and_dogs/'
+    dataset_path = '../utils/datasets/cats_and_dogs/'
     preprocessor = ResizePreprocessor(32, 32)
     loader = ImageLoader([preprocessor])
 

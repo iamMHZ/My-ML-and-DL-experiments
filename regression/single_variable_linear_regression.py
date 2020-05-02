@@ -4,11 +4,11 @@ import numpy as np
 
 def plot(x, y, w):
     """
-     Plots the data and the predicted line
+    Plots the data and the predicted line
 
-    :param x: the data
+    :param x:  data
     :param y:  grand truth labels
-    :param w:  the predicted line
+    :param w:  weight matrix
     :return: None
     """
 
@@ -22,11 +22,11 @@ def plot(x, y, w):
 
 def compute_loss(x, y, w):
     """
-     calculates the sum of squared loss
+    Calculates the sum of squared loss
 
-    :param x: the data
+    :param x:  data
     :param y:  grand truth labels
-    :param w:  the predicted line
+    :param w:  weight matrix
     :return: sum of squared loss
     """
 
@@ -40,6 +40,26 @@ def compute_loss(x, y, w):
     print(f'sum of squared loss {loss}')
 
 
+def compute_gradient(x, y, w):
+    """
+    Computes the derivatives with respect to each w
+
+    :param x:  data points
+    :param y:  grand truth labels
+    :param w:  weight matrix
+    :return: return the gradient vector
+    """
+
+    predictions = np.matmul(x, w)
+
+    delta0 = np.sum(predictions - y)
+    delta1 = np.sum((predictions - y) * x[:, 1:])
+
+    gradient = np.array([[delta0], [delta1]])
+
+    return gradient
+
+
 if __name__ == '__main__':
     x = np.array([[1, 1], [1, 2]])
 
@@ -48,3 +68,6 @@ if __name__ == '__main__':
 
     plot(x, y, w)
     compute_loss(x, y, w)
+
+    gradient = compute_gradient(x, y, w)
+    print(gradient)

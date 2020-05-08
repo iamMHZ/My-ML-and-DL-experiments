@@ -1,7 +1,10 @@
+import time
+
 import matplotlib.pyplot as plt
 import numpy as np
 
 
+# TODO remove duplications
 def plot(x, y, w):
     """
     Plots the data and the predicted line
@@ -52,22 +55,39 @@ def compute_gradient(x, y, w):
 
     predictions = np.matmul(x, w)
 
-    delta0 = np.sum(predictions - y)
-    delta1 = np.sum((predictions - y) * x[:, 1:])
+    error = predictions - y
+
+    delta0 = np.sum(error)
+    delta1 = np.sum(error * x[:, 1:])
 
     gradient = np.array([[delta0], [delta1]])
 
     return gradient
 
 
+def vanilla_gradient(x, y, w, learning_rate, epochs=20):
+    for i in range(epochs):
+        gradient = compute_gradient(x, y, w)
+        w = w - (learning_rate * gradient)
+
+        plot(x, y, w)
+
+        # time.sleep(0.5)
+    return w
+
+
 if __name__ == '__main__':
-    x = np.array([[1, 1], [1, 2]])
+    x = np.array([[1, 1], [2, 2]])
 
     y = np.array([[1], [2]])
-    w = np.array([[0], [1]])
+    w = np.array([[0], [0]])
 
-    plot(x, y, w)
-    compute_loss(x, y, w)
+    # plot(x, y, w)
+    # compute_loss(x, y, w)
+    #
+    # gradient = compute_gradient(x, y, w)
+    # print(gradient)
 
-    gradient = compute_gradient(x, y, w)
-    print(gradient)
+    w = vanilla_gradient(x, y, w, learning_rate=0.01, epochs=100)
+
+    print(w)

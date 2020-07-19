@@ -7,7 +7,7 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
-from transfer_learning.fc_head_net import FCHeadNet
+from computer_vision.transfer_learning.fc_head_net import FCHeadNet
 from utils.loaders.image_loader import ImageLoader
 from utils.model_monitoring.training_monitoring import TrainingMonitor
 from utils.preprocessors.image_preprocessors import ImageToArrayPreprocessor, AspectAwareResizePreprocessor

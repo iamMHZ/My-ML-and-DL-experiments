@@ -1,6 +1,6 @@
 import cv2
 
-from detection_and_tracking.centroid_object_tracking.tracker import CentroidTracker
+from computer_vision.detection_and_tracking.centroid_object_tracking.tracker import CentroidTracker
 
 
 def show_frame(frame, window_name, delay=1):

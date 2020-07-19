@@ -1,6 +1,6 @@
 from utils.loaders.image_loader import ImageLoader
 from utils.preprocessors.image_preprocessors import ResizePreprocessor
-from KNN.classifier import trainKNN
+from computer_vision.KNN.classifier import trainKNN
 
 
 def main():

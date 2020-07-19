@@ -3,7 +3,7 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 
-from artificial_neural_networks.convolutional_neural_networks.shallownet.shallownet import ShallowNet
+from computer_vision.artificial_neural_networks.convolutional_neural_networks.shallownet.shallownet import ShallowNet
 from utils.loaders.image_loader import ImageLoader
 from utils.model_monitoring.checkpoints import get_model_checkpoint_callback
 from utils.model_monitoring.training_monitoring import TrainingMonitor

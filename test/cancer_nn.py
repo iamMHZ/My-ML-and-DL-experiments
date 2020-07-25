@@ -84,6 +84,7 @@ def train(model, train_x, train_y, test_x, test_y):
     sgd = SGD(learning_rate)
     model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
+    # pay attention to directory path format
     log_dir = "logs\\" + datetime.now().strftime("%Y%m%d-%H%M%S")
 
     tensorboard_callback = TensorBoard(log_dir=log_dir)

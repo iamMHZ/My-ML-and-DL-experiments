@@ -1,6 +1,9 @@
 # from tensorflow import keras
+from datetime import datetime
+
 import matplotlib.pyplot  as plt
 import numpy as np
+from keras.callbacks import TensorBoard
 from keras.layers import Dense
 from keras.models import Sequential
 from keras.optimizers import SGD
@@ -9,8 +12,10 @@ from numpy import genfromtxt
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import LabelBinarizer
 
+from datetime import datetime
+
 batch_size = 4
-epochs = 200
+epochs =100
 num_classes = 2
 
 learning_rate = 0.00001
@@ -40,41 +45,7 @@ def load_data():
     return train_x, train_y, test_x, test_y
 
 
-def build_model():
-    model = Sequential()
-    model.add(Dense(16, input_shape=(3,), activation='relu'))
-    model.add(Dense(8, activation='relu'))
-    model.add(Dense(num_classes, activation='softmax'))
-
-    model.summary()
-
-    return model
-
-
-def train(model, train_x, train_y, test_x, test_y):
-    sgd = SGD(learning_rate)
-    model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'])
-    model_history = model.fit(train_x, train_y, validation_data=(test_x, test_y), epochs=epochs, batch_size=batch_size)
-
-    return model_history
-
-
-def plot(model_history):
-    plt.style.use("ggplot")
-    plt.figure()
-    plt.plot(np.arange(0, epochs), model_history.history["loss"], label="train_loss")
-    plt.plot(np.arange(0, epochs), model_history.history["val_loss"], label="val_loss")
-    plt.plot(np.arange(0, epochs), model_history.history["accuracy"], label="train_acc")
-    plt.plot(np.arange(0, epochs), model_history.history["val_accuracy"], label="val_acc")
-    plt.title("Training Loss and Accuracy")
-    plt.xlabel("Epoch")
-    plt.ylabel("Loss/Accuracy")
-    plt.legend()
-    plt.savefig('MNIST_plot.png')
-    plt.show()
-
-
-if __name__ == '__main__':
+def preprocess_data():
     my_data = genfromtxt('data_breast_canser.csv', delimiter=',')
     trai_per = 0.8
     np.random.shuffle(my_data)
@@ -95,6 +66,52 @@ if __name__ == '__main__':
     test_x = x[test_boundary:]
     test_y = y[test_boundary:]
 
+    return train_x, train_y, test_x, test_y, lb
+
+
+def build_model():
+    model = Sequential()
+    model.add(Dense(16, input_shape=(3,), activation='relu'))
+    model.add(Dense(8, activation='relu'))
+    model.add(Dense(num_classes, activation='softmax'))
+
+    model.summary()
+
+    return model
+
+
+def train(model, train_x, train_y, test_x, test_y):
+    sgd = SGD(learning_rate)
+    model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'])
+
+    log_dir = "logs\\" + datetime.now().strftime("%Y%m%d-%H%M%S")
+
+    tensorboard_callback = TensorBoard(log_dir=log_dir)
+
+    model_history = model.fit(train_x, train_y, callbacks=[tensorboard_callback], validation_data=(test_x, test_y),
+                              epochs=epochs, batch_size=batch_size)
+
+    return model_history
+
+
+def plot(model_history):
+    plt.style.use("ggplot")
+    plt.figure()
+    plt.plot(np.arange(0, epochs), model_history.history["loss"], label="train_loss")
+    plt.plot(np.arange(0, epochs), model_history.history["val_loss"], label="val_loss")
+    plt.plot(np.arange(0, epochs), model_history.history["accuracy"], label="train_acc")
+    plt.plot(np.arange(0, epochs), model_history.history["val_accuracy"], label="val_acc")
+    plt.title("Training Loss and Accuracy")
+    plt.xlabel("Epoch")
+    plt.ylabel("Loss/Accuracy")
+    plt.legend()
+    plt.savefig('MNIST_plot.png')
+    plt.show()
+
+
+if __name__ == '__main__':
+    train_x, train_y, test_x, test_y, label_encoder = preprocess_data()
+
     print(train_x.shape)
 
     model = build_model()
@@ -108,6 +125,6 @@ if __name__ == '__main__':
     predictions = model.predict(test_x, batch_size=batch_size, verbose=1)
 
     print(classification_report(test_y.argmax(axis=1), predictions.argmax(axis=1),
-                                target_names=[str(l) for l in lb.classes_]))
+                                target_names=[str(l) for l in label_encoder.classes_]))
 
     plot(model_history)

@@ -1,21 +1,22 @@
 # from tensorflow import keras
-from datetime import datetime
 
+from datetime import datetime
+import pandas as pd
 import matplotlib.pyplot  as plt
 import numpy as np
+import seaborn as sn
 from keras.callbacks import TensorBoard
 from keras.layers import Dense
 from keras.models import Sequential
 from keras.optimizers import SGD
 from keras.utils import to_categorical
 from numpy import genfromtxt
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import plot_confusion_matrix as plc
 from sklearn.preprocessing import LabelBinarizer
 
-from datetime import datetime
-
 batch_size = 4
-epochs =100
+epochs = 50
 num_classes = 2
 
 learning_rate = 0.00001
@@ -106,8 +107,33 @@ def plot(model_history):
     plt.xlabel("Epoch")
     plt.ylabel("Loss/Accuracy")
     plt.legend()
-    plt.savefig('MNIST_plot.png')
+    plt.savefig('plot.png')
     plt.show()
+
+
+def plot_confusion_matrix(test_y, predictions, ):
+    class_names = ['0', '1']
+    cm = confusion_matrix(test_y.argmax(axis=1), predictions.argmax(axis=1))
+
+    print('CONFUSION MATRIX: ')
+    print(cm)
+
+    figure = plt.figure(figsize=(8,8))
+    plt.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
+    plt.title("Confusion matrix")
+    plt.colorbar()
+    tick_marks = np.arange(len(class_names))
+    plt.xticks(tick_marks, class_names)
+    plt.yticks(tick_marks, class_names)
+
+
+    # df_cm = pd.DataFrame(cm, range(2), range(2))
+    # sn.set(font_scale=2.4)
+    # sn.heatmap(df_cm, annot=True, annot_kws={"size": 16})
+    #
+    plt.show()
+
+
 
 
 if __name__ == '__main__':
@@ -129,3 +155,5 @@ if __name__ == '__main__':
                                 target_names=[str(l) for l in label_encoder.classes_]))
 
     plot(model_history)
+
+    plot_confusion_matrix(test_y, predictions)

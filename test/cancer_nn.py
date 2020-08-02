@@ -23,7 +23,7 @@ learning_rate = 0.00001
 
 
 def load_data():
-    my_data = genfromtxt('data_breast_canser.csv', delimiter=',')
+    my_data = genfromtxt('data_breast_cancer.csv', delimiter=',')
     trai_per = 0.8
     np.random.shuffle(my_data)
 
@@ -47,7 +47,7 @@ def load_data():
 
 
 def preprocess_data():
-    my_data = genfromtxt('data_breast_canser.csv', delimiter=',')
+    my_data = genfromtxt('data_breast_cancer.csv', delimiter=',')
     trai_per = 0.8
     np.random.shuffle(my_data)
 

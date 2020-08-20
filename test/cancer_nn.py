@@ -1,9 +1,10 @@
 # from tensorflow import keras
 
 from datetime import datetime
-import pandas as pd
+
 import matplotlib.pyplot  as plt
 import numpy as np
+import pandas as pd
 import seaborn as sn
 from keras.callbacks import TensorBoard
 from keras.layers import Dense
@@ -118,7 +119,7 @@ def plot_confusion_matrix(test_y, predictions, ):
     print('CONFUSION MATRIX: ')
     print(cm)
 
-    figure = plt.figure(figsize=(8,8))
+    figure = plt.figure(figsize=(8, 8))
     plt.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
     plt.title("Confusion matrix")
     plt.colorbar()
@@ -126,14 +127,11 @@ def plot_confusion_matrix(test_y, predictions, ):
     plt.xticks(tick_marks, class_names)
     plt.yticks(tick_marks, class_names)
 
-
     # df_cm = pd.DataFrame(cm, range(2), range(2))
     # sn.set(font_scale=2.4)
     # sn.heatmap(df_cm, annot=True, annot_kws={"size": 16})
     #
     plt.show()
-
-
 
 
 if __name__ == '__main__':
@@ -152,7 +150,7 @@ if __name__ == '__main__':
     predictions = model.predict(test_x, batch_size=batch_size, verbose=1)
 
     print(classification_report(test_y.argmax(axis=1), predictions.argmax(axis=1),
-                                target_names=[str(l) for l in label_encoder.classes_]))
+                                target_names=[str(l) for l in label_encoder.classes_], digits=4))
 
     plot(model_history)
 

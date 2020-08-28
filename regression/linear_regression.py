@@ -41,10 +41,14 @@ def fit(X, y, learning_rate, epochs=30):
     bias = 0.0
 
     # apply full batch gradient descent and update the parameters
+    losses = []
+
     for i in range(epochs):
         predictions = (a * X) + bias
 
         loss, delta0, delta1 = compute_gradient(X, y, predictions)
+        # add this epochs loss to the overall loss of the model for plotting the loss over time
+        losses.append(loss)
 
         a += -learning_rate * delta1
         bias += -learning_rate * delta0
@@ -54,6 +58,13 @@ def fit(X, y, learning_rate, epochs=30):
         # time.sleep(2)
 
         print(f'Epoch {i}, loss {loss}')
+
+    # plot the losses over the training
+    plt.plot(np.arange(0, epochs), losses)
+    plt.title('loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.show()
 
 
 if __name__ == '__main__':

@@ -19,7 +19,7 @@ def compute_gradient(X, y_predict, y_true):
     temp = y_predict - y_true
     # compute the epoch loss
     epoch_loss = 0.5 * np.sum(temp ** 2)
-    # compute the derivatives with the respect to each variable
+    # compute the gradient
     gradient = temp.dot(X)
 
     return epoch_loss, gradient

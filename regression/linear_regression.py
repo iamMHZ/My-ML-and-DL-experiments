@@ -25,11 +25,12 @@ def plot(x, y, predictions):
 
 def compute_gradient(X, y, predictions):
     # compute the total loss
-    total_loss = np.sum(0.5 * ((predictions - y) ** 2))
+    temp = predictions - y
+    total_loss = np.sum(0.5 * (temp ** 2))
 
     # compute the derivatives with respect to each variable(gradient)
-    delta0 = np.sum(predictions - y)
-    delta1 = np.sum((predictions - y) * X)
+    delta0 = np.sum(temp)
+    delta1 = np.sum((temp) * X)
 
     return total_loss, delta0, delta1
 

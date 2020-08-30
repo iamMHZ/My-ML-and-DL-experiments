@@ -15,12 +15,35 @@ def load_data():
     return X, y
 
 
-def compute_gradient(y_predict, y_true):
-    pass
+def compute_gradient(X, y_predict, y_true):
+    temp = y_predict - y_true
+    # compute the epoch loss
+    epoch_loss = 0.5 * np.sum(temp ** 2)
+    # compute the derivatives with the respect to each variable
+    gradient = temp.dot(X)
+
+    return epoch_loss, gradient
 
 
 def fit(X, y, learning_rate=0.001, epochs=30):
-    pass
+    # start the weights randomly
+    weights = np.random.random((1, 2))
+
+    losses = []
+    for i in range(epochs):
+        prediction = np.matmul(weights, X.T)
+
+        epoch_loss, gradients = compute_gradient(X, y_predict=prediction, y_true=y)
+
+        weights += -learning_rate * gradients
+
+        print(f'Epoch {i}, Loss {epoch_loss}')
+
+        losses.append(epoch_loss)
+
+    plt.plot(np.arange(0, epochs), losses)
+    plt.show()
+    print(weights)
 
 
 def main():
@@ -33,7 +56,11 @@ def main():
     column = np.ones((X.shape[0], 1), np.int)
     X = np.append(X, column, axis=1)
 
-    print(X.shape)
+    # print(X.shape)
+
+    y = y.reshape(1, y.shape[0])
+
+    fit(X, y, 0.000000005, epochs=30)
 
 
 main()

@@ -16,11 +16,11 @@ def load_data():
 
 
 def compute_gradient(X, y_predict, y_true):
-    temp = y_predict - y_true
+    errors = y_predict - y_true
     # compute the epoch loss
-    epoch_loss = 0.5 * np.sum(temp ** 2)
+    epoch_loss = 0.5 * np.sum(errors ** 2)
     # compute the gradient
-    gradient = temp.dot(X)
+    gradient = np.matmul(errors, X)
 
     return epoch_loss, gradient
 

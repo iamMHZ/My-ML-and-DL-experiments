@@ -49,8 +49,9 @@ def fit(X, y, learning_rate=0.001, epochs=30):
 def main():
     X, y = load_data()
 
-    # adding an extra column to the X ==> it makes the training of bias and weights easier and all
-    # in vectorized format in linear_regression.py they are trained separately
+    # adding an extra column to the X ==> it makes the training and the gradient computation
+    # of bias and weights easier and all
+    # in vectorized format in linear_regression.py they are separate
 
     X = X.reshape(X.shape[0], 1)
     column = np.ones((X.shape[0], 1), np.int)

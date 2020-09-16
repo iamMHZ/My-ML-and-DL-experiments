@@ -1,4 +1,5 @@
-# in this module learn the ropes of the regression implementation using the sklearn
+# in this module I learn the ropes of the regression implementation using the sklearn
+# TODO scale the data for better results
 import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.utils import shuffle

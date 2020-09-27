@@ -85,5 +85,4 @@ if __name__ == '__main__':
 
     y = y.reshape(y.shape[0], 1)
 
-
     fit(X, y, learning_rate=0.0001, epochs=100)

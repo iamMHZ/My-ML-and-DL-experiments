@@ -4,7 +4,7 @@ import numpy as np
 
 def load_data():
     # https://www.kaggle.com/aungpyaeap/fish-market?select=Fish.csv
-    data_file = np.genfromtxt('../utils/datasets/supervised dataset/fish.csv', delimiter=',')
+    data_file = np.genfromtxt('../../utils/datasets/supervised dataset/fish.csv', delimiter=',')
 
     X = data_file[1:, 1]  # weight
     y = data_file[1:, 2]  # vertical length

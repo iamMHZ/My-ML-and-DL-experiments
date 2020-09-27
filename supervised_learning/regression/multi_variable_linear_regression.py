@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 
 def load_data():
     # https://www.kaggle.com/aungpyaeap/fish-market?select=Fish.csv
-    data_file = np.genfromtxt('../utils/datasets/regression dataset/fish.csv', delimiter=',')
+    data_file = np.genfromtxt('../utils/datasets/supervised dataset/fish.csv', delimiter=',')
 
     X = data_file[1:, 5:]  # height and width of fishes
     y = data_file[1:, 1]  # weight of fishes

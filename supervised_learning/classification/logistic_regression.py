@@ -38,6 +38,7 @@ def compute_loss(y_pred, y_true):
     return epoch_loss
 
 
+# TODO: i am suspicious
 def compute_gradient(X, y_pred, y_true):
     # calculate the gradient vector
     error = y_pred - y_true

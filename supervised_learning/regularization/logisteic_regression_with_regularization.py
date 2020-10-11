@@ -38,6 +38,8 @@ def compute_loss(y_true, y_pred, weights, landa):
     # add L2 regularization
     # W.T@W = W^2
     epoch_loss += 0.5 * landa * (np.matmul(weights.T, weights)[0])
+    # No regularization on the bias so cancel it
+    epoch_loss -= weights[0]**2
 
     # making sure that the over all loss does not become INF
     epoch_loss = np.nan_to_num(epoch_loss)

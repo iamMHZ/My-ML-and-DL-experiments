@@ -48,6 +48,8 @@ def fit(X, y, learning_rate=0.001, epochs=30):  # full batch gradient descent
     plt.plot(np.arange(0, epochs), losses)
     plt.show()
 
+    print('\n\nWeights: ' + str(weights))
+
 
 if __name__ == '__main__':
     X, y = load_data()

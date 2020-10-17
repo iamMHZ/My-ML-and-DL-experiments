@@ -69,6 +69,7 @@ def fit(X, y, learning_rate=0.0001, epochs=50):
     plt.ylabel('Loss')
     plt.show()
 
+    return weights
 
 if __name__ == '__main__':
     X, y = load_data()

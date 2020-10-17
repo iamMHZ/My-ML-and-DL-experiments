@@ -21,19 +21,14 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 
-# TODO change this function
 def compute_loss(y_pred, y_true):
-    epoch_loss = 0
+    epoch_loss = (-y_true * np.log(y_pred)) - ((1 - y_true) * np.log(1 - y_pred))
+    epoch_loss = np.sum(epoch_loss)
 
-    for i in range(y_pred.shape[1]):
-        loss_i = (-y_true[i] * np.log(y_pred[i])) - ((1 - y_true[i]) * np.log(1 - y_pred[i]))
-
-        #  Replace NaN with zero and infinity with large finite number
-        # because the -log(x) and -log(1-x) have the tendency to return NaN or INF so we need to make it a number
-        loss_i = np.nan_to_num(loss_i)
-        epoch_loss += loss_i
-
+    #  Replace NaN with zero and infinity with large finite number
+    # because the -log(x) and -log(1-x) have the tendency to return NaN or INF so we need to make it a number
     # making sure that the over all loss does not become INF
+
     epoch_loss = np.nan_to_num(epoch_loss)
     return epoch_loss
 
@@ -76,9 +71,13 @@ def fit(X, y, learning_rate=0.0001, epochs=50):
 
 if __name__ == '__main__':
     X, y = load_data()
-
+    #
     # from sklearn.datasets import make_blobs
-    # X,y =  make_blobs(n_samples=1000, n_features=2, centers=2, cluster_std=1.5, random_state=1)
+    #
+    # X, y = make_blobs(n_samples=100, n_features=2, centers=2, random_state=16)
+    #
+    # plt.scatter(X[:, 0], X[:, 1])
+    # plt.show()
 
     # add a column for the bias (bias trick) ==> everything is vectorized
     ones_column = np.ones((X.shape[0], 1), np.float)
@@ -86,4 +85,4 @@ if __name__ == '__main__':
 
     y = y.reshape(y.shape[0], 1)
 
-    fit(X, y, learning_rate=0.0001, epochs=100)
+    fit(X, y, learning_rate=0.001, epochs=100)

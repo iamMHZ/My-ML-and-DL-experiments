@@ -22,6 +22,7 @@ def sigmoid(x):
 
 
 def compute_loss(y_pred, y_true):
+    # calculate loss
     epoch_loss = (-y_true * np.log(y_pred)) - ((1 - y_true) * np.log(1 - y_pred))
     epoch_loss = np.sum(epoch_loss)
 

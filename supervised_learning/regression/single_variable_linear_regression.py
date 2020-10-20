@@ -1,5 +1,6 @@
-import time
-
+"""
+Another non-vectorized implementation of the regression
+"""
 import matplotlib.pyplot as plt
 import numpy as np
 

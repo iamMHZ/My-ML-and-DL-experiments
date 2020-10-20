@@ -1,3 +1,7 @@
+"""
+A vectorized implementation of the regression using numpy
+"""
+
 import matplotlib.pyplot as plt
 import numpy as np
 

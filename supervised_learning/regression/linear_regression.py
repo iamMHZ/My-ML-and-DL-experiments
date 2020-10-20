@@ -1,3 +1,7 @@
+"""
+A very simple implementation of the regression using numpy
+"""
+
 import numpy as np
 from matplotlib import pyplot as plt
 

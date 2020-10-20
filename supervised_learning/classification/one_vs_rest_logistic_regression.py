@@ -1,3 +1,7 @@
+"""
+A simple the one versous rest logistic regression classifier is implemented in this module
+
+"""
 import matplotlib.pyplot as  plt
 import numpy as np
 from sklearn.datasets import make_blobs

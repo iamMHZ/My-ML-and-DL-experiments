@@ -1,4 +1,4 @@
-# in this module implement regression in keras
+# In this module regression is implemented in keras
 # TODO scale the data for better results
 import matplotlib.pyplot as plt
 import numpy as np

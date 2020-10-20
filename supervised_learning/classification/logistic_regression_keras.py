@@ -1,3 +1,7 @@
+"""
+Logistic regression with keras
+"""
+
 import numpy as np
 from keras.layers import Dense, Input
 from keras.models import Model

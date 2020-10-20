@@ -1,3 +1,7 @@
+"""
+Using numpy for implementing logistic regression
+"""
+
 import numpy as np
 from matplotlib import pyplot as plt
 

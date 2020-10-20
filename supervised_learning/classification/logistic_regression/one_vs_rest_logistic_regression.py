@@ -8,7 +8,7 @@ from sklearn.datasets import make_blobs
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 
-from supervised_learning.classification.logistic_regression import fit
+from supervised_learning.classification.logistic_regression.logistic_regression import fit
 
 NUM_CLASSES = 3
 LEARNING_RATE = 0.001

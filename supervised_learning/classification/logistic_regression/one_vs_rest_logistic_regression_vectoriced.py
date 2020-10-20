@@ -1,7 +1,6 @@
 """
 Vectorized implementation of the one versus rest logistic regression classifier
-by the vectorized here I mean that all weights re put into one numpy array and gradients are mainly computed in
-vectorized form
+
 """
 
 import matplotlib.pyplot as plt
@@ -28,13 +27,14 @@ class LogisticRegressionOVR:
 
         for i in range(epochs):
 
-            prediction = np.zeros(shape=(train_x.shape[0], self.num_classes))
-
             # let each classifier to make a predict
-            for j in range(self.num_classes):
-                prediction_j = self.sigmoid(np.matmul(train_x, self.weights[:, j]))
+            prediction = self.sigmoid(np.matmul(train_x, self.weights))
 
-                prediction[:, j] = prediction_j
+            # these comments are the non-vectorized form
+            # for j in range(self.num_classes):
+            #     prediction_j = self.sigmoid(np.matmul(train_x, self.weights[:, j]))
+            #
+            #     prediction[:, j] = prediction_j.copy()
 
             # compute loss
             epoch_loss = self.get_loss(prediction, train_y)

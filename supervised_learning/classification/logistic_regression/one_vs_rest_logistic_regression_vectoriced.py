@@ -65,7 +65,7 @@ class LogisticRegressionOVR:
         # making sure that the over all loss does not become INF
         epoch_loss = np.nan_to_num(epoch_loss)
         return epoch_loss
-
+    #TODO can we do better ?
     def get_gradients(self, train_x, y_pred, y_true):
         # calculate the gradient vector
         error = y_pred - y_true

@@ -65,17 +65,12 @@ class LogisticRegressionOVR:
         # making sure that the over all loss does not become INF
         epoch_loss = np.nan_to_num(epoch_loss)
         return epoch_loss
-    #TODO can we do better ?
+
     def get_gradients(self, train_x, y_pred, y_true):
         # calculate the gradient vector
         error = y_pred - y_true
 
-        gradients = np.zeros(shape=(self.num_features, self.num_classes))
-
-        for i in range(self.num_classes):
-            gradients_i = np.matmul(train_x.T, error[:, i])
-
-            gradients[:, i] = gradients_i
+        gradients = np.matmul(train_x.T, error)
 
         return gradients
 
@@ -95,7 +90,7 @@ class LogisticRegressionOVR:
 if __name__ == '__main__':
     from sklearn.datasets import make_blobs
 
-    NUM_CLASSES = 4
+    NUM_CLASSES = 3
     LEARNING_RATE = 0.001
     EPOCHS = 100
 

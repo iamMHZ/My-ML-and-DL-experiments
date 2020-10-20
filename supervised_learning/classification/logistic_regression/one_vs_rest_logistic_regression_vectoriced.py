@@ -26,7 +26,6 @@ class LogisticRegressionOVR:
             train_y = self.encode_labels(train_y)
 
         for i in range(epochs):
-
             # let each classifier to make a predict
             prediction = self.sigmoid(np.matmul(train_x, self.weights))
 
@@ -91,9 +90,6 @@ if __name__ == '__main__':
     from sklearn.datasets import make_blobs
 
     NUM_CLASSES = 3
-    LEARNING_RATE = 0.001
-    EPOCHS = 100
-
     NUM_FEATURES = 3  # with bias
 
     # make dummy data with sklearn and plot them

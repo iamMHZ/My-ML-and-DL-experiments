@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt
 
 def load_data():
     # https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival
-    data_file = np.genfromtxt('../../utils/datasets/supervised dataset/haberman.txt', delimiter=',')
+    data_file = np.genfromtxt('../../../utils/datasets/supervised dataset/haberman.txt', delimiter=',')
 
     X = data_file[:, :2]
     y = data_file[:, 3]
@@ -27,13 +27,15 @@ def sigmoid(x):
 
 def compute_loss(y_pred, y_true):
     # calculate loss
-    epoch_loss = (-y_true * np.log(y_pred)) - ((1 - y_true) * np.log(1 - y_pred))
-    epoch_loss = np.sum(epoch_loss)
+
+    y_pred[y_pred == 1] = 0.99  # helps not facing overflow
 
     #  Replace NaN with zero and infinity with large finite number
     # because the -log(x) and -log(1-x) have the tendency to return NaN or INF so we need to make it a number
-    # making sure that the over all loss does not become INF
+    epoch_loss = (-y_true * np.nan_to_num(np.log(y_pred))) - ((1 - y_true) * np.nan_to_num(np.log(1 - y_pred)))
+    epoch_loss = np.sum(epoch_loss)
 
+    # making sure that the over all loss does not become INF
     epoch_loss = np.nan_to_num(epoch_loss)
     return epoch_loss
 
@@ -75,6 +77,7 @@ def fit(X, y, learning_rate=0.0001, epochs=50):
 
     return weights
 
+
 if __name__ == '__main__':
     X, y = load_data()
     #
@@ -91,4 +94,4 @@ if __name__ == '__main__':
 
     y = y.reshape(y.shape[0], 1)
 
-    fit(X, y, learning_rate=0.001, epochs=100)
+    fit(X, y, learning_rate=0.001, epochs=200)

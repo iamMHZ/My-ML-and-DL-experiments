@@ -14,7 +14,7 @@ EPOCHS = 30
 BATCH_SIZE = 4
 
 # https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival
-data_file = np.genfromtxt('../../utils/datasets/supervised dataset/haberman.txt', delimiter=',')
+data_file = np.genfromtxt('../../../utils/datasets/supervised dataset/haberman.txt', delimiter=',')
 
 X = data_file[:, :2]
 y = data_file[:, 3]

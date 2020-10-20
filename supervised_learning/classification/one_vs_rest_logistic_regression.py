@@ -1,5 +1,5 @@
 """
-A simple the one versous rest logistic regression classifier is implemented in this module
+A simple the one versus rest logistic regression classifier is implemented in this module
 
 """
 import matplotlib.pyplot as  plt

@@ -1,8 +1,8 @@
-
-class SoftmaxClassifer:
+class SoftmaxClassifier:
 
     def __init__(self):
         pass
+
     def fit(self):
         pass
 

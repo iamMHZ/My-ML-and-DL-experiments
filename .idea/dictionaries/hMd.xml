@@ -2,6 +2,7 @@
   <dictionary name="hMd">
     <words>
       <w>dataset</w>
+      <w>softmax</w>
     </words>
   </dictionary>
 </component>

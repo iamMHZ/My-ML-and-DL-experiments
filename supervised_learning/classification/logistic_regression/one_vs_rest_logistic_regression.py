@@ -61,5 +61,5 @@ print('Predictions: ')
 predictions = test_x @ weights
 
 print(predictions)
-report=classification_report(test_y, predictions.argmax(axis=1))
+report = classification_report(test_y, predictions.argmax(axis=1))
 print(report)

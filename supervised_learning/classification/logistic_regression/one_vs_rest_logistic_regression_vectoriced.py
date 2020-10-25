@@ -26,7 +26,7 @@ class LogisticRegressionOVR:
             train_y = self.encode_labels(train_y)
 
         for i in range(epochs):
-            # let each classifier to make a predict
+            # let each classifier to make a prediction
             prediction = self.sigmoid(np.matmul(train_x, self.weights))
 
             # these comments are the non-vectorized form
@@ -84,6 +84,9 @@ class LogisticRegressionOVR:
             new_labels[i][old_labels[i]] = 1
 
         return new_labels
+
+    def predict(self, test_x):
+        return np.matmul(test_x, self.weights)
 
 
 if __name__ == '__main__':

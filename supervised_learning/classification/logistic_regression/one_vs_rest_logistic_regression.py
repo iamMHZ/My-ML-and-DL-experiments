@@ -5,7 +5,6 @@ A simple the one versus rest logistic regression classifier is implemented in th
 import matplotlib.pyplot as  plt
 import numpy as np
 from sklearn.datasets import make_blobs
-from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 
 from supervised_learning.classification.logistic_regression.logistic_regression import fit
@@ -55,11 +54,3 @@ for i in range(NUM_CLASSES):
 print('Weights: ')
 # weights = np.array(weights)
 print(weights)
-
-# prediction
-print('Predictions: ')
-predictions = test_x @ weights
-
-print(predictions)
-
-print(classification_report(test_y, predictions.argmax(axis=1)))

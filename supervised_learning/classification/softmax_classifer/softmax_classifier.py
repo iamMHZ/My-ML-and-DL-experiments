@@ -26,16 +26,21 @@ class SoftmaxClassifier:
             # make a prediction
             predictions = self.softmax(np.matmul(train_x, self.weights))
 
+            epoch_loss = self.loss(predictions, train_y)
+            self.losses.append(epoch_loss)
+            gradients = self.get_gradients(train_x, train_y, predictions)
+            self.weights += -learning_rate * gradients
+
     def predict(self):
         pass
 
-    def softmax(self, data):
+    def softmax(self, scores):
         """
         Softmax function
-        :param data: score vector (matrics in multi-class problems)
+        :param scores: score vector (a matrix in multi-class problems)
         :return: probabilities
         """
-        exps = np.exp(data)
+        exps = np.exp(scores)
 
         exps = exps / np.sum(exps, axis=1)
 
@@ -46,8 +51,10 @@ class SoftmaxClassifier:
 
         return np.sum(epoch_loss)
 
-    def get_gradients(self):
-        pass
+    def get_gradients(self, X, y_true, y_pred):
+        gradients = np.matmul(X.T, (y_pred - y_true))
+
+        return gradients
 
     def hot_encode(self, labels):
         encoded_labels = np.zeros(shape=(labels.shape[0], self.num_classes))

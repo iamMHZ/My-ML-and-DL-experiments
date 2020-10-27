@@ -36,10 +36,10 @@ class LogisticRegressionOVR:
             #     prediction[:, j] = prediction_j.copy()
 
             # compute loss
-            epoch_loss = self.get_loss(prediction, train_y)
+            epoch_loss = self.compute_loss(prediction, train_y)
 
             # update the weights
-            gradients = self.get_gradients(train_x, y_pred=prediction, y_true=train_y)
+            gradients = self.compute_gradients(train_x, y_pred=prediction, y_true=train_y)
             self.weights += -learning_rate * gradients
 
             print(f'Epoch = {i} , Loss = {epoch_loss}')
@@ -52,7 +52,7 @@ class LogisticRegressionOVR:
         plt.ylabel('Loss')
         plt.show()
 
-    def get_loss(self, y_pred, y_true):
+    def compute_loss(self, y_pred, y_true):
 
         y_pred[y_pred == 1] = 0.99  # helps not facing overflow
 
@@ -65,11 +65,11 @@ class LogisticRegressionOVR:
         epoch_loss = np.nan_to_num(epoch_loss)
         return epoch_loss
 
-    def get_gradients(self, train_x, y_pred, y_true):
+    def compute_gradients(self, X, y_pred, y_true):
         # calculate the gradient vector
         error = y_pred - y_true
 
-        gradients = np.matmul(train_x.T, error)
+        gradients = np.matmul(X.T, error)
 
         return gradients
 

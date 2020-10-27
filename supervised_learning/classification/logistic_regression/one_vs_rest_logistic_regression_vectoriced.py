@@ -93,22 +93,20 @@ if __name__ == '__main__':
     from sklearn.datasets import make_blobs
 
     NUM_CLASSES = 3
-    NUM_FEATURES = 3  # with bias
+    NUM_FEATURES = 2
 
     # make dummy data with sklearn and plot them
-    # NUM_FEATURES - 1 exclude bias
-    X, y = make_blobs(n_samples=5000, n_features=NUM_FEATURES - 1, centers=NUM_CLASSES, random_state=42)
+    X, y = make_blobs(n_samples=5000, n_features=NUM_FEATURES, centers=NUM_CLASSES, random_state=42)
     color = ['red', 'green', 'blue']
     plt.scatter(X[:, 0], X[:, 1], c=y)
-    # plt.scatter(X, y, c=y)
     plt.show()
 
     # add a column for the bias (bias trick) ==> everything is vectorized
     ones_column = np.ones((X.shape[0], 1), np.float)
     X = np.append(X, ones_column, axis=1)
-
     y = y.reshape(y.shape[0], 1)
 
-    ovr = LogisticRegressionOVR(num_classes=NUM_CLASSES, num_features=NUM_FEATURES)
+    # +1 is the bias
+    ovr = LogisticRegressionOVR(num_classes=NUM_CLASSES, num_features=NUM_FEATURES + 1)
 
     ovr.fit(X, y, epochs=300, learning_rate=0.0001)

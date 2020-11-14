@@ -134,7 +134,7 @@ if __name__ == '__main__':
     from sklearn.datasets import make_blobs
 
     X, y = make_blobs(n_samples=5000, n_features=NUM_FEATURES, centers=NUM_CLASSES, random_state=42)
-    color = ['red', 'green', 'blue']
+
     plt.scatter(X[:, 0], X[:, 1], c=y)
     plt.show()
 

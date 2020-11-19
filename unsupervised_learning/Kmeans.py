@@ -4,6 +4,7 @@ from sklearn.datasets import make_blobs
 
 
 class KMeans:
+    # TODO debug the centers plot colors
     # TODO  add end criteria as an enum or sth
     # TODO change initialization
 

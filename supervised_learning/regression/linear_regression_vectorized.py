@@ -1,71 +1,71 @@
 """
-A vectorized implementation of the regression using numpy
+A vectorized implementation of the single variable regression using numpy
 """
 
 import matplotlib.pyplot as plt
 import numpy as np
 
 
-def load_data():
-    # https://www.kaggle.com/aungpyaeap/fish-market?select=Fish.csv
-    data_file = np.genfromtxt('../../utils/datasets/supervised dataset/fish.csv', delimiter=',')
+class LinearRegressionVectorized:
+    def __init__(self):
+        # keep track of loss of each epoch
+        self.losses = []
 
-    X = data_file[1:, 1]  # weight
-    y = data_file[1:, 2]  # vertical length
+        # load the specific dataset
+        self.x, self.y = self.load_data()
 
-    plt.scatter(X, y)
-    plt.show()
+        # adding an extra column to the X ==> it makes the training
+        #  and the gradient computation of bias and weights easier and all
+        # in vectorized format in linear_regression.py they are separate
+        self.x = self.x.reshape(self.x.shape[0], 1)
+        column = np.ones((self.x.shape[0], 1), np.int)
+        self.x = np.append(self.x, column, axis=1)
+        # reshape y
+        self.y = self.y.reshape(1, self.y.shape[0])
 
-    return X, y
+        # initialize weights randomly
+        self.weights = np.random.random((1, self.x.shape[1]))
 
+    def load_data(self):
+        # TODO change this method to be compatible with other dataset
+        # https://www.kaggle.com/aungpyaeap/fish-market?select=Fish.csv
+        data_file = np.genfromtxt('../../utils/datasets/supervised dataset/fish.csv', delimiter=',')
 
-def compute_gradient(X, y_predict, y_true):
-    errors = y_predict - y_true
-    # compute the epoch loss
-    epoch_loss = 0.5 * np.sum(errors ** 2)
-    # compute the gradient
-    gradient = np.matmul(errors, X)
+        x = data_file[1:, 1]  # weight
+        y = data_file[1:, 2]  # vertical length
 
-    return epoch_loss, gradient
+        plt.scatter(x, y)
+        plt.show()
 
+        return x, y
 
-def fit(X, y, learning_rate=0.001, epochs=30):
-    # start the weights randomly
-    weights = np.random.random((1, 2))
+    def compute_gradient(self, y_predict):
+        errors = y_predict - self.y
+        # compute the epoch loss
+        epoch_loss = 0.5 * np.sum(errors ** 2)
+        # compute the gradient
+        gradient = np.matmul(errors, self.x)
 
-    losses = []
-    for i in range(epochs):
-        prediction = np.matmul(weights, X.T)
+        return epoch_loss, gradient
 
-        epoch_loss, gradients = compute_gradient(X, y_predict=prediction, y_true=y)
+    def fit(self, learning_rate=0.001, epochs=30):
+        for i in range(epochs):
+            prediction = np.matmul(self.weights, self.x.T)
 
-        weights += -learning_rate * gradients
+            epoch_loss, gradients = self.compute_gradient(prediction)
 
-        print(f'Epoch {i}, Loss {epoch_loss}')
+            self.weights += -learning_rate * gradients
 
-        losses.append(epoch_loss)
+            print(f'Epoch {i}, Loss {epoch_loss}')
 
-    plt.plot(np.arange(0, epochs), losses)
-    plt.show()
-    print(weights)
+            self.losses.append(epoch_loss)
 
-
-def main():
-    X, y = load_data()
-
-    # adding an extra column to the X ==> it makes the training and the gradient computation
-    # of bias and weights easier and all
-    # in vectorized format in linear_regression.py they are separate
-
-    X = X.reshape(X.shape[0], 1)
-    column = np.ones((X.shape[0], 1), np.int)
-    X = np.append(X, column, axis=1)
-
-    # print(X.shape)
-
-    y = y.reshape(1, y.shape[0])
-
-    fit(X, y, 0.000000005, epochs=30)
+        # plot the training loss curve
+        plt.plot(np.arange(0, epochs), self.losses)
+        plt.show()
+        print(self.weights)
 
 
-main()
+if __name__ == '__main__':
+    lr = LinearRegressionVectorized()
+    lr.fit(0.000000005, epochs=30)

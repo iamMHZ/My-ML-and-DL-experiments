@@ -1,5 +1,5 @@
 """
-A very simple implementation of the regression using numpy
+A very simple implementation of the single variable  regression using numpy
 """
 
 import numpy as np

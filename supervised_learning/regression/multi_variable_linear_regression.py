@@ -1,67 +1,73 @@
 """
-Implementation of the multi-variable regression
+A vectorized implementation of the multi-variable regression
 """
 
 import numpy as np
 from matplotlib import pyplot as plt
 
 
-def load_data():
-    # https://www.kaggle.com/aungpyaeap/fish-market?select=Fish.csv
-    data_file = np.genfromtxt('../../utils/datasets/supervised dataset/fish.csv', delimiter=',')
+class MultiVariableRegression:
 
-    X = data_file[1:, 5:]  # height and width of fishes
-    y = data_file[1:, 1]  # weight of fishes
+    def __init__(self):
+        # keep track of loss of each epoch
+        self.losses = []
 
-    print(X[:5, :])
-    print(y[:5])
+        # load the specific dataset
+        self.x, self.y = self.load_data()
 
-    return X, y
+        # adding an extra column to the X ==> it makes the training
+        #  and the gradient computation of bias and weights easier and all
+        # in vectorized format
+        column = np.ones((self.x.shape[0], 1), np.int)
+        self.x = np.append(self.x, column, axis=1)
+        # reshape y
+        self.y = self.y.reshape(1, self.y.shape[0])
 
+        # initialize weights randomly
+        self.weights = np.random.random((1, self.x.shape[1]))
 
-def compute_gradient(X, y_pred, y_true):
-    errors = y_pred - y_true
+    def load_data(self):
+        data_file = np.genfromtxt('../../utils/datasets/supervised dataset/fish.csv', delimiter=',')
 
-    loss = 0.5 * np.sum(errors ** 2)
+        x = data_file[1:, 5:]  # height and width of fishes
+        y = data_file[1:, 1]  # weight of fishes
 
-    gradients = np.matmul(errors, X)
+        print(x[:5, :])
+        print(y[:5])
 
-    return loss, gradients
+        return x, y
 
+    def compute_gradient(self, y_pred):
+        errors = y_pred - self.y
 
-def fit(X, y, learning_rate=0.001, epochs=30):  # full batch gradient descent
+        loss = 0.5 * np.sum(errors ** 2)
 
-    # initialize the weights randomly
-    weights = np.random.random((1, X.shape[1]))
+        gradients = np.matmul(errors, self.x)
 
-    losses = []
-    for i in range(epochs):
-        # make a prediction
-        y_pred = np.matmul(weights, X.transpose())
+        return loss, gradients
 
-        # compute the loss and the gradients
-        loss, gradients = compute_gradient(X, y_pred=y_pred, y_true=y)
+    def fit(self, learning_rate=0.001, epochs=30):
+        # full batch gradient descent
+        for i in range(epochs):
+            # make a prediction
+            y_pred = np.matmul(self.weights, self.x.transpose())
 
-        # update the weights
-        weights += -learning_rate * gradients
+            # compute the loss and the gradients
+            loss, gradients = self.compute_gradient(y_pred)
 
-        print(f'EPOCH {i}, LOSS {loss}')
+            # update the weights
+            self.weights += -learning_rate * gradients
 
-        losses.append(loss)
+            print(f'EPOCH {i}, LOSS {loss}')
 
-    plt.plot(np.arange(0, epochs), losses)
-    plt.show()
+            self.losses.append(loss)
 
-    print('\n\nWeights: ' + str(weights))
+        plt.plot(np.arange(0, epochs), self.losses)
+        plt.show()
+
+        print('\n\nWeights: ' + str(self.weights))
 
 
 if __name__ == '__main__':
-    X, y = load_data()
-
-    # add an extra column for the bias this way you don't need to compute the gradients separately
-    ones_column = np.ones((X.shape[0], 1), np.float)
-    X = np.append(X, ones_column, axis=1)
-
-    y = y.reshape(1, y.shape[0])
-
-    fit(X,y,learning_rate= 0.00001,epochs=30)
+    lr = MultiVariableRegression()
+    lr.fit(learning_rate=0.00001, epochs=30)

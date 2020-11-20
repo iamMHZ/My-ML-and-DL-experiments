@@ -79,17 +79,17 @@ class KMeans:
         # TODO debug the centers plot colors
         plt.scatter(self.centers[:, 0], self.centers[:, 1], marker='*', s=200, c=np.arange(0, self.centers.shape[0]),
                     edgecolors='black', zorder=1)
-        plt.show(delay=100)
+        plt.show()
 
 
 if __name__ == '__main__':
-    data, _ = make_blobs(n_samples=300, centers=3, n_features=2, cluster_std=1)
+    data, _ = make_blobs(n_samples=400, centers=3, n_features=2, cluster_std=1)
 
     # for 2D data
     plt.scatter(data[:, 0], data[:, 1])
 
     plt.show()
 
-    km = KMeans(data=data, K=5, initialization_method=KMeans.INITIALIZE_FROM_DATA)
+    km = KMeans(data=data, K=8, initialization_method=KMeans.INITIALIZE_FROM_DATA)
 
-    km.start_clustering(end_criteria=KMeans.MAX_ITERATION_END_CRITERIA)
+    km.start_clustering(end_criteria=KMeans.NO_CHANGE_IN_CENTERS_END_CRITERIA)

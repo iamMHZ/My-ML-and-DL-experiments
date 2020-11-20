@@ -4,20 +4,31 @@ from sklearn.datasets import make_blobs
 
 
 class KMeans:
-    # TODO debug the centers plot colors
     # TODO  add end criteria as an enum or sth
     # TODO change initialization
 
-    def __init__(self, data, K):
+    # Initialization method for centers
+    INITIALIZE_RANDOMLY = 0
+    INITIALIZE_FROM_DATA = 1
+    # End criteria
+    MAX_ITERATION_END_CRITERIA = 0
+    NO_CHANGE_IN_CENTERS_END_CRITERIA = 1
+
+    def __init__(self, data, K, initialization_method=INITIALIZE_FROM_DATA):
         self.num_centers = K
         self.data = data
-        # initialize centers
-        self.centers = np.random.random((self.num_centers, *data.shape[1:]))
 
-        # initialize center of each data point; initially all data is belonged to one cluster
+        # initialize centers
+        if initialization_method == KMeans.INITIALIZE_RANDOMLY:
+            self.centers = np.random.random((self.num_centers, *data.shape[1:]))
+        else:
+            random_indexes = np.random.randint(low=0, high=self.data.shape[0], size=self.num_centers)
+            self.centers = self.data[random_indexes]
+
+        # initialize an array as the center of each data point; initially all of them are in one cluster
         self.data_center_ids = np.zeros(data.shape[0])
 
-    def start_clustering(self, max_iterations=300):
+    def start_clustering(self, end_criteria=NO_CHANGE_IN_CENTERS_END_CRITERIA, max_iterations=300):
 
         old_data_center_ids = self.data_center_ids.copy()  # don't forget .copy()
 
@@ -43,10 +54,16 @@ class KMeans:
             print('Plotting... ')
             self.plot()
 
-            if num_iterations >= max_iterations or np.allclose(self.data_center_ids, old_data_center_ids):
-                print('Meet a criteria')
+            # check the end criteria
+            if num_iterations >= max_iterations and end_criteria == KMeans.MAX_ITERATION_END_CRITERIA:
+                print('MAX ITERATION END CRITERIA ===> FINISHED')
+                break
+            elif np.allclose(self.data_center_ids,
+                             old_data_center_ids) and end_criteria == KMeans.NO_CHANGE_IN_CENTERS_END_CRITERIA:
+                print('NO CHANGES IN CENTERS END CRITERIA ===> FINISHED ')
                 break
 
+            # update old centers for the next iteration
             old_data_center_ids = self.data_center_ids.copy()
             num_iterations += 1
 
@@ -54,6 +71,8 @@ class KMeans:
         # for now, in case of 2D data plot data
 
         plt.scatter(self.data[:, 0], self.data[:, 1], c=self.data_center_ids)
+
+        # TODO debug the centers plot colors
         plt.scatter(self.centers[:, 0], self.centers[:, 1], marker='*', s=200, c=np.arange(0, self.centers.shape[0]),
                     edgecolors='black', zorder=1)
         plt.show(delay=100)
@@ -67,6 +86,6 @@ if __name__ == '__main__':
 
     plt.show()
 
-    km = KMeans(data=data, K=4)
+    km = KMeans(data=data, K=5, initialization_method=KMeans.INITIALIZE_FROM_DATA)
 
-    km.start_clustering()
+    km.start_clustering(end_criteria=KMeans.MAX_ITERATION_END_CRITERIA)

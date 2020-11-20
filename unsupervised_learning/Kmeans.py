@@ -4,25 +4,29 @@ from sklearn.datasets import make_blobs
 
 
 class KMeans:
-    # TODO  add end criteria as an enum or sth
-    # TODO change initialization
+    # TODO add cost of the clustering
 
     # Initialization method for centers
     INITIALIZE_RANDOMLY = 0
     INITIALIZE_FROM_DATA = 1
     # End criteria
+    # TODO add another criteria
     MAX_ITERATION_END_CRITERIA = 0
     NO_CHANGE_IN_CENTERS_END_CRITERIA = 1
 
     def __init__(self, data, K, initialization_method=INITIALIZE_FROM_DATA):
+
         self.num_centers = K
         self.data = data
 
         # initialize centers
         if initialization_method == KMeans.INITIALIZE_RANDOMLY:
+            # randomly initialize centers
+            # this method may cause some centers to have no data
             self.centers = np.random.random((self.num_centers, *data.shape[1:]))
         else:
             random_indexes = np.random.randint(low=0, high=self.data.shape[0], size=self.num_centers)
+            # choose centers from data randomly
             self.centers = self.data[random_indexes]
 
         # initialize an array as the center of each data point; initially all of them are in one cluster

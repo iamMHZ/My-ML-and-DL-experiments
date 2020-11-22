@@ -30,28 +30,33 @@ class KMeans:
         # initialize an array as the center of each data point; initially all of them are in one cluster
         self.data_center_ids = np.zeros(data.shape[0])
 
+        # cost of clustering (useful in Elbow technique)
         self.clustering_cost = None
 
     def start_clustering(self, max_iterations=300, end_criteria=NO_CHANGE_IN_CENTERS_END_CRITERIA):
 
-        old_data_center_ids = self.data_center_ids.copy()  # don't forget .copy()
+        old_data_center_ids = self.data_center_ids.copy()  # Danger:  don't forget .copy()
 
         num_iterations = 0
         while True:
 
             print(f'##Iteration number {num_iterations}')
 
-            # update centers of each data
+            # update centers of each data in other words, what is the new center
+            #  of each data after the update of the centers
             for i, data_point in enumerate(self.data):
                 center_id_i = np.argmin(np.linalg.norm(data_point - self.centers, axis=1))
                 self.data_center_ids[i] = center_id_i
 
-            # update centers
+            # update centers, move centers to the mean position of all of the data that is belong to it
             for i, center in enumerate(self.centers):
+                # index of all the data that is belonged to the center i
                 indexes = np.argwhere(self.data_center_ids == i)
+                # data of i-th center
                 data_clusters = self.data[indexes.reshape(indexes.shape[0])]
-                # check that this cluster has assigned data to it
+                # check that i-th center has assigned data to it
                 if len(data_clusters) > 0:
+                    # move i-th center
                     mean = np.mean(data_clusters, axis=0)
                     self.centers[i] = mean
 
@@ -78,8 +83,10 @@ class KMeans:
         self.clustering_cost = 0
 
         for i in range(self.num_centers):
+            # which data is for what center
             indexes = np.argwhere(self.data_center_ids == i)
             data_clusters = self.data[indexes.reshape(indexes.shape[0])]
+            # in case of an empty center( a center with no data associated to it)
             if len(data_clusters) > 0:
                 dist = np.linalg.norm(data_clusters - self.centers[i], axis=1)
                 self.clustering_cost += np.sum(dist)
@@ -89,6 +96,9 @@ class KMeans:
         print(f'Print clustering cost with these number of centers(K) is {self.clustering_cost}')
 
     def plot(self):
+        # Plot data with their center
+
+        # TODO for data in the higher dimension use some dimensionality reduction before plotting
         # for now, in case of 2D data, plot data
         plt.scatter(self.data[:, 0], self.data[:, 1], c=self.data_center_ids)
 

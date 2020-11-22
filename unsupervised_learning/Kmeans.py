@@ -4,8 +4,6 @@ from sklearn.datasets import make_blobs
 
 
 class KMeans:
-    # TODO add cost of the clustering
-
     # Initialization method for centers
     INITIALIZE_RANDOMLY = 0
     INITIALIZE_FROM_DATA = 1
@@ -32,7 +30,9 @@ class KMeans:
         # initialize an array as the center of each data point; initially all of them are in one cluster
         self.data_center_ids = np.zeros(data.shape[0])
 
-    def start_clustering(self, end_criteria=NO_CHANGE_IN_CENTERS_END_CRITERIA, max_iterations=300):
+        self.clustering_cost = None
+
+    def start_clustering(self, max_iterations=300, end_criteria=NO_CHANGE_IN_CENTERS_END_CRITERIA):
 
         old_data_center_ids = self.data_center_ids.copy()  # don't forget .copy()
 
@@ -71,25 +71,42 @@ class KMeans:
             old_data_center_ids = self.data_center_ids.copy()
             num_iterations += 1
 
-    def plot(self):
-        # for now, in case of 2D data plot data
+    def cost(self):
+        # mean squared error of the clustering ( or Euclidean distance or how far is data for its center)
+        # this can be used to determine the right K for the algorithm also( Elbow technique)
 
+        self.clustering_cost = 0
+
+        for i in range(self.num_centers):
+            indexes = np.argwhere(self.data_center_ids == i)
+            data_clusters = self.data[indexes.reshape(indexes.shape[0])]
+            if len(data_clusters) > 0:
+                dist = np.linalg.norm(data_clusters - self.centers[i], axis=1)
+                self.clustering_cost += np.sum(dist)
+
+        self.clustering_cost /= self.data.shape[0]
+
+        print(f'Print clustering cost with these number of centers(K) is {self.clustering_cost}')
+
+    def plot(self):
+        # for now, in case of 2D data, plot data
         plt.scatter(self.data[:, 0], self.data[:, 1], c=self.data_center_ids)
 
-        # TODO debug the centers plot colors
+        # TODO debug the centers  colors
         plt.scatter(self.centers[:, 0], self.centers[:, 1], marker='*', s=200, c=np.arange(0, self.centers.shape[0]),
                     edgecolors='black', zorder=1)
         plt.show()
 
 
 if __name__ == '__main__':
-    data, _ = make_blobs(n_samples=400, centers=3, n_features=2, cluster_std=1)
+    data, _ = make_blobs(n_samples=400, centers=3, n_features=2, cluster_std=1, random_state=33)
 
     # for 2D data
     plt.scatter(data[:, 0], data[:, 1])
 
     plt.show()
 
-    km = KMeans(data=data, K=8, initialization_method=KMeans.INITIALIZE_FROM_DATA)
+    km = KMeans(data=data, K=5, initialization_method=KMeans.INITIALIZE_FROM_DATA)
 
     km.start_clustering(end_criteria=KMeans.NO_CHANGE_IN_CENTERS_END_CRITERIA)
+    km.cost()

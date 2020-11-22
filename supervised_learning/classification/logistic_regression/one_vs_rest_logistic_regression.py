@@ -8,7 +8,7 @@ from sklearn.datasets import make_blobs
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 
-from supervised_learning.classification.logistic_regression.logistic_regression import fit
+from supervised_learning.classification.logistic_regression.logistic_regression import LogisticRegression
 
 NUM_CLASSES = 3
 LEARNING_RATE = 0.0001
@@ -27,8 +27,6 @@ plt.show()
 ones_column = np.ones((X.shape[0], 1), np.float)
 X = np.append(X, ones_column, axis=1)
 
-y = y.reshape(y.shape[0], 1)
-
 # split the data
 
 train_x, test_x, train_y, test_y = train_test_split(X, y, test_size=0.1, random_state=18)
@@ -45,8 +43,9 @@ for i in range(NUM_CLASSES):
     changed_labels[changed_labels == i] = 0
     changed_labels[changed_labels != i] = 1
 
+    lr = LogisticRegression(train_x, changed_labels,add_bias_column=False)
     # train the ith classifier
-    weight_i = fit(train_x, changed_labels, learning_rate=LEARNING_RATE, epochs=EPOCHS)
+    weight_i = lr.fit(learning_rate=LEARNING_RATE, epochs=EPOCHS)
 
     # append weights
     weights[:, i] = weight_i[:, 0]

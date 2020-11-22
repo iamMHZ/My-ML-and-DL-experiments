@@ -8,12 +8,14 @@ from matplotlib import pyplot as plt
 
 class LogisticRegression:
 
-    def __init__(self):
-        # load data
-        self.x, self.y = self.load_data()
-        # add a column for the bias (bias trick) ==> everything is vectorized
-        ones_column = np.ones((self.x.shape[0], 1), np.float)
-        self.x = np.append(self.x, ones_column, axis=1)
+    def __init__(self, x, y, add_bias_column=True):
+        self.x = x
+        self.y = y
+
+        if add_bias_column:
+            # add a column for the bias (bias trick) ==> everything is vectorized
+            ones_column = np.ones((self.x.shape[0], 1), np.float)
+            self.x = np.append(self.x, ones_column, axis=1)
 
         self.y = self.y.reshape(self.y.shape[0], 1)
 
@@ -21,20 +23,6 @@ class LogisticRegression:
         self.weights = np.random.random((self.x.shape[1], 1))
 
         self.losses = []
-
-    def load_data(self):
-        # https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival
-        data_file = np.genfromtxt('../../../utils/datasets/supervised dataset/haberman.txt', delimiter=',')
-
-        x = data_file[:, :2]
-        y = data_file[:, 3]
-
-        #  labels are 1 (survived) and 2 (died)
-        # change 2 to 0
-
-        y[y == 2] = 0
-
-        return x, y
 
     def sigmoid(self, x):
         return 1 / (1 + np.exp(-x))
@@ -86,5 +74,18 @@ class LogisticRegression:
 
 
 if __name__ == '__main__':
-    lr = LogisticRegression()
+    # Load data
+
+    # https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival
+    data_file = np.genfromtxt('../../../utils/datasets/supervised dataset/haberman.txt', delimiter=',')
+
+    x = data_file[:, :2]
+    y = data_file[:, 3]
+
+    #  labels are 1 (survived) and 2 (died)
+    # change 2 to 0
+
+    y[y == 2] = 0
+
+    lr = LogisticRegression(x, y)
     lr.fit(learning_rate=0.000001, epochs=200)

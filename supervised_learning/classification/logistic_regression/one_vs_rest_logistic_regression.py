@@ -43,7 +43,7 @@ for i in range(NUM_CLASSES):
     changed_labels[changed_labels == i] = 0
     changed_labels[changed_labels != i] = 1
 
-    lr = LogisticRegression(train_x, changed_labels,add_bias_column=False)
+    lr = LogisticRegression(train_x, changed_labels, add_bias_column=False)
     # train the ith classifier
     weight_i = lr.fit(learning_rate=LEARNING_RATE, epochs=EPOCHS)
 

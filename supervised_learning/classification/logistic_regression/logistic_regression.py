@@ -6,92 +6,85 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 
-def load_data():
-    # https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival
-    data_file = np.genfromtxt('../../../utils/datasets/supervised dataset/haberman.txt', delimiter=',')
+class LogisticRegression:
 
-    X = data_file[:, :2]
-    y = data_file[:, 3]
+    def __init__(self):
+        # load data
+        self.x, self.y = self.load_data()
+        # add a column for the bias (bias trick) ==> everything is vectorized
+        ones_column = np.ones((self.x.shape[0], 1), np.float)
+        self.x = np.append(self.x, ones_column, axis=1)
 
-    #  labels are 1 (survived) and 2 (died)
-    # change 2 to 0
+        self.y = self.y.reshape(self.y.shape[0], 1)
 
-    y[y == 2] = 0
+        # initialize weights randomly
+        self.weights = np.random.random((self.x.shape[1], 1))
 
-    return X, y
+        self.losses = []
 
+    def load_data(self):
+        # https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival
+        data_file = np.genfromtxt('../../../utils/datasets/supervised dataset/haberman.txt', delimiter=',')
 
-def sigmoid(x):
-    return 1 / (1 + np.exp(-x))
+        x = data_file[:, :2]
+        y = data_file[:, 3]
 
+        #  labels are 1 (survived) and 2 (died)
+        # change 2 to 0
 
-def compute_loss(y_pred, y_true):
-    # calculate loss
+        y[y == 2] = 0
 
-    y_pred[y_pred == 1] = 0.99  # helps not facing overflow
+        return x, y
 
-    #  Replace NaN with zero and infinity with large finite number
-    # because the -log(x) and -log(1-x) have the tendency to return NaN or INF so we need to make it a number
-    epoch_loss = (-y_true * np.nan_to_num(np.log(y_pred))) - ((1 - y_true) * np.nan_to_num(np.log(1 - y_pred)))
-    epoch_loss = np.sum(epoch_loss)
+    def sigmoid(self, x):
+        return 1 / (1 + np.exp(-x))
 
-    # making sure that the over all loss does not become INF
-    epoch_loss = np.nan_to_num(epoch_loss)
-    return epoch_loss
+    def compute_loss(self, y_pred):
+        # calculate loss
 
+        y_pred[y_pred == 1] = 0.99  # helps not facing overflow
 
-# TODO: i am suspicious
-def compute_gradient(X, y_pred, y_true):
-    # calculate the gradient vector
-    error = y_pred - y_true
+        #  Replace NaN with zero and infinity with large finite number
+        # because the -log(x) and -log(1-x) have the tendency to return NaN or INF so we need to make it a number
+        epoch_loss = (-self.y * np.nan_to_num(np.log(y_pred))) - ((1 - self.y) * np.nan_to_num(np.log(1 - y_pred)))
+        epoch_loss = np.sum(epoch_loss)
 
-    gradients = np.matmul(X.T, error)
+        # making sure that the over all loss does not become INF
+        epoch_loss = np.nan_to_num(epoch_loss)
+        return epoch_loss
 
-    return gradients
+    def compute_gradient(self, y_pred):
+        # calculate the gradient vector
+        error = y_pred - self.y
 
+        gradients = np.matmul(self.x.T, error)
 
-def fit(X, y, learning_rate=0.0001, epochs=50):
-    # initialize weights randomly
-    weights = np.random.random((X.shape[1], 1))
+        return gradients
 
-    losses = []
-    for i in range(epochs):
-        # make a prediction
-        prediction = sigmoid(np.matmul(X, weights))
-        # compute loss
-        epoch_loss = compute_loss(prediction, y)
+    def fit(self, learning_rate=0.0001, epochs=50):
+        for i in range(epochs):
+            # make a prediction
+            prediction = self.sigmoid(np.matmul(self.x, self.weights))
+            # compute loss
+            epoch_loss = self.compute_loss(prediction)
 
-        # update the weights
-        gradients = compute_gradient(X, prediction, y)
-        weights += -learning_rate * gradients
+            # update the weights
+            gradients = self.compute_gradient(prediction)
+            self.weights += -learning_rate * gradients
 
-        print(f'Epoch = {i} , Loss = {epoch_loss}')
+            print(f'Epoch = {i} , Loss = {epoch_loss}')
 
-        losses.append(epoch_loss)
+            self.losses.append(epoch_loss)
 
-    # plot the training loss
-    plt.plot(np.arange(0, epochs), losses)
-    plt.xlabel('Epoch')
-    plt.ylabel('Loss')
-    plt.show()
+        # plot the training loss
+        plt.plot(np.arange(0, epochs), self.losses)
+        plt.xlabel('Epoch')
+        plt.ylabel('Loss')
+        plt.show()
 
-    return weights
+        return self.weights
 
 
 if __name__ == '__main__':
-    X, y = load_data()
-    #
-    # from sklearn.datasets import make_blobs
-    #
-    # X, y = make_blobs(n_samples=100, n_features=2, centers=2, random_state=16)
-    #
-    # plt.scatter(X[:, 0], X[:, 1])
-    # plt.show()
-
-    # add a column for the bias (bias trick) ==> everything is vectorized
-    ones_column = np.ones((X.shape[0], 1), np.float)
-    X = np.append(X, ones_column, axis=1)
-
-    y = y.reshape(y.shape[0], 1)
-
-    fit(X, y, learning_rate=0.001, epochs=200)
+    lr = LogisticRegression()
+    lr.fit(learning_rate=0.000001, epochs=200)

@@ -1,5 +1,5 @@
 """
-Kmeams on the mnist dataset using sklearn
+Kmeams on the 8x8 digit dataset using sklearn
 """
 from matplotlib import pyplot as plt
 from sklearn.cluster import KMeans

@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class Activation(ABC):
+class ActivationFunction(ABC):
     def __init__(self):
         pass
 

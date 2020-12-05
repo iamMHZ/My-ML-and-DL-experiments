@@ -16,14 +16,14 @@ class FeedForwardLayer:
         self.layer_weights = None
         self.layer_biases = np.zeros(shape=(self.num_neurons, 1))
 
-    def forward(self, previouse_activation):
+    def forward(self, previous_activation):
         # initialize weights
         if self.layer_weights is None:
             # TODO is there any other way of doing the initialization here
             # TODO like using model class or sth else
-            self.layer_weights = np.zeros(shape=(previouse_activation.shape[1], self.num_neurons))
+            self.layer_weights = np.zeros(shape=(previous_activation.shape[1], self.num_neurons))
 
-        self.layer_weighted_input = np.matmul(previouse_activation, self.layer_weights)
+        self.layer_weighted_input = np.matmul(previous_activation, self.layer_weights)
         self.layer_activations = self.activation_function.make_activation(self.layer_weighted_input)
 
         return self.layer_activations

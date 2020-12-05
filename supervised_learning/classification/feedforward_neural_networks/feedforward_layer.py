@@ -9,8 +9,8 @@ class FeedForwardLayer:
         self.activation_function = activation_function
 
         # INITIALIZE
-        self.layer_weighted_input = np.zeros(shape=(self.num_neurons, 1))  # OR None ?
-        self.layer_activations = np.zeros(shape=(self.num_neurons, 1))  # OR None ?
+        self.layer_weighted_input = None  # OR Zeroes ?
+        self.layer_activations = None  # OR Zeroes ?
         # TODO how to determine the shape of weights dynamically
         # TODO  the if in self.forward is doing it but is there a better way
         self.layer_weights = None
@@ -23,8 +23,8 @@ class FeedForwardLayer:
             # TODO like using model class or sth else
             self.layer_weights = np.random.rand(previous_activation.shape[1], self.num_neurons)
 
-        self.layer_weighted_input = np.matmul(previous_activation, self.layer_weights) + self.layer_biases
-        self.layer_activations = self.activation_function.make_activation(self.layer_weighted_input)
+        self.layer_weighted_input = np.matmul(previous_activation, self.layer_weights)
+        self.layer_activations = self.activation_function.make_activation(self.layer_weighted_input.copy())
 
         return self.layer_activations
 

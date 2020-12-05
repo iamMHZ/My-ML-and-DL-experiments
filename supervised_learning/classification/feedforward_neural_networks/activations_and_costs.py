@@ -3,6 +3,19 @@ from abc import ABC, abstractmethod
 import numpy as np
 
 
+class CostFunction(ABC):
+    def __init__(self):
+        pass
+
+    @abstractmethod
+    def cost(self, y_true, y_pred):
+        pass
+
+    @abstractmethod
+    def cost_derivatives(self, y_true, y_pred):
+        pass
+
+
 class ActivationFunction(ABC):
     def __init__(self):
         pass
@@ -39,6 +52,12 @@ class SoftmaxActivationFunction(ActivationFunction):
         pass
 
 
-class CostFunction:
+class MSECost(CostFunction):
     def __init__(self):
-        pass
+        super().__init__()
+
+    def cost(self, y_true, y_pred):
+        return 1 / len(y_true) * (np.sum((y_true - y_pred)) ** 2)
+
+    def cost_derivatives(self, y_true, y_pred):
+        return 2 / len(y_true) * np.sum(y_true - y_pred)

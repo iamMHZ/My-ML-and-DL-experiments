@@ -14,17 +14,19 @@ class FeedForwardLayer:
         # TODO how to determine the shape of weights dynamically
         # TODO  the if in self.forward is doing it but is there a better way
         self.layer_weights = None
-        self.layer_biases = np.random.rand(self.num_neurons, 1)
+        self.layer_biases = np.random.rand(1, self.num_neurons)
 
     def forward(self, previous_activation):
         # initialize weights
         if self.layer_weights is None:
             # TODO is there any other way of doing the initialization here
             # TODO like using model class or sth else
+            # shape of weights is number of features in previous activation * number of neurons of this layer
             self.layer_weights = np.random.rand(previous_activation.shape[1], self.num_neurons)
 
         self.layer_weighted_input = np.matmul(previous_activation, self.layer_weights)
-        self.layer_activations = self.activation_function.make_activation(self.layer_weighted_input.copy())
+        self.layer_weighted_input = self.layer_weighted_input + self.layer_biases
+        self.layer_activations = self.activation_function.make_activation(self.layer_weighted_input)
 
         return self.layer_activations
 

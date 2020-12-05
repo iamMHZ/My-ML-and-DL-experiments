@@ -9,8 +9,15 @@ class FeedForwardNeuralNetwork:
     def add_layer(self, layer):
         self.layers.append(layer)
 
-    def train(self):
-        pass
+    def train(self, train_x):
+        # TODO add backward pass
+
+        # for the first layer
+        activation = self.layers[0].forward(train_x)
+        # TODO remove duplicate code
+        # from the second layer to the last layer do the forward pass
+        for i in range(1, len(self.layers)):
+            activation = self.layers[i].forward(activation)
 
     def predict(self, data):
         # uses only the forward pass

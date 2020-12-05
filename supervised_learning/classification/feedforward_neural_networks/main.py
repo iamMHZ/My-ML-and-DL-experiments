@@ -18,6 +18,7 @@ model.add_layer(FeedForwardLayer(1, SigmoidActivationFunction()))
 data = np.random.randint(0, 10, size=(120, 3))
 labels = np.random.randint(0, 2, size=(120, 1))
 
+# TODO hot encode labels
 model.train(data, labels, epochs=2)
 
 print(model.evaluate(data[0]))

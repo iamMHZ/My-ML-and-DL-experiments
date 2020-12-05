@@ -11,3 +11,4 @@ model.add_layer(FeedForwardLayer(2, SigmoidActivationFunction()))
 model.add_layer(FeedForwardLayer(1, SigmoidActivationFunction()))
 
 
+model

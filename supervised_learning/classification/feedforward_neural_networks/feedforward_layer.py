@@ -23,7 +23,7 @@ class FeedForwardLayer:
             # TODO like using model class or sth else
             self.layer_weights = np.zeros(shape=(previous_activation.shape[1], self.num_neurons))
 
-        self.layer_weighted_input = np.matmul(previous_activation, self.layer_weights)
+        self.layer_weighted_input = np.matmul(previous_activation, self.layer_weights) + self.layer_biases
         self.layer_activations = self.activation_function.make_activation(self.layer_weighted_input)
 
         return self.layer_activations

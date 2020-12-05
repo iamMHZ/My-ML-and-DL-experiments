@@ -21,7 +21,7 @@ class FeedForwardNeuralNetwork:
             for i in range(1, len(self.layers)):
                 activation = self.layers[i].forward(activation)
 
-    def predict(self, data):
+    def evaluate(self, data):
         # uses only the forward pass
 
         # for the first layer
@@ -31,7 +31,7 @@ class FeedForwardNeuralNetwork:
         for i in range(1, len(self.layers)):
             activation = self.layers[i].forward(activation)
 
-        return activation.argmax(axis=1)
+        return activation
 
-    def evaluate(self):
+    def predict(self):
         pass

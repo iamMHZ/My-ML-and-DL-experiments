@@ -16,7 +16,11 @@ class FeedForwardLayer:
         self.layer_weights = None
         self.layer_biases = np.random.rand(1, self.num_neurons)
 
+        self.previous_activation = None
+
     def forward(self, previous_activation):
+        self.previous_activation = previous_activation
+
         # initialize weights
         if self.layer_weights is None:
             # TODO is there any other way of doing the initialization here
@@ -30,5 +34,14 @@ class FeedForwardLayer:
 
         return self.layer_activations
 
-    def backward(self):
-        pass
+    def backward(self, up_coming_error, learning_rate):
+        # TODO check and complete backward pass
+        # TODO separate the optimization part
+        error = up_coming_error * self.activation_function.activation_derivatives(self.layer_weighted_input)
+
+        # Update the weights and biases
+
+        self.layer_weights -= learning_rate * np.sum(error * self.previous_activation.T, axis=0)
+        self.layer_biases -= learning_rate * np.sum(error, axis=1)
+
+        return error

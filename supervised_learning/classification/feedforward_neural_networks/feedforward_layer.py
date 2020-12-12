@@ -17,6 +17,7 @@ class FeedForwardLayer:
         self.layer_biases = np.random.rand(1, self.num_neurons)
 
         self.previous_activation = None
+        self.layer_error = None
 
     def forward(self, previous_activation):
         self.previous_activation = previous_activation
@@ -37,11 +38,17 @@ class FeedForwardLayer:
     def backward(self, up_coming_error, learning_rate):
         # TODO check and complete backward pass
         # TODO separate the optimization part
-        error = up_coming_error * self.activation_function.activation_derivatives(self.layer_weighted_input)
+        self.layer_error = up_coming_error * self.activation_function.activation_derivatives(self.layer_weighted_input)
 
         # Update the weights and biases
 
-        self.layer_weights -= learning_rate * np.sum(error * self.previous_activation.T, axis=0)
-        self.layer_biases -= learning_rate * np.sum(error, axis=1)
+        self.update_weights(learning_rate)
 
-        return error
+        # (W layer + 1.T @ delta layer + 1)
+        self.layer_error = self.layer_error @ self.layer_weights.T
+
+        return self.layer_error
+
+    def update_weights(self, learning_rate):
+        self.layer_biases += -learning_rate * np.sum(self.layer_error, axis=0)
+        self.layer_weights += -learning_rate * (self.previous_activation.T @ self.layer_error)
